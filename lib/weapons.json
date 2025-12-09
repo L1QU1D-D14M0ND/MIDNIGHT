@@ -1,0 +1,106 @@
+[
+	{
+		"name": "M1A2 Abrams",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "F-35 Lightning II",
+		"tags": ["Air", "Stealth"]
+	},
+	{
+		"name": "AH-64 Apache",
+		"tags": ["Air", "Heavy"]
+	},
+	{
+		"name": "M2 Bradley",
+		"tags": ["Armor", "Support"]
+	},
+	{
+		"name": "M142 HIMARS",
+		"tags": ["Support", "Heavy"]
+	},
+	{
+		"name": "MQ-9 Reaper",
+		"tags": ["Air", "Support"]
+	},
+	{
+		"name": "MIM-104 Patriot",
+		"tags": ["Structure", "Heavy"]
+	},
+	{
+		"name": "Leopard 2A7",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "Su-57 Felon",
+		"tags": ["Air", "Stealth"]
+	},
+	{
+		"name": "Iron Dome",
+		"tags": ["Structure", "Support"]
+	},
+	{
+		"name": "B-21 Raider",
+		"tags": ["Air", "Stealth", "Heavy"]
+	},
+	{
+		"name": "V-22 Osprey",
+		"tags": ["Air", "Support"]
+	},
+	{
+		"name": "T-14 Armata",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "FGM-148 Javelin",
+		"tags": ["Infantry", "Heavy"]
+	},
+	{
+		"name": "M1126 Stryker",
+		"tags": ["Armor", "Support"]
+	},
+	{
+		"name": "AC-130J Ghostrider",
+		"tags": ["Air", "Heavy"]
+	},
+	{
+		"name": "Phalanx CIWS",
+		"tags": ["Structure", "Support"]
+	},
+	{
+		"name": "Challenger 3",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "Eurofighter Typhoon",
+		"tags": ["Air"]
+	},
+	{
+		"name": "TOS-1A Solntsepek",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "RQ-4 Global Hawk",
+		"tags": ["Air", "Support"]
+	},
+	{
+		"name": "Pantsir-S1",
+		"tags": ["Armor", "Support"]
+	},
+	{
+		"name": "Aegis Ashore",
+		"tags": ["Structure", "Heavy"]
+	},
+	{
+		"name": "Switchblade 600",
+		"tags": ["Air", "Stealth"]
+	},
+	{
+		"name": "Merkava Mk 4",
+		"tags": ["Armor", "Heavy"]
+	},
+	{
+		"name": "THAAD Battery",
+		"tags": ["Structure", "Heavy"]
+	}
+]
