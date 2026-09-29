@@ -123,6 +123,4 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 - **Loyalty:** FRACTURED. Assets are currently embedded in opposing factions (Global Defense, The Clandestine Service, The Private Sector).
 - **Objective:** SURVIVAL. The new cohort is not tasked with hunting Elisabeth. They are tasked with preventing the next Downfall.
 
-**Work in progress**: the game is in an early phase and this entry will be finished later, for now ignore that the new MAJESTIC-12 have no official members, they will be added later in development. Some Black File units have the affiliation but it is pending further revision, the only confirmed member for now is The BLACK KNIGHT.
-
-Some cards might have MAJESTIC-12 clearance level but that is a placeholder for now.
+**Placeholder membership:** Black Knight is the only confirmed member of the new cohort. A Black File whose clearance is stamped MAJESTIC-12 temporarily joins the faction until the roster is revised. That stamp is a placeholder, not a permanent assignment and not a rules tag. The placeholders are White Knight, Scheherazade, Janus, and Enterprise. Where a file already names another department, that department stays beside the placeholder line.

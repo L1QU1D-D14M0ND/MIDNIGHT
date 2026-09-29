@@ -193,4 +193,4 @@ These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
 - The mundane roster. The clock table is only a clearance guide.
-- Setting questions in [World](world.md): which legends are actually Majestic-12, the Yorktown name versus Enterprise, and whether Karras is another name for Scharnhorst. Affiliation is not a rules tag.
+- Setting questions in [World](world.md): whether Karras is another name for Scharnhorst. Enterprise is the carrier's codename. A legend whose clearance is stamped Majestic-12 temporarily belongs to that faction; the stamp is a placeholder, not a rules tag. Affiliation is not a rules tag.
