@@ -1,300 +1,196 @@
 # Mechanics
 
-> **Status: design sketch, unfinished.** These rules are not implemented. The playable build is [Project stack](project-stack.md). The setting is [World](world.md). The legend files are [Cards](cards.md).
+> **Status: design rules.** This is how a match of MIDNIGHT is meant to be played. It is not implemented. The playable build is [Project stack](project-stack.md). The setting is [World](world.md). The legend files are [Cards](cards.md).
 >
-> The rules below are the sketch as written, including contradictions. Decisions required to finish the sketch are collected at the end and are not rules yet.
+> Chip cost, health, and attack on individual legends are still unassigned. Mundane assets (infantry through nukes) do not have cards yet.
 
 ## Web app
 
-This game will be developed in a web app to be played online against other players.
+This game is a web app, played online against another player.
 
-## Decapitation Strike
+## Match setup
 
-The Rule: The game ends IMMEDIATELY when a Commander’s (player’s) Health is reduced to 0 or lower.
+- The clock starts at **5 to Midnight**.
+- Each commander starts at **30** health.
+- Each player has a 30-card draw pile, shuffled.
+- Each player draws an opening hand of 5.
+- Before the first turn, each player may mulligan once: shuffle the hand back into the draw pile and draw 5. A player cannot mulligan twice.
+- The players choose who is Player 1. Player 1 takes the first turn.
+- **Black File** cards are unique: one copy in a deck. Any other asset is limited to three copies.
+- Mundane assets are not designed yet. The clock table below is their clearance guide until those cards exist.
 
-Clarification: There are no other victory conditions. You cannot win by "decking out" the opponent, nor by reaching a specific time limit. You must kill the head of the snake.
+## Board
 
-The Commander (player) has a max life of 30 at the start of the game, and a unit can only target the commander if there are no enemy units on the same lane, most area attacks and one-shot effects can’t target the commander under any circumstance.
+The table has **four lanes**, shared by both players. A lane is a column.
 
-## Escalation
+Each player has **one slot** in each lane. A player may have one unit in a lane. The opposing unit in that same lane is the enemy in that lane, not an adjacent unit.
 
-### SYSTEM: THE DOOMSDAY CLOCK
+**Adjacent** means the next lane to the left or the right. Adjacency does not cross the table to the other player.
 
-### 1. Visual Representation
+### Zones
 
-Embedded in the rich mahogany of the poker table (top center) is a vintage, analog Doomsday Clock.
+| Zone | What it holds |
+| --- | --- |
+| Command | The commander. This is a health total, not a card. |
+| Hand | Cards a player can deploy. Maximum 7. |
+| Draw pile | Face-down cards that player draws from. |
+| Field | Units in lane slots. |
+| Orbital dock | Orbital units. They do not use a lane slot. |
+| Graveyard | Exiled cards. |
+| Capture | Cards held unusable by a capturing effect. |
 
-- The Face: a full clock, only the last numbers are written on it.
-- The Hand: A heavy, jagged black minute hand. It doesn't sweep smoothly; it ticks with a loud, mechanical CLACK that vibrates the table.
-- The Zones: The arc is divided into 6 Segments (Minutes).
+## Turn, round, and clock tick
 
-### 2. The Minutes (Escalation Levels)
+A **turn** is one player's phases. A **round** is Player 1's turn plus Player 2's turn.
 
-Instead of "Levels," the game measures progress in "Minutes to Midnight." Each minute authorizes a specific tier of weaponry.
+On your turn, in this order:
 
-| Time | Defcon | Narrative State | Authorized Assets |
-| --- | --- | --- | --- |
-| 5 to Midnight | Blue | Cold War | Infantry, Spies, Light Spec-Ops (Richelieu Unleashed) |
-| 4 to Midnight | Green | Skirmish | Light Vehicles (Jeeps), Transport, Support. |
-| 3 to Midnight | Yellow | Conflict | Main Battle Tanks, Attack Choppers. |
-| 2 to Midnight | Orange | War | Heavy Artillery, Strategic Bombers, Naval Support. |
-| 1 to Midnight | Red | Crisis | Experimental Units, Chemical/Bio Weapons. |
-| MIDNIGHT | Black | Doomsday (theme game doesn’t end, but the all out war starts) | Tactical Nukes, Omega Units (Scharnhorst Unleashed). |
+1. **Upkeep.** Start-of-turn damage and other "at the start of your turn" abilities. Resolve them one at a time.
+2. **Draw.** Draw one card. If your hand already has 7 cards, skip the draw. If the draw pile is empty, the draw fails and you get no card.
+3. **Chips.** Refill your Chips to your current maximum.
+4. **Main.** Deploy cards and use activated abilities, in any order, as many times as you can pay for.
+5. **Combat.** Your units attack, one unit at a time, in the order you choose.
+6. **End.** End-of-turn abilities, one at a time.
 
-### 3. How Time Passes
-
-The clock is the heartbeat of the match. It moves in two ways:
-
-### A. Inevitable Drift (The Turn Timer)
-
-War is momentum. It is hard to stop once it starts.
-
-- Mechanic: the Minute Hand advances 1 Minute automatically every 2 Rounds (after both players have acted twice).
-- Pacing: this ensures that even if players play passively, the game will eventually reach the endgame (Midnight).
-- Scheherazade: her passive “The 1001st Night” stops the clock from reaching MIDNIGHT.
-
-### B. "Breach of Protocol" (The Gamble)
-
-This is the core tactical risk. You can play a card that is 1 level higher than the current Time, but you must force the clock forward to do it.
-
-- The Scenario: It is 5 to Midnight (Infantry only). You have an M1 Abrams Tank (Requires 4 to Midnight) in your hand.
-- The Action: You declare a "Breach."
-- The Cost:
-  - You pay twice the Chip cost of the Tank.
-  - You manually advance the Clock by 1 minute maximum. (Moving from 5 to 4 = 1 Minutes).
-- The Consequence:
-  - You get your Tank out early (advantage).
-  - BUT: You have just unlocked Level 4 Assets for your opponent as well. You escalated the war for them.
-
-### 4. Card Design: Clearance Levels
-
-Every Asset card has a "Time Stamp" in the top right corner, styled like a classified document stamp.
-
-- Infantry Card: Stamped [-5] (Playable immediately).
-- Tank Card: Stamped [-3] (Playable at 3 to Midnight).
-- Nuke Card: Stamped [00] (Playable only at Midnight).
-
-Units deployed are disabled (don’t do anything) if the conflict deescalates below their deployment time, but if they are attacked the clock advances to allow them to fire back. They still block attacks against the commander though.
-
-Visual Note: If a card is currently "Restricted" (e.g., it's a Tank but the clock is at Infantry level), the card appears "Greyed Out" or covered by a digital "Locked" overlay in the player's hand.
+The minute hand advances **one minute at the end of every second round**, after Player 2's end phase, before Player 1's next turn. The clock starts at 5, so the first automatic advance happens after round 2, from 5 to 4.
 
 ## Chips
 
-The main resource of the game, needed to deploy assets and used as currency.
+Chips are the currency. They pay for deployments and for activated abilities that print a Chip cost.
 
-## MIDNIGHT effects
+- Both players start at **1 Chip**, with a maximum of **1**.
+- Unspent Chips do not bank. At the start of your turn, during the Chips phase, your Chips become your current maximum.
+- At the end of each round, both maximums increase by **1**, to a cap of **10**. On a round when the clock also advances, the clock moves first, then the maximums increase.
+- A deployment spends the card's Chip cost.
+- An activated ability spends the Chip cost printed on it.
+- An ordinary attack is free, unless a card says the attack costs Chips.
 
-Normally, offensive type MIDNIGHT abilities take priority over defensive type MIDNIGHT abilities.
+## Decapitation Strike
 
-Self-destructing effects that cause damage to allies occur after other effects take action.
+The match ends immediately when a commander's health is **0 or lower**. That player loses. There is no other victory. An empty draw pile does not lose the game. The clock reaching Midnight does not end the game. Midnight is when the all-out war starts.
 
-Self-destructing and Sacrifice take priority over allied defense effects.
+### Sequential resolution
 
-## Infinite Loop
+Damage, healing, kills, and other effects happen **one at a time**, in the order they are caused. After each instance, check both commanders.
 
-The Rule: If a player attempts to Draw a Card from an empty Deck:
+The first commander to reach 0 loses, and the match ends before the next instance is applied. A single effect does not damage two commanders in one step. When a card would damage both commanders, damage the opponent's commander first, then your own, and stop if the match has already ended. A card that cannot be ordered this way is a design bug and has to be rewritten. The rules do not have a tie.
 
-1. Shuffle the entire Casualty Pile (Discard Pile).
-2. Place it face-down to form a New Deck.
-3. Continue the Draw action normally.
+### Targeting the commander
 
-Tactical Implication: Assets are never truly lost unless they are Exiled (Removed from Game).
+During combat, a unit's attack targets the enemy unit in its lane. If that lane has no enemy unit, the attack may target the enemy commander.
 
-## Deployment
+An area effect or a one-shot deals damage only to units, unless its own text says it deals damage to a commander. Panopticon's Midnight liquidation says it deals commander damage, so it can. White Knight's Rod from God does not, so it cannot.
 
-Deployed units don’t suffer any sort of “summon sickness", they may act in the same turn they were deployed unless an external effect blocks them from doing so.
+A unit that does not attack, including a Structure and an Orbital, does not strike the commander by occupying or shadowing a lane. A Structure in a lane still counts as the enemy unit in that lane, so it blocks commander strikes in that lane.
 
-## Character interactions
+### Casualty, exile, and capture
 
-Cards (mostly Black File units) will talk to each other, there will be no voice acting so all will be floating text.
+**Casualty.** A killed card is shuffled into its owner's draw pile. It can be drawn again. Killing a card does not put it in a separate discard pile. Sacrifice is a kill: the sacrificed card is a casualty and returns to its owner's draw pile, unless the effect exiles it instead.
 
-## Mechanical Priorities
+**Exile.** An exiled card is put into its owner's graveyard. It stays there until an effect says it leaves. Discard does this too: a discarded card is exiled to the graveyard. Exile is not a kill, and a kill is not an exile.
 
-“Cannot” effects take priority over “Can” effects.
+**Capture.** A captured card is unusable. It is not in the draw pile, the hand, the field, or the graveyard. It does nothing until an effect frees it. The freeing effect says where the card goes. If an effect says only that the card is freed, it returns to its owner's hand. If the effect kills the captured card, the card is freed and then becomes a casualty: it is shuffled into its owner's draw pile.
 
-## Recommendations to finish this document
+Captured cards and exiled cards are not shuffled back by a death. They move only when an effect moves them.
 
-This section is not rules. The sections above are the design sketch as written. The items below are the decisions that sketch still needs before [Cards](cards.md) can be implemented. A suggested default is a proposal. It becomes a rule only when it is written into the sections above and this note is removed.
+## The Doomsday Clock
 
-Finish the items in this order. Later cards assume the earlier decisions.
+Embedded in the mahogany at the top center of the table is a vintage analog clock. Only the last minutes are marked. A heavy black minute hand ticks with a mechanical clack. The face has six segments.
 
-### 1. Board, lanes, and zones
+The names of those segments, from the start of the match to the end, are:
 
-The commander rule says a unit may strike the commander only when its lane is empty. Lane count, slots per lane, and adjacency are never defined. Pandora buffs adjacent units. Black Knight does not sit in a lane; it docks and casts a shadow on one.
+**5 to Midnight, 4 to Midnight, 3 to Midnight, 2 to Midnight, 1 to Midnight, Midnight.**
 
-Write a board section that states:
+A card is stamped with one of those six names. It may be deployed when the clock is on its stamp or further toward Midnight. A card stamped **5 to Midnight** may be deployed immediately. A card stamped **Midnight** may be deployed only at Midnight, unless Breach of Protocol is used from 1 to Midnight.
 
-- How many lanes exist, and whether a lane is a column shared by both players.
-- How many units each player may have in one lane.
-- What "adjacent" means.
-- The zones: command (the commander is a health total, not a card), hand, deck, field, casualty, exile, capture (tucked under a card such as Panopticon), and orbital dock.
+| Time | Defcon | Narrative state | Authorized mundane assets |
+| --- | --- | --- | --- |
+| 5 to Midnight | Blue | Cold War | Infantry, spies, light spec-ops |
+| 4 to Midnight | Green | Skirmish | Light vehicles (jeeps), transport, support |
+| 3 to Midnight | Yellow | Conflict | Main battle tanks, attack choppers |
+| 2 to Midnight | Orange | War | Heavy artillery, strategic bombers, naval support |
+| 1 to Midnight | Red | Crisis | Experimental units, chemical and bio weapons |
+| Midnight | Black | Doomsday | Tactical nukes, omega units |
 
-Suggested default: four shared lanes, matching the prototype grid in [Project stack](project-stack.md). Each player may occupy one slot per lane. Adjacent means the next lane to the left or right. An orbital unit occupies the dock and chooses one lane to shadow. It does not fill that lane's slot, so it does not block the commander by itself.
+Richelieu's unleashed state is a 5-to-Midnight legend ability. Scharnhorst's unleashed state is a Midnight legend ability. Those names live on their cards. They are not extra clock steps.
 
-### 2. Turn, round, and the clock tick
+If a card in hand is earlier than the clock allows, and Breach cannot legally play it, the card is shown locked: greyed out, with a locked overlay.
 
-"The minute hand advances 1 minute every 2 rounds (after both players have acted twice)" uses round and turn without definitions.
+### Breach of Protocol
 
-Write:
+You may deploy a card stamped exactly **one minute** further toward Midnight than the clock.
 
-- A **turn** is one player's sequence of phases.
-- A **round** is Player 1's turn plus Player 2's turn.
-- The automatic clock tick happens at the end of every second round, before the next Player 1 turn.
-- The phase order inside a turn. Suggested default: upkeep (start-of-turn damage and "at the start of your turn" abilities), draw, gain Chips, main (deploy and activate), combat, end.
+1. Pay **twice** that card's Chip cost.
+2. Advance the clock one minute. Both players are now on the new minute.
+3. The card enters.
 
-Say whether both players attack in one shared combat step or each player attacks on their own turn. The prototype resolves both sides together at the end of the round. The lane rule reads more cleanly if each player attacks during their own turn, into the enemy units currently in that lane.
+You cannot breach by more than one minute. From 5, a jeep stamped **4 to Midnight** can be breached. A tank stamped **3 to Midnight** cannot. From 1, a Midnight card can be breached: the clock becomes Midnight, then the card enters.
 
-### 3. Chips
+Example. The clock is at 5. You breach a jeep stamped 4. You pay twice its Chip cost, the clock moves to 4, and the jeep enters. Your opponent may now deploy their own 4-stamped cards as well.
 
-The Chips section is one sentence. Cards already spend Chips (White Knight's Rod from God costs 2) and tax them (Scheherazade makes enemy attacks cost +1 Chip).
+### When the clock moves backward
 
-Write the numbers:
+The clock moves forward unless a card says it moves backward. When a card does move it backward:
 
-- Starting Chips and the maximum.
-- When Chips are gained, and whether unspent Chips bank.
-- Which actions spend them: deploy, activated abilities, attacks, or some combination.
+- A unit whose stamp is further toward Midnight than the new time is **disabled**. It cannot attack or use activated abilities.
+- It still occupies its slot, and it still blocks commander strikes in its lane.
+- If that disabled unit is attacked, the clock advances to that unit's stamp before it retaliates. This happens once for that attack, and both players share the new time. The unit may then retaliate.
 
-Suggested default, so there is a known curve while the card files are costed: same shape as prototype Deployment Points. Start at 1, maximum increases by 1 at the end of each round, cap 10, refill to the maximum at the start of your turn, unspent Chips do not bank. Deploy costs the card's Chip cost. Activated abilities spend what the card says. Ordinary attacks are free unless a card says otherwise.
+### Scheherazade
 
-### 4. One clock vocabulary
+While Scheherazade is on the board, the clock **cannot enter Midnight**. The automatic tick stops at 1 to Midnight. A Breach declared from 1 also stops at 1, the double Chip cost is not paid, and the Midnight card is not deployed. Her card repeats this lock and does not grant an exception.
 
-The escalation table, the breach example, and the stamp list disagree.
+If a disabled Midnight unit is attacked while she is on the board, the retaliation advance stops at 1. That unit stays disabled and does not retaliate.
 
-| Source | What it says about a tank |
+## Card types and tags
+
+**Black File** is a supertype, not a weapon tag. A Black File legend is unique.
+
+`TAGS: [NONE]` on a legend means it has no weapon tag. The parenthetical in the file, such as `(Black File / Orbital Assassin)`, is a role label for authors. It is not a rules tag.
+
+A legend gains a rules tag only where its text says it is that tag. Panopticon, Pandora, and Gehenna say they are **Structure**. White Knight and Black Knight are **Orbital**.
+
+Rules tags are: **Infantry, Armor, Air, Heavy, Structure, Support, Stealth, Orbital.**
+
+| Type | Meaning |
 | --- | --- |
-| Escalation table | Main battle tanks are authorized at 3 to Midnight. Light vehicles are authorized at 4. |
-| Breach example | An M1 Abrams requires 4 to Midnight, played while the clock is at 5. |
-| Stamp list | A tank is stamped [-3], playable at 3 to Midnight. An infantry card is [-5]. A nuke is [00]. |
+| Asset | A unit in a lane slot. |
+| Structure | An asset that does not move and does not make ordinary attacks, unless its text says it does. It still occupies its slot and blocks the commander. |
+| Orbital | Deploys into the orbital dock, and only at Midnight (or by a legal Breach from 1). On deploy, it chooses one lane to shadow. It does not fill that lane's slot and does not, by itself, block the commander. |
+| Tactic | A one-shot with no body. Older card text that says "spell" means tactic. |
 
-Pick one set of names and use it on every card: `5`, `4`, `3`, `2`, `1`, `Midnight`. Suggested default: keep the table, change the Abrams example to a light vehicle at 4 or a tank at 3, and replace `[-5]` / `[-3]` / `[00]` with those six names. `[-5]` reads as "five minutes to Midnight" only if the reader already knows the joke.
+A mundane asset's stamp is the minute that authorizes it in the clock table. A legend's stamp is the stamp in its stat block.
 
-Also name the asset each minute actually authorizes, as the table does, and point at the future mundane roster. [Cards](cards.md) is only Black File legends. Infantry, jeeps, tanks, bombers, and nukes have no files. This document should say the table is a clearance guide until that roster exists.
+## Abilities and priority
 
-### 5. Breach of Protocol
+| Word | Meaning |
+| --- | --- |
+| Passive | A static ability. It is on while the card is in play and its conditions are met. |
+| Activated ability | An ability a player chooses to use, paid for if it has a cost. Card text that says "active ability" means this. |
+| Triggered ability | An ability that happens when its event occurs. |
+| Deployment effect | An ability that happens as the card enters, before it can be chosen as an attacker. |
+| Tactic | A one-shot card with no body. "Spell" in older sentences is a tactic. |
 
-State the procedure in one place:
-
-- You may deploy a card whose stamp is exactly one minute later than the current time.
-- You pay twice its Chip cost.
-- The clock advances one minute, for both players, before the card enters.
-- You cannot breach by more than one minute.
-- A card stamped Midnight can be breached onto the table only from 1 to Midnight.
-
-Suggested default: that is the whole rule. The breach example should use a card whose stamp matches the table.
-
-### 6. Whether the clock can move backward
-
-Deployed units "are disabled if the conflict deescalates below their deployment time." Nothing in the base rules moves the clock backward, so the disable rule has no trigger until a card creates one.
-
-Suggested default: the clock only moves forward unless a card says it moves backward. When a card does move it backward:
-
-- A unit whose stamp is later than the new time cannot attack or use activated abilities.
-- It still occupies its lane and still blocks the commander.
-- If that unit is attacked, the clock advances to its stamp before it retaliates. This happens once per attack, and it advances the clock for both players.
-
-Write that procedure into the clock section. Delete the single sentence that currently carries the whole rule, and replace it with the procedure.
-
-### 7. Scheherazade and Midnight
-
-This document says her passive stops the clock from reaching Midnight. Her card says Breach still works, and the next sentence says a Breach that would reach Midnight stays stuck at 1. Those cannot all be true.
-
-Suggested default: while Scheherazade is on the board, nothing reaches Midnight. The automatic tick stops at 1. A Breach declared from 1 also stops at 1, and a Midnight-stamped card cannot be deployed. Her "this state is impossible while she lives" line and the dealer note both describe that lock. Delete "Breach Protocol still works" from her card when the rules are updated.
-
-The other candidate is a soft lock: the timer cannot enter Midnight, but a paid Breach can. Choose the hard lock or the soft lock in this document, then make her card repeat that sentence and no other.
-
-### 8. Combat and the commander
-
-Replace "most area attacks and one-shot effects can't target the commander."
-
-Suggested default:
-
-- A unit attack may target the enemy unit in the same lane.
-- If that lane has no enemy unit, the attack may target the commander.
-- An area effect or one-shot deals damage only to units, unless its text says "deal damage to the commander."
-- Panopticon's Midnight liquidation says it deals commander damage, so it is allowed under this default. White Knight's Rod from God does not, so it is not.
-- Commander health starts at 30. At 0 or below, that player loses immediately, in the middle of the effect that dealt the damage.
-- If one effect would reduce both commanders to 0, the player who controls that effect wins. If a game rule with no controller does it, the match is a draw.
-
-Also define damage, death, and where the body goes: casualty by default, exile when a card says removed from the game, capture when a card says tucked under another card. Captured and exiled cards are not part of the casualty pile, so they are not shuffled back by the empty-deck rule.
-
-### 9. One Midnight priority order
-
-The three sentences under MIDNIGHT effects disagree about self-destruct. "Cannot" over "can" is a separate section. Fold both into one stack and delete the old sentences.
-
-Suggested order, first to last:
+When several effects want to happen at the same moment, apply them in this order. Inside each step, the active player's effects happen first, then the opponent's, and each effect finishes before the next one starts.
 
 1. **Cannot** beats **can**. A prohibition wins over a permission.
-2. Prevention and negation (Black Knight's point defense, a cancelled Breach).
+2. Prevention and negation, such as Black Knight's point defense or a cancelled Breach.
 3. Offensive Midnight abilities.
 4. Defensive Midnight abilities.
 5. Sacrifice and self-destruct, including damage those effects deal to allied units.
 
-Define the words cards already use: passive, activated ability, triggered ability, spell, tactic, deployment effect. Black Knight negates "the first Spell, Tactic, or Active Ability" that targets it. Those types need a definition or that line cannot be played.
+## Deployment
 
-### 10. Tags and card types
+A deployed unit may act on the turn it entered, unless a card says it enters exhausted or cannot act.
 
-Every legend is stamped `TAGS: [NONE]`, and the body then says the unit is a `[STRUCTURE]`, `[ORBITAL]`, `[INFANTRY]`, or similar. The prototype tag list and the design are not the same list.
+## Speech
 
-Suggested default:
+Character speech is floating text. Deployment, ability, and death may have sound effects. There is no voice acting. Lines in [Cards](cards.md) labeled as voice lines are the floating-text script.
 
-- **Black File** is a supertype, not a weapon tag. Legends are unique.
-- `TAGS: [NONE]` means the card has no weapon tag. The parenthetical, such as `(Black File / Orbital Assassin)`, is a role label for authors, not a rules tag.
-- When a card says it "is a [STRUCTURE]" (or Air, Armor, Infantry, Heavy, Support, Stealth, Orbital), that word is a rules tag other cards can name.
-- Weapon tags that mechanics text is allowed to use: Infantry, Armor, Air, Heavy, Structure, Support, Stealth, Orbital.
-- A normal asset's clearance comes from the clock table. A Black File's clearance is the stamp printed on it.
+## Still open
 
-Add four card types, because the files already assume them:
+These are not rules yet, and this document does not invent them:
 
-- **Asset** — a unit on a lane.
-- **Structure** — an asset that does not move or make ordinary attacks, unless its text says it does.
-- **Orbital** — deploys only at Midnight, into the dock.
-- **Tactic** — a one-shot with no body. "Spell" in older sentences means tactic.
-
-### 11. Deck, hand, and the missing roster
-
-Write deck size, opening hand, maximum hand, mulligan, and copy limits.
-
-Suggested default: 30-card deck, opening hand 5, maximum hand 7, one mulligan (shuffle back and draw 5). Black File cards are limited to one copy. Other assets are limited to three. An empty deck still reshuffles the casualty pile, as already written. If the casualty pile is also empty, the draw fails and the player takes no card.
-
-Do not invent the non-legend roster inside this file. Add one sentence: mundane assets are not designed yet; the clock table is their clearance guide.
-
-### 12. Speech, sound, and the stat block
-
-This document says characters are floating text and there is no voice acting. The card template asks for spoken deployment, ability, and death lines.
-
-Suggested default: character speech is floating text. Deployment, ability, and death may have sound effects. Nobody is voiced. The "voice line" fields in [Cards](cards.md) are the floating-text script.
-
-Add a stat block to the card template, and then to every legend, once the items above exist:
-
-| Field | Example |
-| --- | --- |
-| Chip cost | 4 |
-| Stamp | 3 to Midnight |
-| Health | 6 |
-| Attack | 3 |
-| Tags | Structure |
-| Supertype | Black File, unique |
-| Type | Asset |
-
-Until those numbers exist, the legend files are art, lore, and ability prose. They are not playable cards.
-
-### Definition of done
-
-This document is finished when a reader can resolve a turn without inventing a number, and when each item below has one answer in the rules above:
-
-- Lane count, slots, adjacency, and the zone list.
-- Turn, round, phase order, and the exact moment the clock ticks.
-- Chip starting value, income, cap, banking, and what spends them.
-- One stamp vocabulary, with the Abrams example matching the table.
-- Breach procedure, including a one-minute limit.
-- Clock direction, and the disabled-unit procedure if it can move backward.
-- Scheherazade: hard lock or soft lock, repeated on her card.
-- Commander targeting, commander-damage exceptions, and both-commanders-die.
-- Casualty, exile, and capture.
-- One priority order, plus definitions for passive, activated, triggered, and tactic.
-- Tag list and the four card types.
-- Deck size, hand size, copy limits.
-- Floating text versus sound effects.
-- A stat block on the template in [Cards](cards.md).
-
-Two canon notes belong in [World](world.md), not here, but they leak into these rules. World says the only confirmed Majestic-12 member is Black Knight, and that other Majestic-12 stamps are placeholders. White Knight, Enterprise, Scheherazade, and Janus are stamped Majestic-12 anyway. Scheherazade's dialogue names Yorktown; the carrier in the card file is Enterprise. World also calls Scharnhorst by the name Karras. Settle those in the world file before treating affiliation as a mechanical trait.
+- Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
+- The mundane roster. The clock table is only a clearance guide.
+- Setting questions in [World](world.md): which legends are actually Majestic-12, the Yorktown name versus Enterprise, and whether Karras is another name for Scharnhorst. Affiliation is not a rules tag.

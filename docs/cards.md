@@ -1,8 +1,8 @@
 # Cards
 
-> **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules these files assume are the unfinished sketch in [Mechanics](mechanics.md).
+> **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules are [Mechanics](mechanics.md).
 
-The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. None of them have a shared stat block yet. See [Recommendations to finish the mechanics](mechanics.md#recommendations-to-finish-this-document).
+The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed.
 
 ## Contents
 
@@ -47,6 +47,20 @@ The first entry is the blank template. The rest are Black File legends. Several 
 | **TAGS** | *[NONE] (Black File)* |
 | **ARCHETYPE** | *[e.g., Late-Game Carry, Stasis, Economy Engine]* |
 | **DEPLOYMENT TYPE** | *[Standard Escalation] OR [Midnight Tactical]* |
+
+### STAT BLOCK
+
+Required on every card. The rules for these fields are in [Mechanics](mechanics.md). The values in this template are examples of the shape, not a real card.
+
+| Field | Example |
+| --- | --- |
+| Chip cost | 4 |
+| Stamp | 3 to Midnight |
+| Health | 6 |
+| Attack | 3 |
+| Tags | Structure |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## 2. VISUAL PROFILE (CARD ART)
 
@@ -114,15 +128,15 @@ The first entry is the blank template. The rest are Black File legends. Several 
 
 ## 5. FIELD AUDIO & FX
 
-*Sound cues for digital implementation.*
+*Sound effects and floating text. Nobody is voiced. The lines below are the on-screen script.*
 
-- **ON DEPLOYMENT:** *"[Sound Effect] [Voice Line]"*
-- **ACTIVE ABILITY:** *"[Voice Line]"*
-- **DEFEATED/DEATH:** *"[Visual FX description] [Final Voice Line]"*
+- **ON DEPLOYMENT:** *"[Sound Effect] [Floating text]"*
+- **ACTIVE ABILITY:** *"[Floating text]"*
+- **DEFEATED/DEATH:** *"[Visual FX description] [Floating text]"*
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
 
-*Specific text lines triggered when this unit interacts with other legends. (Floating text, no voice acting).*
+*Floating text when this unit meets another legend. No voice acting.*
 
 | **Target Asset** | **Interaction Type** | **Dialogue Log** |
 | --- | --- | --- |
@@ -146,8 +160,9 @@ The first entry is the blank template. The rest are Black File legends. Several 
 - **PHYSICALITY:** *[How does the card feel to play? Heavy? Fast? Annoying? Does it add tokens (mass) or remove cards (emptiness)?]*
 - **PSYCHOLOGY:** *[How does it affect the opponent's mindset? Fear? Frustration? Greed? Does it force them to play sub-optimally?]*
 - **MECHANICAL CHECK:**
-  - *Does this respect the Decapitation Strike rule? (Cannot target Commander directly if guards exist)*
-  - *Does the Midnight effect follow priority? (Offensive > Defensive > Self-Destruct)*
+  - *Does this respect Decapitation Strike? A unit strikes the commander only when its lane is empty. Area effects and one-shots hit a commander only if they say so.*
+  - *Does the effect resolve sequentially, so two commanders are never reduced in one step?*
+  - *Does a Midnight effect follow priority? Cannot, then prevention, then offensive Midnight, then defensive Midnight, then sacrifice and self-destruct.*
 
 # CLASSIFIED ASSET FILE: WHITE KNIGHT
 
@@ -165,6 +180,20 @@ The first entry is the blank template. The rest are Black File legends. Several 
 | **TAGS** | [NONE] (Black File / Orbital Assassin) |
 | **ARCHETYPE** | Assassin / Anti-Hero / Precision Striker |
 | **DEPLOYMENT TYPE** | Midnight Tactical (Orbital Weapon) |
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | Orbital |
+| Supertype | Black File, unique |
+| Type | Orbital |
 
 ## 2. VISUAL PROFILE (CARD ART)
 
@@ -227,7 +256,7 @@ The first entry is the blank template. The rest are Black File legends. Several 
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
 
-*Specific text lines triggered when this unit interacts with other legends. (Floating text, no voice acting).*
+*Floating text when this unit meets another legend. No voice acting.*
 
 | **Target Asset** | **Interaction Type** | **Dialogue Log** |
 | --- | --- | --- |
@@ -303,6 +332,20 @@ The first entry is the blank template. The rest are Black File legends. Several 
 | **ARCHETYPE** | Anti-Air / Counter-Spell / Orbital Siege |
 | **DEPLOYMENT TYPE** | **Midnight Tactical** (Doomsday Weapon) |
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | Orbital |
+| Supertype | Black File, unique |
+| Type | Orbital |
+
 ## 2. VISUAL PROFILE (CARD ART)
 
 *Directives for the art team to establish the "Poker Table" aesthetic. Target Style: 90s Anime / Gritty OVA (High contrast, mature tone).*
@@ -362,7 +405,7 @@ The first entry is the blank template. The rest are Black File legends. Several 
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
 
-*Specific text lines triggered when this unit interacts with other legends. (Floating text, no voice acting).*
+*Floating text when this unit meets another legend. No voice acting.*
 
 | **Target Asset** | **Interaction Type** | **Dialogue Log** |
 | --- | --- | --- |
@@ -429,6 +472,20 @@ The first entry is the blank template. The rest are Black File legends. Several 
 
 **TAGS:** **[NONE]** (Black File / Supermax Facility)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | 0 |
+| Tags | Structure |
+| Supertype | Black File, unique |
+| Type | Structure |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -453,11 +510,11 @@ There are no guns visible. The weapon is the building itself. The entrance is a 
 
 **The Dealer's Note:**
 
-*"Don't let your Commander get dragged in there. If Panopticon takes a unit, it doesn't go to the discard pile. It just... vanishes. And if you listen closely to the card, you can hear them screaming."*
+*"Don't let your Commander get dragged in there. If Panopticon takes a unit, it doesn't go back to the draw pile. It just... vanishes. And if you listen closely to the card, you can hear them screaming."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
-**Archetype:** Removal / Casualty Pile Denial / Chip Generation
+**Archetype:** Removal / Capture / Chip Generation
 
 **Tag Interaction:** As a **Black File** unit, Panopticon is a **[STRUCTURE]**.
 
@@ -467,7 +524,7 @@ Core Passive: "Indefinite Detention"
 
 Designer Note: This denies "On Death" effects and Resurrection.
 
-Effect: When Panopticon "Destroys" (“Sacrifice” doesn't count) a unit, that unit is "Captured" (tucked face-down under the Panopticon card). Captured units are held in Indefinite Detention. They are not in the Casualty Pile and cannot be reshuffled while Panopticon is active.
+Effect: When Panopticon "Destroys" (“Sacrifice” doesn't count) a unit, that unit is captured (tucked face-down under the Panopticon card). Captured units are held in Indefinite Detention. They are unusable, and they do not return to the draw pile, until an effect frees them.
 
 - *Limit:* Panopticon can hold up to 4 Prisoners.
 
@@ -493,12 +550,12 @@ Designer Note: The prison fills up, extracts info, and eventually liquidates the
   - **Flavor:** *"Cell block C is compromised. Lockdown!"*
 - **1 TO MIDNIGHT: "Liquidation Protocol"**
   - **Status:** *Purge*
-  - **Active Ability:** **"Execute."** Destroy a Captured unit (Send it to the Casualty Pile). Heal your Commander for equal to that unit's Health.
+  - **Active Ability:** **"Execute."** Destroy a captured unit. It is freed and becomes a casualty: shuffle it into its owner's draw pile. Heal your Commander for equal to that unit's Health.
   - **Flavor:** *"We need the space. Get rid of them."*
 - **MIDNIGHT: "BURN THE FILES"**
   - **Status:** *Cover-Up*
   - **Final Resort:** **"Total Eradication"**
-    - **Effect:** Sacrifice Panopticon. Destroy ALL Captured units (send them to the Casualty Pile). Deal damage to the Enemy Commander equal to the total Cost of all destroyed units.
+    - **Effect:** Sacrifice Panopticon. It returns to its owner's draw pile. Then destroy each captured unit, one at a time; each is shuffled into its owner's draw pile. Then deal damage to the enemy commander equal to the total cost of the units destroyed this way. Check the commander after that damage. Do not damage your own commander.
     - **Flavor:** *"No witnesses. No evidence. It never happened."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -559,6 +616,20 @@ The walls crumble. Tiny figures (the prisoners) run out into the smoke, cheering
 **AFFILIATION:** Advanced Projects Agency (DARPA) / "The Skunkworks"
 
 **TAGS:** **[NONE]** (Black File / Prototype Armory)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | 0 |
+| Tags | Structure |
+| Supertype | Black File, unique |
+| Type | Structure |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -696,6 +767,20 @@ The fabricator arm goes haywire, flailing wildly before the structure collapses 
 
 **TAGS:** **[NONE]** (Black File / Mobile Factory)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | 0 |
+| Tags | Structure |
+| Supertype | Black File, unique |
+| Type | Structure |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -734,7 +819,7 @@ Core Passive: "The Open Pit"
 
 Designer Note: This turns your weak/dying units into value.
 
-Effect: Once per turn, you may drag a Friendly Unit onto Gehenna to Sacrifice it (Send to Casualty Pile).
+Effect: Once per turn, you may drag a friendly unit onto Gehenna to sacrifice it. The sacrificed unit is a casualty and is shuffled into its owner's draw pile.
 
 - **Benefit:** Gain **Chips** equal to half that unit's Deployment Cost (rounded up).
 - *Synergy:* Great for recycling units that are about to die from DoT effects or cheap tokens.
@@ -831,6 +916,20 @@ The boiler explodes. Molten slag spills out, covering the card art in glowing or
 **AFFILIATION:** Private Sector / "The Contractors"
 
 **TAGS:** **[NONE]** (Black File / Logistics Support)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -963,6 +1062,20 @@ The operators don't die. They deploy smoke, and when it clears, they are gone.
 
 **TAGS:** **[NONE]** (Black File / Standing Army)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -1091,6 +1204,20 @@ The line doesn't break. One soldier falls, and another instantly steps forward t
 **AFFILIATION:** Information Warfare Group / "The Broadcaster"
 
 **TAGS:** **[NONE]** (Black File / Narrative Control)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -1225,6 +1352,20 @@ The camera lens cracks. The image distorts into color bars and static.
 
 **TAGS:** **[NONE]** (Black File / Doomsday Prevention)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -1263,9 +1404,9 @@ Core Passive: "The 1001st Night"
 
 Designer Note: This is the hard lock on the game state.
 
-Effect: As long as Scheherazade is on the board, the Escalation Clock CANNOT advance to MIDNIGHT on its own, Breach Protocol still works though.
+Effect: As long as Scheherazade is on the board, the Escalation Clock cannot advance to Midnight. The turn timer and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
 
-- If the Turn Timer or a "Breach" attempts to push the clock to Midnight, it remains stuck at **1 Minute to Midnight**.
+- If the Turn Timer or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
 - *Consequence:* **Scharnhorst** never gets his Ultimate. **Apollyon** never floods the board.
 
 Rules of Engagement (The Holding Action)
@@ -1364,6 +1505,20 @@ Scheherazade collapses. The crowbar falls from her hand. The red light turns sol
 
 **TAGS:** **[NONE]** (Black File / Grand Strategist)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -1437,7 +1592,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
 - **MIDNIGHT: "COUP D'ÉTAT"**
   - **Status:** *Regime Change*
   - **Final Resort:** **"Tabula Rasa"**
-    - **Effect:** Sacrifice Janus. Shuffle your Hand and Casualty Pile back into your Deck. Draw 5 new cards. Reset the Escalation Clock to **5 to Midnight**.
+    - **Effect:** Sacrifice Janus. He returns to his owner's draw pile. Shuffle your hand into your draw pile and draw 5. Reset the Escalation Clock to **5 to Midnight**. Exiled cards stay in the graveyard. Captured cards stay captured.
     - **Flavor:** *"This government has failed. We are initiating the contingency government."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -1497,6 +1652,20 @@ Janus doesn't die. He simply hangs up the phone, closes his file folder, and whe
 
 **TAGS:** **[NONE]** (Black File / Economic Sanctions)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -1551,7 +1720,7 @@ Designer Note: Terminus is oppressive in the early game, locking the opponent ou
   - **Flavor:** *"Everything that crosses this line costs extra."*
 - **3 TO MIDNIGHT: "Contraband Seizure"**
   - **Status:** *Restrictive*
-  - **Active Ability:** **"Confiscate."** Choose a card in the enemy's Deck and send it to their Casualty Pile.
+  - **Active Ability:** **"Confiscate."** Choose a card in the enemy's draw pile and exile it to their graveyard.
   - **Flavor:** *"Seize the cargo. We can use it."*
 - **2 TO MIDNIGHT: "Black Market Leaks"**
   - **Status:** *Porous*
@@ -1631,6 +1800,20 @@ Terminus is pushed aside by an invisible crowd. He drops his tablet, and it shat
 | ARCHETYPE | Late-Game Carry / Scaling Duelist |
 | DEPLOYMENT TYPE | Standard Escalation |
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## 2. VISUAL PROFILE (CARD ART)
 
 *Directives for the art team to establish the "Poker Table" aesthetic. Target Style: 90s Anime / Gritty OVA (High contrast, mature tone).*
@@ -1696,7 +1879,7 @@ Terminus is pushed aside by an invisible crowd. He drops his tablet, and it shat
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
 
-*Specific text lines triggered when this unit interacts with other legends. (Floating text, no voice acting).*
+*Floating text when this unit meets another legend. No voice acting.*
 
 | Target Asset | Interaction Type | Dialogue Log |
 | --- | --- | --- |
@@ -1762,6 +1945,20 @@ Terminus is pushed aside by an invisible crowd. He drops his tablet, and it shat
 **AFFILIATION:** Cyber-Warfare Command / "The Five Eyes"
 
 **TAGS:** **[NONE]** (Black File / Electronic Warfare)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -1886,6 +2083,20 @@ Rio unplugs the cable from her neck, gasping for air. The holograms shatter into
 
 **TAGS:** **[NONE]** (Black File / Diplomatic Immunity)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -2008,6 +2219,20 @@ Richelieu does not fall. She simply checks her watch, looks disgusted, and walks
 **AFFILIATION:** Defense Logistics Agency / "The Fixer"
 
 **TAGS:** **[NONE]** (Black File / War Profiteer)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -2134,6 +2359,20 @@ Moebius drops his clipboard. He doesn't look scared, just annoyed.
 
 **TAGS:** **[NONE]** (Black File / Asymmetric Threat)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -2259,6 +2498,20 @@ Caliban laughs—a dry, wheezing sound. He pulls a pin on his vest, but instead 
 **AFFILIATION:** Experimental Weapons Division / "Unit 731-B"
 
 **TAGS:** **[NONE]** (Black File / Geneva Violation)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -2392,6 +2645,20 @@ The suit ruptures violently. A cloud of yellow smoke obscures the card. When it 
 | **ARCHETYPE** | Stealth / Ambush / Hand Reveal |
 | **DEPLOYMENT TYPE** | Standard Escalation |
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## 2. VISUAL PROFILE (CARD ART)
 
 *Directives for the art team to establish the "Poker Table" aesthetic. Target Style: 90s Anime / Gritty OVA (High contrast, mature tone).*
@@ -2459,7 +2726,7 @@ The suit ruptures violently. A cloud of yellow smoke obscures the card. When it 
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
 
-*Specific text lines triggered when this unit interacts with other legends. (Floating text, no voice acting).*
+*Floating text when this unit meets another legend. No voice acting.*
 
 | **Target Asset** | **Interaction Type** | **Dialogue Log** |
 | --- | --- | --- |
@@ -2527,6 +2794,20 @@ The suit ruptures violently. A cloud of yellow smoke obscures the card. When it 
 **AFFILIATION:** Cyber-Warfare Command / "The Hive"
 
 **TAGS:** **[NONE]** (Black File / Autonomous System)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -2653,6 +2934,20 @@ The truck explodes, but the operator doesn't scream. They just sigh and take off
 
 **TAGS:** **[NONE]** (Black File / Asset Recovery)
 
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
+
 ## I. VISUAL PROFILE (CARD ART)
 
 Subject Description:
@@ -2691,7 +2986,7 @@ Core Passive: "Medevac Protocol"
 
 Designer Note: This allows you to recycle your best cards.
 
-Effect: Whenever a friendly non-token non-vehicle unit would be destroyed, there is a 50% chance Nightingale returns it to your Hand instead of the Casualty Pile. (The unit keeps its Escalation bonuses but must be re-deployed).
+Effect: Whenever a friendly non-token non-vehicle unit would be killed, there is a 50% chance Nightingale returns it to your hand instead of shuffling it into your draw pile. The unit keeps its escalation bonuses and must be redeployed.
 
 Rules of Engagement (The Triage System)
 
@@ -2766,7 +3061,7 @@ No scream. Just a mechanical warning alarm: "PULL UP. PULL UP."
 
 ## V. STRATEGIC NOTE (THE POKER TABLE FEEL)
 
-*Designer Note: Nightingale adds a layer of "Greed" to the table. The opponent knows that killing your units doesn't mean they are gone forever—they just bounce back to your hand. Visually, the card feels panicked. As the clock ticks down, the "clean" medical aesthetic degrades into a dirty, desperate salvage operation, mirroring the player's desperation to save their best cards from the Casualty Pile.*
+*Designer Note: Nightingale adds a layer of "Greed" to the table. The opponent knows that killing your units doesn't mean they are gone forever—they just bounce back to your hand, instead of returning to the draw pile. Visually, the card feels panicked. As the clock ticks down, the "clean" medical aesthetic degrades into a dirty, desperate salvage operation.*
 
 # CLASSIFIED ASSET FILE: STARLIGHT
 
@@ -2777,6 +3072,20 @@ No scream. Just a mechanical warning alarm: "PULL UP. PULL UP."
 **AFFILIATION:** Directed Energy Directorate / "The Glass House"
 
 **TAGS:** **[NONE]** (Black File / High-Energy Mobile Laser)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -2845,7 +3154,7 @@ Designer Note: Starlight doesn't "level up" like a soldier; it "charges up" its 
 - **MIDNIGHT: "GAMMA RAY BURST"**
   - **Status:** *Meltdown*
   - **Final Resort:** **"Solar Hammer"**
-    - **Effect:** Destroys a single target, bypasses any protection but can’t target Commanders under any condition. Then, deal 10 Damage to everything adjacent to Starlight as the reactor explodes. Starlight is sacrificed and goes to the Casualty Pile.
+    - **Effect:** Destroys a single target, bypasses any protection, and cannot target commanders. Then deal 10 damage to each adjacent unit, one target at a time. Starlight is sacrificed and shuffled into its owner's draw pile. This does not damage commanders.
     - **Flavor:** *"Let there be light."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -2902,6 +3211,20 @@ The crawler shudders, and the lens shatters into a million glowing shards.
 **AFFILIATION:** Clandestine Service / "The Sleepwalkers"
 
 **TAGS:** **[NONE]** (Black File / Cognitive Hazard)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 
@@ -3033,6 +3356,20 @@ The van implodes into a singularity of static. A shrill scream plays, then cuts 
 **AFFILIATION:** Urban Siege Division / "The Breachers"
 
 **TAGS:** **[NONE]** (Black File / Heavy Siege)
+
+### Stat block
+
+Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+
+| Field | Value |
+| --- | --- |
+| Chip cost | Unassigned |
+| Stamp | 5 to Midnight |
+| Health | Unassigned |
+| Attack | Unassigned |
+| Tags | — |
+| Supertype | Black File, unique |
+| Type | Asset |
 
 ## I. VISUAL PROFILE (CARD ART)
 

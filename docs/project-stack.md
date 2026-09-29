@@ -5,14 +5,14 @@
 The design documents are the direction the game is being rewritten toward. They are not implemented.
 
 - [World](world.md) — Elisabeth, Operation Downfall, and Majestic-12. Unfinished.
-- [Mechanics](mechanics.md) — commander, Doomsday Clock, Chips, and the open rules decisions.
+- [Mechanics](mechanics.md) — the design rules: commander, Doomsday Clock, Chips, lanes, and card flow. Not in the build.
 - [Cards](cards.md) — the Black File legend files.
 
 | | This prototype | Design documents |
 | --- | --- | --- |
-| Currency | Deployment Points. Start at 1, maximum rises by 1 each full round of turns, cap 10. | Chips. Income, cap, and banking are not written yet. |
-| Win | Units in the same column damage each other. There is no commander and no match-ending health total. | The match ends when a commander reaches 0 health. |
-| Board | A 4-column grid. Each player has a side. | Lanes. Lane count and slots are not written yet. |
+| Currency | Deployment Points. Start at 1, maximum rises by 1 after combat, cap 10. Unspent points do not bank. | Chips. Start at 1, maximum rises by 1 at the end of each round, cap 10. Unspent Chips do not bank. |
+| Win | Units in the same column damage each other. There is no commander and no match-ending health total. | The match ends when a commander reaches 0 health. Effects resolve one at a time, so both commanders are not reduced together. |
+| Board | A 4-column grid. Each player has a side. Combat hits the enemy in the same column. | Four shared lanes, one slot per player per lane. |
 | Cards | Generated from `lib/weapons.json` with HP, attack, cost, and tags. | Authored Black File files in [Cards](cards.md). |
 | Time | Turns and phases only. | A six-step Doomsday Clock. |
 
@@ -126,4 +126,4 @@ These are the rules in `lib/store.ts` and `lib/card-data.ts`.
 
 ### What this build does not do
 
-No Doomsday Clock, no Chips, no commander health, no lanes as a rules term, no Black File abilities, no casualty pile, and no authored legend roster. Those belong to the design documents linked above.
+No Doomsday Clock, no Chips, no commander health, no Black File abilities, and no authored legend roster. A defeated prototype unit is placed on its owner's deck at full health. The design instead shuffles a killed card into the draw pile, and it adds a graveyard and capture, which this build does not have.
