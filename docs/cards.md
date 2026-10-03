@@ -72,7 +72,7 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** *[Clean, passive, hidden, or civilian guise. The calm before the storm.]*
 - **3 TO MIDNIGHT (Conflict):** *[Active combat, damage visible, weapons drawn. The "Action" shot.]*
@@ -160,7 +160,7 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 - **PHYSICALITY:** *[How does the card feel to play? Heavy? Fast? Annoying? Does it add tokens (mass) or remove cards (emptiness)?]*
 - **PSYCHOLOGY:** *[How does it affect the opponent's mindset? Fear? Frustration? Greed? Does it force them to play sub-optimally?]*
 - **MECHANICAL CHECK:**
-  - *Does this respect Decapitation Strike? A unit strikes the commander only when its lane is empty. Area effects and one-shots hit a commander only if they say so.*
+  - *Does this respect Decapitation Strike? A unit strikes the commander only when both enemy slots in its lane are empty. Area effects and one-shots hit a commander only if they say so.*
   - *Does the effect resolve sequentially, so two commanders are never reduced in one step?*
   - *Does a Midnight effect follow priority? Cannot, then prevention, then offensive Midnight, then defensive Midnight, then sacrifice and self-destruct.*
 
@@ -205,7 +205,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** The spaceplane is sitting on a fog-covered runway at night, bathed in floodlights. Liquid nitrogen is venting from the fuel lines. It looks dormant but tense.
 - **3 TO MIDNIGHT (Conflict):** Ascending. The background is the sky turning from blue to black. The thrusters are burning white-hot as it punches through the atmosphere.
@@ -356,7 +356,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** A grainy, black-and-white photograph taken from a U-2 spy plane. The object is a silhouette against the stars. It looks dormant.
 - **3 TO MIDNIGHT (Conflict):** The object is backlit by the sun. Thrusters are firing (visualized as cold gas plumes). The lenses are glowing angry red. It has rotated to face the surface.
@@ -390,7 +390,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 | **System** | **Ability Name** | **Effect / Description** | **Flavor Text** |
 | --- | --- | --- | --- |
-| **HAND-ACTIVE** | **Orbital Telemetry** | While this card is in your hand and the clock is at **3 Minutes to Midnight** or closer, you play with the *Top Card of your Deck* revealed. | *"Terminal velocity achieved. Impact confirmed."* |
+| **HAND-ACTIVE** | **Orbital Telemetry** | While this card is in your hand and the clock is at **3 to Midnight** or closer, you play with the *Top Card of your Deck* revealed. | *"Terminal velocity achieved. Impact confirmed."* |
 | **SYSTEM 1** | **Geosynchronous Orbit** | **Passive:** Black Knight cannot be targeted by [INFANTRY], [ARMOR], or [HEAVY] units (Ground Forces). It can only be targeted by [AIR] or [SUPPORT] units. | *"Target is out of range. It's too high."* |
 | **SYSTEM 2** | **Point Defense Laser** | **Defense:** Negate the first **Spell**, **Tactic**, or **Active Ability** that targets Black Knight each turn. | *"Projectile intercepted. Threat neutralized."* |
 | **SYSTEM 3** | **Kinetic Rod** | **Passive:** when attacked, fire back a kinetic rod that does 5 damage, double when hitting a [STRUCTURE] | *"Rod released. Impact in 3 seconds."* |
@@ -969,7 +969,7 @@ Core Passive: "Logistics Network"
 
 Designer Note: This is pure QoL. It smooths out the RNG of card games.
 
-Effect: As long as Shadow Company is active (Escalation 5-2), your Hand Size is increased by +2.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, **3 to Midnight**, or **2 to Midnight**, your Hand Size is increased by +2.
 
 - **"Scouting":** At the start of your turn, look at the top card of your Deck. You may keep it there or move it to the bottom. (Scry 1).
 
@@ -1257,7 +1257,7 @@ Core Passive: "The Spin Room"
 
 Designer Note: This forces the opponent to play honestly or suffer penalties.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, whenever an enemy unit Attacks, there is a 50% Chance the attack is "Censored" (Cancelled). The unit creates a "Breaking News" effect instead.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, whenever an enemy unit Attacks, there is a 50% Chance the attack is "Censored" (Cancelled). The unit creates a "Breaking News" effect instead.
 
 Rules of Engagement (The Narrative Collapse)
 
@@ -1380,7 +1380,7 @@ She holds no weapon. Her hands are gripping a massive manual override lever, knu
 
 - **5 to Midnight (Cold War):** She is asleep at a desk next to a red telephone. The room is calm blue. A cup of coffee is steaming.
 - **3 to Midnight (Conflict):** She is awake, shouting into the phone. The room is lit by amber hazard lights. On the screens behind her, launch trajectories are calculating.
-- **Midnight (Doomsday):** *Note: She prevents this state, but visually...* The clock is vibrating at 11:59. She is physically jamming a crowbar into the server gears, sparks showering over her, screaming to stop the machine.
+- **Midnight (Doomsday):** *Note: She prevents this state, but visually...* The minute hand is jammed on **1 to Midnight**. She is physically jamming a crowbar into the server gears, sparks showering over her, screaming to stop the machine.
 
 ## II. PSYCHOLOGICAL PROFILE (LORE)
 
@@ -1398,15 +1398,15 @@ She holds no weapon. Her hands are gripping a massive manual override lever, knu
 
 **Tag Interaction:** As a **Black File** unit, Scheherazade overrides **[ORBITAL]** protocols.
 
-- **Interaction:** Orbital units require Midnight to deploy. Because Scheherazade prevents the clock from ticking that last second, Orbital cards are "Brick" (useless) in the opponent's hand as long as she is on the board.
+- **Interaction:** Orbital units require Midnight to deploy. Because Scheherazade prevents the clock from entering **Midnight**, Orbital cards are "Brick" (useless) in the opponent's hand as long as she is on the board.
 
 Core Passive: "The 1001st Night"
 
 Designer Note: This is the hard lock on the game state.
 
-Effect: As long as Scheherazade is on the board, the Escalation Clock cannot advance to Midnight. The turn timer and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
+Effect: As long as Scheherazade is on the board, the Doomsday Clock cannot advance to Midnight. The automatic tick and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
 
-- If the Turn Timer or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
+- If the automatic tick or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
 - *Consequence:* **Scharnhorst** never gets his Ultimate. **Apollyon** never floods the board.
 
 Rules of Engagement (The Holding Action)
@@ -1427,7 +1427,7 @@ Designer Note: She struggles early, but at "2 to Midnight" she activates her uni
   - **Flavor:** *"Talking is better than dying."*
 - **2 TO MIDNIGHT: "Legacy Protocols"**
   - **Status:** *Stabilizing*
-  - **Passive Ability:** **"Time Bubble."** Friendly units with **Inverse Scaling** (Richelieu, Rio, Terminus) treat the Clock as if it were **3 Minutes to Midnight** regardless of the actual time.
+  - **Passive Ability:** **"Time Bubble."** Friendly units with **Inverse Scaling** (Richelieu, Rio, Terminus) treat the Doomsday Clock as if it were **3 to Midnight** regardless of the actual time.
   - *Tactical Note:* This is critical. Usually, Richelieu and Rio become useless at this stage. Scheherazade keeps them in their "Active" window, allowing you to use "The Bribe" or "The Glass Table" even in the late game.
   - **Flavor:** *"Rerouting power to the old grid. Keep the lights on."*
 - **1 TO MIDNIGHT: "THE RED LINE"**
@@ -1555,12 +1555,12 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 Core Passive: "The Long Con"
 
-Designer Note: This replaces the "Inverse Clock" with "False Intel."
+Designer Note: Janus does not move the Doomsday Clock. He lies about which step it is.
 
 Effect: Janus maintains a "False Narrative."
 
-- If the Real Clock is **Early (5-3)**, Janus's Narrative is **Total War**.
-- If the Real Clock is **Late (2-0)**, Janus's Narrative is **Peacetime**.
+- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**.
+- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**.
 
 Rules of Engagement (The Manipulation)
 
@@ -1573,7 +1573,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
   - **Flavor:** *"Tell them the enemy killed the hostages. Make them angry."*
 - **4 TO MIDNIGHT: "Information Blackout"**
   - **Status:** *Censoring*
-  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Clock is at **5-to-Midnight** (Peak Power) for this turn.
+  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Doomsday Clock is at **5 to Midnight** (Peak Power) for this turn.
   - **Cost:** Discard a card (The cost of burying the truth).
   - **Flavor:** *"They don't need to know the front line has collapsed. Keep them fighting."*
 - **3 TO MIDNIGHT: "The Manchurian Candidate"**
@@ -1592,7 +1592,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
 - **MIDNIGHT: "COUP D'ÉTAT"**
   - **Status:** *Regime Change*
   - **Final Resort:** **"Tabula Rasa"**
-    - **Effect:** Sacrifice Janus. He returns to his owner's draw pile. Shuffle your hand into your draw pile and draw 5. Reset the Escalation Clock to **5 to Midnight**. Exiled cards stay in the graveyard. Captured cards stay captured.
+    - **Effect:** Sacrifice Janus. He returns to his owner's draw pile. Shuffle your hand into your draw pile and draw 5. Reset the Doomsday Clock to **5 to Midnight**. Exiled cards stay in the graveyard. Captured cards stay captured.
     - **Flavor:** *"This government has failed. We are initiating the contingency government."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -1704,7 +1704,7 @@ Core Passive: "The Boundary Line"
 
 Designer Note: This is the hard counter to Moebius's "Rush" tactics.
 
-Effect: after Terminus has been on the table for 2 turns and the Clock is at 5, 4, or 3 Minutes to Midnight, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played, ignoring any [HASTE] or [RUSH] tags. Easy to handle in this web based game.
+Effect: after Terminus has been on the table for 2 turns and the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played, ignoring any [HASTE] or [RUSH] tags. Easy to handle in this web based game.
 
 Rules of Engagement (The Blockade Crumbling)
 
@@ -1795,6 +1795,7 @@ Terminus is pushed aside by an invisible crowd. He drops his tablet, and it shat
 | --- | --- |
 | CLEARANCE LEVEL | BLACK // BURN AFTER READING |
 | CODENAME ORIGIN | WWII Battleship (Kriegsmarine) / "The Unsinkable" |
+| CIVILIAN NAME | Karras |
 | AFFILIATION | Independent Contractor / [REDACTED] |
 | TAGS | [NONE] (Black File / Low Cost Investment) |
 | ARCHETYPE | Late-Game Carry / Scaling Duelist |
@@ -1824,7 +1825,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** *Hands in pockets, looking down, reading a newspaper at a cafe. No weapons visible. He looks tired, like a man waiting for a shift to start.*
 - **3 TO MIDNIGHT (Conflict):** *The coat is unbuttoned. He is dual-wielding heavy SMGs. The background is on fire. He moves with unnatural precision, tilting his head slightly as if receiving guidance from the dead.*
@@ -1850,7 +1851,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### CORE PASSIVE: "PROTOCOL: ESCALATION"
 
-- **Effect:** *Scharnhorst possesses dynamic stats. He gains* ***+1 Attack*** *and* ***+1 Health*** *for every active level on the* ***Escalation Clock*** *(e.g., at 3+2-to-Midnight, he has +4/+4).*
+- **Effect:** *Scharnhorst possesses dynamic stats. He gains +1 Attack and +1 Health for the current Doomsday Clock step, counting **5 to Midnight** as the first step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
 
 ### RULES OF ENGAGEMENT
 
@@ -1871,7 +1872,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 5. FIELD AUDIO & FX
 
-*Sound cues for digital implementation.*
+*Sound cues for digital implementation. The deployment line uses his name, Karras. Scharnhorst is the codename.*
 
 - **ON DEPLOYMENT:** *"[Sound of a lighter flicking open] Karras on station. Working the hardest."*
 - **ACTIVE ABILITY:** *"[Shotgun rack] Obstruction removed. Moving to next."*
@@ -1933,7 +1934,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 - **PHYSICALITY:** *Scharnhorst is the ultimate "Investment." When you play him early, he is just a guy in a coat—unassuming, almost weak. The opponent might ignore him to focus on tanks. This is the trap. As the clock ticks, the card physically changes on the table, growing darker and more violent.*
 - **PSYCHOLOGY:** *He forces the opponent to play paranoid. They know if they let the "Late Game Carry" survive until Midnight, they lose. But for the player controlling him, there is a sombre duty—you aren't just trying to win; you are trying to fulfill the contract of the Dead.*
 - **MECHANICAL CHECK:**
-  - *Does this respect the Decapitation Strike rule?* **YES.** *Specific override at 5-to-Midnight ensures he cannot snipe the Commander even if the lane is clear.*
+  - *Does this respect the Decapitation Strike rule?* **YES.** *The override at **5 to Midnight** ensures he cannot strike the commander even when both enemy slots in his lane are empty.*
   - *Does the Midnight effect follow priority?* **YES.** *Passive Immunity/Buffs take effect immediately. His effect is a self-buff, not a board wipe, so no conflict with Defensive priorities.*
 
 # CLASSIFIED ASSET FILE: RIO
@@ -1996,7 +1997,7 @@ Core Passive: "The Glass Table"
 
 Designer Note: This ability physically changes how the game is played on the table.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, the Enemy's Hand is played Face Up. (You can see everything they are holding).
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, the Enemy's Hand is played Face Up. (You can see everything they are holding).
 
 Rules of Engagement (The Signal Degradation)
 
@@ -2127,13 +2128,13 @@ She holds no gun. She holds a gold-nibbed fountain pen suspended over a document
 
 **Archetype:** Early-Game Control / Economy / Clock Manipulation
 
-**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Spells as long as she has Influence (Escalation 5-3). She is not a combatant; she is a political entity.
+**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Spells while the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**. She is not a combatant; she is a political entity.
 
 Core Passive: "The Peace Dividend"
 
 Designer Note: She funds your war machine.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, you gain +1 Chip every turn.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, you gain +1 Chip every turn.
 
 Rules of Engagement (The Inverse Escalation)
 
@@ -2669,7 +2670,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** **Submerged.** A green wireframe sonar display showing a massive, unidentified leviathan lurking deep underwater. "CONTACT UNKNOWN" flashing in red.
 - **3 TO MIDNIGHT (Conflict):** **Periscope Depth.** The conning tower (sail) just breaches the waves. A single red light glows from the bridge. Cruise missiles are launching from just *below* the water line, trailing bubbles.

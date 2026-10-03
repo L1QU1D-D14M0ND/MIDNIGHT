@@ -21,11 +21,17 @@ This game is a web app, played online against another player.
 
 ## Board
 
-The table has **four lanes**, shared by both players. A lane is a column.
+The table has **five lanes**, shared by both players. A lane is a column.
 
-Each player has **one slot** in each lane. A player may have one unit in a lane. The opposing unit in that same lane is the enemy in that lane, not an adjacent unit.
+Each player has **two slots** in each lane. The slot closer to the enemy is the **front** slot. The slot farther from the enemy is the **back** slot. Those slots are that player's front row and back row. A player may have one unit in each of their own slots.
 
-**Adjacent** means the next lane to the left or the right. Adjacency does not cross the table to the other player.
+**In front** of a unit is the other slot in its lane, closer to the center of the table. **Behind** a unit is the other slot in its lane, farther from the center. A card may call the back row the backline. The enemy backline in a lane is the enemy back slot in that lane.
+
+**Adjacent** means the next lane to the left or the right, on the same side of the table. Adjacency does not cross to the other player, and it does not mean the unit in front or behind. "Two slots away" means two lanes to the left or the right.
+
+A unit moves **forward** only when a card says it does. Forward is from that player's back slot to that player's front slot in the same lane. If the front slot is occupied, the card has to say what happens to the unit already there.
+
+During combat, a unit's attack targets the enemy front unit in its lane. If that front slot is empty, the attack targets the enemy back unit in that lane. If both enemy slots in that lane are empty, the attack may target the enemy commander. The unit behind a target is the unit in that lane's slot farther from the center than the target. If the target is already in a back slot, nothing is behind it.
 
 ### Zones
 
@@ -77,11 +83,11 @@ The first commander to reach 0 loses, and the match ends before the next instanc
 
 ### Targeting the commander
 
-During combat, a unit's attack targets the enemy unit in its lane. If that lane has no enemy unit, the attack may target the enemy commander.
+During combat, a unit's attack follows the lane order in Board: the enemy front slot, then the enemy back slot, then the enemy commander when both of those slots are empty.
 
 An area effect or a one-shot deals damage only to units, unless its own text says it deals damage to a commander. Panopticon's Midnight liquidation says it deals commander damage, so it can. White Knight's Rod from God does not, so it cannot.
 
-A unit that does not attack, including a Structure and an Orbital, does not strike the commander by occupying or shadowing a lane. A Structure in a lane still counts as the enemy unit in that lane, so it blocks commander strikes in that lane.
+A unit that does not attack, including a Structure and an Orbital, does not strike the commander by occupying or shadowing a lane. A unit in either enemy slot of a lane still blocks commander strikes through that lane.
 
 ### Casualty, exile, and capture
 
@@ -101,6 +107,12 @@ The names of those segments, from the start of the match to the end, are:
 
 **5 to Midnight, 4 to Midnight, 3 to Midnight, 2 to Midnight, 1 to Midnight, Midnight.**
 
+These six names are the only names for the clock. Write them as **5 to Midnight**, **4 to Midnight**, **3 to Midnight**, **2 to Midnight**, **1 to Midnight**, and **Midnight**. A heading may capitalize a name: "5 TO MIDNIGHT" means **5 to Midnight**.
+
+Do not write "minutes to Midnight," "5-to-Midnight," "5-3," "2-0," or "Escalation Clock." The clock is the Doomsday Clock. There is no step called 0. After **1 to Midnight** comes **Midnight**.
+
+"Or closer" means the named step and every step further toward Midnight. A range names the steps: "**5 to Midnight**, **4 to Midnight**, or **3 to Midnight**."
+
 A card is stamped with one of those six names. It may be deployed when the clock is on its stamp or further toward Midnight. A card stamped **5 to Midnight** may be deployed immediately. A card stamped **Midnight** may be deployed only at Midnight, unless Breach of Protocol is used from 1 to Midnight.
 
 | Time | Defcon | Narrative state | Authorized mundane assets |
@@ -112,7 +124,7 @@ A card is stamped with one of those six names. It may be deployed when the clock
 | 1 to Midnight | Red | Crisis | Experimental units, chemical and bio weapons |
 | Midnight | Black | Doomsday | Tactical nukes, omega units |
 
-Richelieu's unleashed state is a 5-to-Midnight legend ability. Scharnhorst's unleashed state is a Midnight legend ability. Those names live on their cards. They are not extra clock steps.
+Richelieu's unleashed state is a **5 to Midnight** legend ability. Scharnhorst's unleashed state is a **Midnight** legend ability. Those names live on their cards. They are not extra clock steps.
 
 If a card in hand is earlier than the clock allows, and Breach cannot legally play it, the card is shown locked: greyed out, with a locked overlay.
 
@@ -146,7 +158,7 @@ If a disabled Midnight unit is attacked while she is on the board, the retaliati
 
 **Black File** is a supertype, not a weapon tag. A Black File legend is unique.
 
-`TAGS: [NONE]` on a legend means it has no weapon tag. The parenthetical in the file, such as `(Black File / Orbital Assassin)`, is a role label for authors. It is not a rules tag.
+`TAGS: [NONE]` on a legend means it has no weapon tag. The parenthetical in the file, such as `(Black File / Orbital Assassin)`, is a role label for authors. It is not a rules tag. Affiliation is not a rules tag. A Majestic-12 clearance stamp is a temporary faction placeholder, described in [World](world.md).
 
 A legend gains a rules tag only where its text says it is that tag. Panopticon, Pandora, and Gehenna say they are **Structure**. White Knight and Black Knight are **Orbital**.
 
@@ -155,8 +167,8 @@ Rules tags are: **Infantry, Armor, Air, Heavy, Structure, Support, Stealth, Orbi
 | Type | Meaning |
 | --- | --- |
 | Asset | A unit in a lane slot. |
-| Structure | An asset that does not move and does not make ordinary attacks, unless its text says it does. It still occupies its slot and blocks the commander. |
-| Orbital | Deploys into the orbital dock, and only at Midnight (or by a legal Breach from 1). On deploy, it chooses one lane to shadow. It does not fill that lane's slot and does not, by itself, block the commander. |
+| Structure | An asset that does not move and does not make ordinary attacks, unless its text says it does. It still occupies its slot and blocks commander strikes through that lane. |
+| Orbital | Deploys into the orbital dock, and only at Midnight (or by a legal Breach from 1). On deploy, it chooses one lane to shadow. It does not fill either slot in that lane and does not, by itself, block the commander. |
 | Tactic | A one-shot with no body. Older card text that says "spell" means tactic. |
 
 A mundane asset's stamp is the minute that authorizes it in the clock table. A legend's stamp is the stamp in its stat block.
@@ -193,4 +205,3 @@ These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
 - The mundane roster. The clock table is only a clearance guide.
-- Setting questions in [World](world.md): whether Karras is another name for Scharnhorst. Enterprise is the carrier's codename. A legend whose clearance is stamped Majestic-12 temporarily belongs to that faction; the stamp is a placeholder, not a rules tag. Affiliation is not a rules tag.
