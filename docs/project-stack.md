@@ -12,7 +12,7 @@ The design documents are the direction the game is being rewritten toward. They 
 | --- | --- | --- |
 | Currency | Deployment Points. Start at 1, maximum rises by 1 after combat, cap 10. Unspent points do not bank. | Chips. Start at 1, maximum rises by 1 at the end of each round, cap 10. Unspent Chips do not bank. |
 | Win | Units in the same column damage each other. There is no commander and no match-ending health total. | The match ends when a commander reaches 0 health. Effects resolve one at a time, so both commanders are not reduced together. |
-| Board | A 4-column grid. Each player has a side. Combat hits the enemy in the same column. | Four shared lanes, one slot per player per lane. |
+| Board | A 4-column grid. Each player has a side. Combat hits the enemy in the same column. | Five shared lanes. Each player has a front slot and a back slot in each lane. |
 | Cards | Generated from `lib/weapons.json` with HP, attack, cost, and tags. | Authored Black File files in [Cards](cards.md). |
 | Time | Turns and phases only. | A six-step Doomsday Clock. |
 

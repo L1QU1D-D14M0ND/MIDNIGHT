@@ -72,7 +72,7 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** *[Clean, passive, hidden, or civilian guise. The calm before the storm.]*
 - **3 TO MIDNIGHT (Conflict):** *[Active combat, damage visible, weapons drawn. The "Action" shot.]*
@@ -160,7 +160,7 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 - **PHYSICALITY:** *[How does the card feel to play? Heavy? Fast? Annoying? Does it add tokens (mass) or remove cards (emptiness)?]*
 - **PSYCHOLOGY:** *[How does it affect the opponent's mindset? Fear? Frustration? Greed? Does it force them to play sub-optimally?]*
 - **MECHANICAL CHECK:**
-  - *Does this respect Decapitation Strike? A unit strikes the commander only when its lane is empty. Area effects and one-shots hit a commander only if they say so.*
+  - *Does this respect Decapitation Strike? A unit strikes the commander only when both enemy slots in its lane are empty. Area effects and one-shots hit a commander only if they say so.*
   - *Does the effect resolve sequentially, so two commanders are never reduced in one step?*
   - *Does a Midnight effect follow priority? Cannot, then prevention, then offensive Midnight, then defensive Midnight, then sacrifice and self-destruct.*
 
@@ -176,7 +176,7 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 | --- | --- |
 | **CLEARANCE LEVEL** | MAJESTIC-12 // COSMIC TOP SECRET |
 | **CODENAME ORIGIN** | "The White Knight" (Chess Piece that jumps over obstacles) / "Project Saint" |
-| **AFFILIATION** | MAJESTIC-12 |
+| **AFFILIATION** | MAJESTIC-12 (temporary placeholder) |
 | **TAGS** | [NONE] (Black File / Orbital Assassin) |
 | **ARCHETYPE** | Assassin / Anti-Hero / Precision Striker |
 | **DEPLOYMENT TYPE** | Midnight Tactical (Orbital Weapon) |
@@ -205,7 +205,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** The spaceplane is sitting on a fog-covered runway at night, bathed in floodlights. Liquid nitrogen is venting from the fuel lines. It looks dormant but tense.
 - **3 TO MIDNIGHT (Conflict):** Ascending. The background is the sky turning from blue to black. The thrusters are burning white-hot as it punches through the atmosphere.
@@ -329,7 +329,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **CODENAME ORIGIN** | "The 1954 Satellite Conspiracy / 'The Dark Sentinel'" |
 | **AFFILIATION** | "MAJESTIC-12 / The 'Star Wars' Initiative" |
 | **TAGS** | [NONE] (Black File / Orbital Interceptor) |
-| **ARCHETYPE** | Anti-Air / Counter-Spell / Orbital Siege |
+| **ARCHETYPE** | Anti-Air / Counter-Tactic / Orbital Siege |
 | **DEPLOYMENT TYPE** | **Midnight Tactical** (Doomsday Weapon) |
 
 ### Stat block
@@ -356,7 +356,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** A grainy, black-and-white photograph taken from a U-2 spy plane. The object is a silhouette against the stars. It looks dormant.
 - **3 TO MIDNIGHT (Conflict):** The object is backlit by the sun. Thrusters are firing (visualized as cold gas plumes). The lenses are glowing angry red. It has rotated to face the surface.
@@ -390,9 +390,9 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 | **System** | **Ability Name** | **Effect / Description** | **Flavor Text** |
 | --- | --- | --- | --- |
-| **HAND-ACTIVE** | **Orbital Telemetry** | While this card is in your hand and the clock is at **3 Minutes to Midnight** or closer, you play with the *Top Card of your Deck* revealed. | *"Terminal velocity achieved. Impact confirmed."* |
+| **HAND-ACTIVE** | **Orbital Telemetry** | While this card is in your hand and the clock is at **3 to Midnight** or closer, you play with the *Top Card of your Deck* revealed. | *"Terminal velocity achieved. Impact confirmed."* |
 | **SYSTEM 1** | **Geosynchronous Orbit** | **Passive:** Black Knight cannot be targeted by [INFANTRY], [ARMOR], or [HEAVY] units (Ground Forces). It can only be targeted by [AIR] or [SUPPORT] units. | *"Target is out of range. It's too high."* |
-| **SYSTEM 2** | **Point Defense Laser** | **Defense:** Negate the first **Spell**, **Tactic**, or **Active Ability** that targets Black Knight each turn. | *"Projectile intercepted. Threat neutralized."* |
+| **SYSTEM 2** | **Point Defense Laser** | **Defense:** Negate the first **Tactic** or **Active Ability** that targets Black Knight each turn. | *"Projectile intercepted. Threat neutralized."* |
 | **SYSTEM 3** | **Kinetic Rod** | **Passive:** when attacked, fire back a kinetic rod that does 5 damage, double when hitting a [STRUCTURE] | *"Rod released. Impact in 3 seconds."* |
 
 ## 5. FIELD AUDIO & FX
@@ -456,7 +456,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool spells or airplanes."
+- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool tactics or airplanes."
 - **VISUAL SPECTACLE:** The Midnight ability is visually spectacular—It doesn't just hit the board; it **hovers** over it. It forces the opponent to look for Anti-Air solutions while being pelted by kinetic rods from an enemy they literally cannot reach with tanks.
 - **MECHANICAL CHECK:**
   - Does this respect the Decapitation Strike rule? **YES.** The "Kinetic Strike" targets units, not the Commander directly.
@@ -534,7 +534,7 @@ Designer Note: The prison fills up, extracts info, and eventually liquidates the
 
 - **5 TO MIDNIGHT: "Extraordinary Rendition"**
   - **Status:** *Operational*
-  - **Active Ability:** **"Bag & Tag."** Target an enemy **[INFANTRY]** or **[STEALTH]** unit. Instantly **Capture** it. (Remove from board, place under Panopticon). Up to 5 cards can be captured at the same time.
+  - **Active Ability:** **"Bag & Tag."** Target an enemy **[INFANTRY]** or **[STEALTH]** unit. Instantly **Capture** it. (Remove from board, place under Panopticon). Panopticon holds at most 4 prisoners.
   - **Flavor:** *"He was never here. Wipe the tapes."*
 - **4 TO MIDNIGHT: "Solitary Confinement"**
   - **Status:** *Secure*
@@ -892,8 +892,8 @@ The boiler explodes. Molten slag spills out, covering the card art in glowing or
 | **PANOPTICON** | **COOP (Ally)** | "Send the prisoners to the foundry. We need labor. And fuel." |
 | **MOEBIUS** | **VS (Enemy)** | "I don't need imports. I make everything right here." |
 | **MOEBIUS** | **COOP (Ally)** | "You bring the crates. I'll open them. With a crusher." |
-| **YORKTOWN** | **VS (Enemy)** | "That ship... think of how much steel is in that hull." |
-| **YORKTOWN** | **COOP (Ally)** | "Crashed planes go in the furnace. We build new ones tomorrow." |
+| **ENTERPRISE** | **VS (Enemy)** | "That ship... think of how much steel is in that hull." |
+| **ENTERPRISE** | **COOP (Ally)** | "Crashed planes go in the furnace. We build new ones tomorrow." |
 | **TERMINUS** | **VS (Enemy)** | "Tariffs don't apply to trash. It's garbage until I say otherwise." |
 | **TERMINUS** | **COOP (Ally)** | "Seize the contraband. My fire is hungry." |
 | **NIGHTMARE** | **VS (Enemy)** | "You can't scare a machine. Get in the fire." |
@@ -963,13 +963,13 @@ They are carrying modular carbines and tablet computers. In the background, ther
 
 **Tag Interaction:** As a **Black File** unit, Shadow Company acts as **[INFANTRY]** but with **"Mercenary"** status.
 
-- **Interaction:** They cannot be inspired by **Commanders** or **Cassandra/Siren** (Morale does not work on them). They are immune to **"Fear"** effects but susceptible to **"Bribes"** (like Richelieu's).
+- **Interaction:** They cannot be inspired by **Commanders** or **Siren** (Morale does not work on them). They are immune to **"Fear"** effects but susceptible to **"Bribes"** (like Richelieu's).
 
 Core Passive: "Logistics Network"
 
 Designer Note: This is pure QoL. It smooths out the RNG of card games.
 
-Effect: As long as Shadow Company is active (Escalation 5-2), your Hand Size is increased by +2.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, **3 to Midnight**, or **2 to Midnight**, your Hand Size is increased by +2.
 
 - **"Scouting":** At the start of your turn, look at the top card of your Deck. You may keep it there or move it to the bottom. (Scry 1).
 
@@ -1257,7 +1257,7 @@ Core Passive: "The Spin Room"
 
 Designer Note: This forces the opponent to play honestly or suffer penalties.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, whenever an enemy unit Attacks, there is a 50% Chance the attack is "Censored" (Cancelled). The unit creates a "Breaking News" effect instead.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, whenever an enemy unit Attacks, there is a 50% Chance the attack is "Censored" (Cancelled). The unit creates a "Breaking News" effect instead.
 
 Rules of Engagement (The Narrative Collapse)
 
@@ -1286,7 +1286,7 @@ Designer Note: Siren is a god of manipulation early on. As the war escalates, th
 - **MIDNIGHT: "MASS HYSTERIA"**
   - **Status:** *Panic*
   - **Final Resort:** **"Broadcast Interrupt"**
-    - **Effect:** Sacrifice Siren. Force a **"Ceasefire"** for 1 Turn. (No units can attack; no cards can be played). This delays the end of the game briefly, but grants no advantage.
+    - **Effect:** Sacrifice Siren. Force a **"Ceasefire"** for 1 Turn. (No units can attack; no cards can be played). Move the Doomsday Clock back one minute. It cannot move earlier than **5 to Midnight**.
     - **Flavor:** *"Please stand by. This is not a test."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -1348,7 +1348,7 @@ The camera lens cracks. The image distorts into color bars and static.
 
 **CODENAME ORIGIN:** *One Thousand and One Nights* (The Queen who delayed her execution with stories)
 
-**AFFILIATION:** Strategic Command / "The Fail-Safe"
+**AFFILIATION:** MAJESTIC-12 (temporary placeholder) / Strategic Command / "The Fail-Safe"
 
 **TAGS:** **[NONE]** (Black File / Doomsday Prevention)
 
@@ -1380,7 +1380,7 @@ She holds no weapon. Her hands are gripping a massive manual override lever, knu
 
 - **5 to Midnight (Cold War):** She is asleep at a desk next to a red telephone. The room is calm blue. A cup of coffee is steaming.
 - **3 to Midnight (Conflict):** She is awake, shouting into the phone. The room is lit by amber hazard lights. On the screens behind her, launch trajectories are calculating.
-- **Midnight (Doomsday):** *Note: She prevents this state, but visually...* The clock is vibrating at 11:59. She is physically jamming a crowbar into the server gears, sparks showering over her, screaming to stop the machine.
+- **Midnight (Doomsday):** *Note: She prevents this state, but visually...* The minute hand is jammed on **1 to Midnight**. She is physically jamming a crowbar into the server gears, sparks showering over her, screaming to stop the machine.
 
 ## II. PSYCHOLOGICAL PROFILE (LORE)
 
@@ -1390,7 +1390,7 @@ She holds no weapon. Her hands are gripping a massive manual override lever, knu
 
 **The Dealer's Note:**
 
-*"The enemy wants Midnight. They brought their Black Knight, their Yorktown. They are waiting for the bell. Scheherazade breaks the clock. As long as she is breathing, the nukes stay in the tubes, and the monsters stay in orbit."*
+*"The enemy wants Midnight. They brought their Black Knight, their Enterprise. They are waiting for the bell. Scheherazade breaks the clock. As long as she is breathing, the nukes stay in the tubes, and the monsters stay in orbit."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
@@ -1398,15 +1398,15 @@ She holds no weapon. Her hands are gripping a massive manual override lever, knu
 
 **Tag Interaction:** As a **Black File** unit, Scheherazade overrides **[ORBITAL]** protocols.
 
-- **Interaction:** Orbital units require Midnight to deploy. Because Scheherazade prevents the clock from ticking that last second, Orbital cards are "Brick" (useless) in the opponent's hand as long as she is on the board.
+- **Interaction:** Orbital units require Midnight to deploy. Because Scheherazade prevents the clock from entering **Midnight**, Orbital cards are "Brick" (useless) in the opponent's hand as long as she is on the board.
 
 Core Passive: "The 1001st Night"
 
 Designer Note: This is the hard lock on the game state.
 
-Effect: As long as Scheherazade is on the board, the Escalation Clock cannot advance to Midnight. The turn timer and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
+Effect: As long as Scheherazade is on the board, the Doomsday Clock cannot advance to Midnight. The automatic tick and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
 
-- If the Turn Timer or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
+- If the automatic tick or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
 - *Consequence:* **Scharnhorst** never gets his Ultimate. **Apollyon** never floods the board.
 
 Rules of Engagement (The Holding Action)
@@ -1427,7 +1427,7 @@ Designer Note: She struggles early, but at "2 to Midnight" she activates her uni
   - **Flavor:** *"Talking is better than dying."*
 - **2 TO MIDNIGHT: "Legacy Protocols"**
   - **Status:** *Stabilizing*
-  - **Passive Ability:** **"Time Bubble."** Friendly units with **Inverse Scaling** (Richelieu, Rio, Terminus) treat the Clock as if it were **3 Minutes to Midnight** regardless of the actual time.
+  - **Passive Ability:** **"Time Bubble."** Friendly units with **Inverse Scaling** (Richelieu, Rio, Terminus) treat the Doomsday Clock as if it were **3 to Midnight** regardless of the actual time.
   - *Tactical Note:* This is critical. Usually, Richelieu and Rio become useless at this stage. Scheherazade keeps them in their "Active" window, allowing you to use "The Bribe" or "The Glass Table" even in the late game.
   - **Flavor:** *"Rerouting power to the old grid. Keep the lights on."*
 - **1 TO MIDNIGHT: "THE RED LINE"**
@@ -1470,8 +1470,8 @@ Scheherazade collapses. The crowbar falls from her hand. The red light turns sol
 | **MOEBIUS** | **COOP (Ally)** | "Get me spare parts for the server! It's overheating!" |
 | **BLACK KNIGHT** | **VS (Enemy)** | "Stay in orbit, relic. You are not invited to this party." |
 | **BLACK KNIGHT** | **COOP (Ally)** | "Keep the silo doors closed. Don't let anything launch." |
-| **YORKTOWN** | **VS (Enemy)** | "Ground your fleet, Admiral. The sky is closed." |
-| **YORKTOWN** | **COOP (Ally)** | "Hold pattern. Do not drop the payload until I say so." |
+| **ENTERPRISE** | **VS (Enemy)** | "Ground your fleet, Admiral. The sky is closed." |
+| **ENTERPRISE** | **COOP (Ally)** | "Hold pattern. Do not drop the payload until I say so." |
 | **WHITE KNIGHT** | **VS (Enemy)** | "Re-entry denied. Bounce off the atmosphere." |
 | **WHITE KNIGHT** | **COOP (Ally)** | "Stand down. We don't need the railgun yet." |
 | **STARLIGHT** | **VS (Enemy)** | "Cut the power to the laser. We are not firing." |
@@ -1501,7 +1501,7 @@ Scheherazade collapses. The crowbar falls from her hand. The red light turns sol
 
 **CODENAME ORIGIN:** Roman God of Beginnings, Endings, and Duality (Two-Faced)
 
-**AFFILIATION:** Psychological Operations Command / "The Spymaster"
+**AFFILIATION:** MAJESTIC-12 (temporary placeholder) / Psychological Operations Command / "The Spymaster"
 
 **TAGS:** **[NONE]** (Black File / Grand Strategist)
 
@@ -1555,12 +1555,12 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 Core Passive: "The Long Con"
 
-Designer Note: This replaces the "Inverse Clock" with "False Intel."
+Designer Note: Janus does not move the Doomsday Clock. He lies about which step it is.
 
 Effect: Janus maintains a "False Narrative."
 
-- If the Real Clock is **Early (5-3)**, Janus's Narrative is **Total War**.
-- If the Real Clock is **Late (2-0)**, Janus's Narrative is **Peacetime**.
+- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**.
+- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**.
 
 Rules of Engagement (The Manipulation)
 
@@ -1573,7 +1573,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
   - **Flavor:** *"Tell them the enemy killed the hostages. Make them angry."*
 - **4 TO MIDNIGHT: "Information Blackout"**
   - **Status:** *Censoring*
-  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Clock is at **5-to-Midnight** (Peak Power) for this turn.
+  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Doomsday Clock is at **5 to Midnight** (Peak Power) for this turn.
   - **Cost:** Discard a card (The cost of burying the truth).
   - **Flavor:** *"They don't need to know the front line has collapsed. Keep them fighting."*
 - **3 TO MIDNIGHT: "The Manchurian Candidate"**
@@ -1592,7 +1592,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
 - **MIDNIGHT: "COUP D'ÉTAT"**
   - **Status:** *Regime Change*
   - **Final Resort:** **"Tabula Rasa"**
-    - **Effect:** Sacrifice Janus. He returns to his owner's draw pile. Shuffle your hand into your draw pile and draw 5. Reset the Escalation Clock to **5 to Midnight**. Exiled cards stay in the graveyard. Captured cards stay captured.
+    - **Effect:** Sacrifice Janus. He returns to his owner's draw pile. Shuffle your hand into your draw pile and draw 5. Reset the Doomsday Clock to **5 to Midnight**. Exiled cards stay in the graveyard. Captured cards stay captured.
     - **Flavor:** *"This government has failed. We are initiating the contingency government."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -1704,7 +1704,7 @@ Core Passive: "The Boundary Line"
 
 Designer Note: This is the hard counter to Moebius's "Rush" tactics.
 
-Effect: after Terminus has been on the table for 2 turns and the Clock is at 5, 4, or 3 Minutes to Midnight, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played, ignoring any [HASTE] or [RUSH] tags. Easy to handle in this web based game.
+Effect: after Terminus has been on the table for 2 turns and the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played, ignoring any [HASTE] or [RUSH] tags. Easy to handle in this web based game.
 
 Rules of Engagement (The Blockade Crumbling)
 
@@ -1795,6 +1795,7 @@ Terminus is pushed aside by an invisible crowd. He drops his tablet, and it shat
 | --- | --- |
 | CLEARANCE LEVEL | BLACK // BURN AFTER READING |
 | CODENAME ORIGIN | WWII Battleship (Kriegsmarine) / "The Unsinkable" |
+| CIVILIAN NAME | Karras |
 | AFFILIATION | Independent Contractor / [REDACTED] |
 | TAGS | [NONE] (Black File / Low Cost Investment) |
 | ARCHETYPE | Late-Game Carry / Scaling Duelist |
@@ -1824,7 +1825,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** *Hands in pockets, looking down, reading a newspaper at a cafe. No weapons visible. He looks tired, like a man waiting for a shift to start.*
 - **3 TO MIDNIGHT (Conflict):** *The coat is unbuttoned. He is dual-wielding heavy SMGs. The background is on fire. He moves with unnatural precision, tilting his head slightly as if receiving guidance from the dead.*
@@ -1846,11 +1847,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** *Ignores standard counter-measures. He is not [INFANTRY], so he cannot be pinned by machine-gun fire. He is not [ARMOR], so anti-tank missiles pass right through his cloak. He exists outside the rock-paper-scissors loop.*
+- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet. He is not [ARMOR], so anti-tank missiles pass right through his cloak.*
 
 ### CORE PASSIVE: "PROTOCOL: ESCALATION"
 
-- **Effect:** *Scharnhorst possesses dynamic stats. He gains* ***+1 Attack*** *and* ***+1 Health*** *for every active level on the* ***Escalation Clock*** *(e.g., at 3+2-to-Midnight, he has +4/+4).*
+- **Effect:** *Scharnhorst possesses dynamic stats. He gains +1 Attack and +1 Health for the current Doomsday Clock step, counting **5 to Midnight** as the first step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
 
 ### RULES OF ENGAGEMENT
 
@@ -1864,14 +1865,14 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | --- | --- | --- | --- |
 | 5 TO MIDNIGHT | Restricted | Observer Status: Deals -1 Damage to Vehicles. Cannot attack Commanders (Hard Lock). | "Target Positive. Engagement unauthorized. Holding fire." |
 | 4 TO MIDNIGHT | Mobilized | Active Duty: The "Restricted" penalties are removed. | "The first shot is fired. Scharnhorst puts his cigarette out." |
-| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Spells unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
+| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Tactics unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
 | 2 TO MIDNIGHT | Aggressor | Dead Man's Hand: If Scharnhorst kills an infantry unit, he readies instantly and can attack again (Max 2 chains per turn). | "Violence of Action. Work harder. Kill harder." |
 | 1 TO MIDNIGHT | Executioner | Coup de Grâce: Attacks instantly kill any unit that has already taken damage this turn. | "No mercy. She never gave any." |
 | MIDNIGHT | Omega | One Man Army: Gains Double Strike and Immunity to [WMD] / Nuclear effects. | "The world is ending. He is the only thing designed to survive it." |
 
 ## 5. FIELD AUDIO & FX
 
-*Sound cues for digital implementation.*
+*Sound cues for digital implementation. The deployment line uses his name, Karras. Scharnhorst is the codename.*
 
 - **ON DEPLOYMENT:** *"[Sound of a lighter flicking open] Karras on station. Working the hardest."*
 - **ACTIVE ABILITY:** *"[Shotgun rack] Obstruction removed. Moving to next."*
@@ -1892,7 +1893,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | CALIBAN | VS (Enemy) | "You look like a walking scrapyard. Put the gun down, kid." |
 | CALIBAN | COOP (Ally) | "Take what you want from the wreck. Just leave the Commander to me." |
 | CATAPHRACT | VS (Enemy) | "You need speed to kill me, shield-bearer. You're too slow." |
-| CATAPHRACT | COOP (Ally) | "Stay behind the shield. I'll take the hits." |
+| CATAPHRACT | COOP (Ally) | "Hold the wall. I'm going through the gap." |
 | GEHENNA | VS (Enemy) | "You smell like burning meat. Stay away from me." |
 | GEHENNA | COOP (Ally) | "I don't need a factory. I need a grave. Just keep the fire burning." |
 | JANUS | VS (Enemy) | "Your chess game is too slow. I'm flipping the board." |
@@ -1903,8 +1904,8 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | NIGHTINGALE | COOP (Ally) | "Just drive. I'm not bleeding, it's theirs." |
 | NIGHTMARE | VS (Enemy) | "I know what you see when you close your eyes. The rain. The mud." |
 | NIGHTMARE | COOP (Ally) | "The monsters are real. Go make them scream." |
-| PANDORA | VS (Enemy) | "Your physiology is unique. I must have a sample." |
-| PANDORA | COOP (Ally) | "I can make you faster, butcher. Just sign the waiver." |
+| PANDORA | VS (Enemy) | "Keep your needles. I don't donate samples." |
+| PANDORA | COOP (Ally) | "Build the gun. I'll pull the trigger." |
 | PANOPTICON | VS (Enemy) | "No cell can hold me. I am the breach." |
 | PANOPTICON | COOP (Ally) | "If they talk, let me know. I'll finish the job." |
 | PHALANX | VS (Enemy) | "One commando against a battalion? I like those odds." |
@@ -1915,14 +1916,14 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | RIO | COOP (Ally) | "Mark the target. I will handle the ballistics." |
 | SCHEHERAZADE | VS (Enemy) | "You can't talk your way out of this one. Step aside." |
 | SCHEHERAZADE | COOP (Ally) | "Hold the clock. I need five more minutes to clear the room." |
-| SHADOW CO. | VS (Enemy) | "Amateurs. You fight for money; I fight because I am the weapon." |
-| SHADOW CO. | COOP (Ally) | "Secure the perimeter. I'm going inside." |
+| SHADOW COMPANY | VS (Enemy) | "Amateurs. You fight for money; I fight because I am the weapon." |
+| SHADOW COMPANY | COOP (Ally) | "Secure the perimeter. I'm going inside." |
 | SIREN | VS (Enemy) | "Your cameras can't track me. I'm just a blur in the footage." |
 | SIREN | COOP (Ally) | "Don't film this. It's going to get messy." |
 | STARLIGHT | VS (Enemy) | "A glass cannon. One stone is all it takes." |
 | STARLIGHT | COOP (Ally) | "Burn the cover. I'll take the shot." |
 | TERMINUS | VS (Enemy) | "I don't stop for checkpoints. Open the gate or I will blow it." |
-| TERMINUS | COOP (Ally) | "The checkpoint is secure. You are cleared to engage." |
+| TERMINUS | COOP (Ally) | "Keep the gate shut behind me. I'm not coming back for stragglers." |
 | WHITE KNIGHT | VS (Enemy) | "You look shiny and new. Let's see if you break like the first one." |
 | WHITE KNIGHT | COOP (Ally) | "You strike from above. I strike from the shadows." |
 | ENTERPRISE | VS (Enemy) | "Big target. Hard to miss. I'll board and sink it from the inside." |
@@ -1933,7 +1934,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 - **PHYSICALITY:** *Scharnhorst is the ultimate "Investment." When you play him early, he is just a guy in a coat—unassuming, almost weak. The opponent might ignore him to focus on tanks. This is the trap. As the clock ticks, the card physically changes on the table, growing darker and more violent.*
 - **PSYCHOLOGY:** *He forces the opponent to play paranoid. They know if they let the "Late Game Carry" survive until Midnight, they lose. But for the player controlling him, there is a sombre duty—you aren't just trying to win; you are trying to fulfill the contract of the Dead.*
 - **MECHANICAL CHECK:**
-  - *Does this respect the Decapitation Strike rule?* **YES.** *Specific override at 5-to-Midnight ensures he cannot snipe the Commander even if the lane is clear.*
+  - *Does this respect the Decapitation Strike rule?* **YES.** *The override at **5 to Midnight** ensures he cannot strike the commander even when both enemy slots in his lane are empty.*
   - *Does the Midnight effect follow priority?* **YES.** *Passive Immunity/Buffs take effect immediately. His effect is a self-buff, not a board wipe, so no conflict with Defensive priorities.*
 
 # CLASSIFIED ASSET FILE: RIO
@@ -1996,7 +1997,7 @@ Core Passive: "The Glass Table"
 
 Designer Note: This ability physically changes how the game is played on the table.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, the Enemy's Hand is played Face Up. (You can see everything they are holding).
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, the Enemy's Hand is played Face Up. (You can see everything they are holding).
 
 Rules of Engagement (The Signal Degradation)
 
@@ -2053,7 +2054,7 @@ Rio unplugs the cable from her neck, gasping for air. The holograms shatter into
 | SCHARNHORST | VS (Enemy) | “You can't hide from me, ghost. I know your real name." |
 | SCHARNHORST | COOP (Ally) | "I've marked the path for you. Go make a mess." |
 | RICHELIEU | VS (Enemy) | "Voice pattern analyzed. It's a lie. Ignore her." |
-| RICHELIEU | COOP (Ally) | "Find me their leverage. I want to know what they fear." |
+| RICHELIEU | COOP (Ally) | "Their accounts are open. Tell me which name you want buried." |
 | NIGHTINGALE | VS (Enemy) | "I've scrubbed your flight path. No one knows where you landed." |
 | NIGHTINGALE | COOP (Ally) | "Extraction coordinates uploaded. Get them out of there." |
 | ACHERON | VS (Enemy) | "Chemical composition analyzed. Uploading the antidote formula to the team." |
@@ -2127,13 +2128,13 @@ She holds no gun. She holds a gold-nibbed fountain pen suspended over a document
 
 **Archetype:** Early-Game Control / Economy / Clock Manipulation
 
-**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Spells as long as she has Influence (Escalation 5-3). She is not a combatant; she is a political entity.
+**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Tactics while the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**. She is not a combatant; she is a political entity.
 
 Core Passive: "The Peace Dividend"
 
 Designer Note: She funds your war machine.
 
-Effect: As long as the Clock is at 5, 4, or 3 Minutes to Midnight, you gain +1 Chip every turn.
+Effect: As long as the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, you gain +1 Chip every turn.
 
 Rules of Engagement (The Inverse Escalation)
 
@@ -2333,11 +2334,11 @@ Moebius drops his clipboard. He doesn't look scared, just annoyed.
 | NIGHTINGALE | VS (Enemy) | "I don't haul bodies. Only ammo. Call someone else." |
 | NIGHTINGALE | COOP (Ally) | "Delivery complete. Where's my fuel, pilot?" |
 | ACHERON | VS (Enemy) | "My men can't work in this gas! You're shutting down my line!" |
-| ACHERON | COOP (Ally) | "We need more canisters. Don't ask what's in them." |
+| ACHERON | COOP (Ally) | "Canisters are on the pallet. Keep them off the invoice." |
 | APOLLYON | VS (Enemy) | "Damn, those are some crazy logistics." |
-| APOLLYON | COOP (Ally) | "Resupply confirmed. Reloading tubes." |
+| APOLLYON | COOP (Ally) | "Fresh batteries, fresh warheads. Sign for the crate." |
 | RIO | VS (Enemy) | "Stop hacking my manifest! I have clients to protect!" |
-| RIO | COOP (Ally) | "Syncing watches. Delivery coordinates uploaded." |
+| RIO | COOP (Ally) | "Coordinates received. The truck rolls when the route is clean." |
 | CALIBAN | VS (Enemy) | "Thief! Get away from my inventory!" |
 | CALIBAN | COOP (Ally) | "I can sell that scrap metal for you. 60-40 split?" |
 | BLACK KNIGHT | VS (Enemy) | "Shipping lanes blocked. I can't get the cargo plane up." |
@@ -2640,7 +2641,7 @@ The suit ruptures violently. A cloud of yellow smoke obscures the card. When it 
 | --- | --- |
 | **CLEARANCE LEVEL** | MAJESTIC-12 // DEEP BLUE |
 | **CODENAME ORIGIN** | USS Enterprise (CV-6 "The Grey Ghost") / The Surcouf |
-| **AFFILIATION** | Naval Strike Command / "The Silent Fleet" |
+| **AFFILIATION** | MAJESTIC-12 (temporary placeholder) / Naval Strike Command / "The Silent Fleet" |
 | **TAGS** | [NONE] (Black File / Submersible Carrier) |
 | **ARCHETYPE** | Stealth / Ambush / Hand Reveal |
 | **DEPLOYMENT TYPE** | Standard Escalation |
@@ -2663,13 +2664,13 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *Directives for the art team to establish the "Poker Table" aesthetic. Target Style: 90s Anime / Gritty OVA (High contrast, mature tone).*
 
-- **SUBJECT:** Enterprise is no longer a spaceship; she is a colossal, sleek **Stealth Submarine Carrier** (resembling a futuristic *Alicorn* or *Surcouf* class). She is breaking the surface of a dark, stormy ocean. The hull is matte black, shedding water like oil.
+- **SUBJECT:** Enterprise is a colossal, sleek **Stealth Submarine Carrier** (resembling a futuristic *Alicorn* or *Surcouf* class). She is breaking the surface of a dark, stormy ocean. The hull is matte black, shedding water like oil.
 - **GEAR/WEAPON:** The flight deck is "wet"—it emerges from the hull. VLS (Vertical Launch System) missile tubes are open and steaming. She doesn't look like a boat; she looks like a sea monster made of steel.
 - **SETTING:** The middle of a raging typhoon in the Pacific. Rain is lashing the camera lens.
 
 ### DYNAMIC EVOLUTION (Visual Progression)
 
-*How the card art changes as the Escalation Clock ticks down.*
+*How the card art changes as the Doomsday Clock ticks down.*
 
 - **5 TO MIDNIGHT (Cold War):** **Submerged.** A green wireframe sonar display showing a massive, unidentified leviathan lurking deep underwater. "CONTACT UNKNOWN" flashing in red.
 - **3 TO MIDNIGHT (Conflict):** **Periscope Depth.** The conning tower (sail) just breaches the waves. A single red light glows from the bridge. Cruise missiles are launching from just *below* the water line, trailing bubbles.
@@ -2778,7 +2779,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
 - **PHYSICALITY:** Enterprise brings a "Hidden Information" game to the table. The "Sonar" mechanic (seeing the enemy's deck) makes the player feel like a submarine captain looking through a periscope. The physical act of "Diving" (maybe flipping the card or putting a 'Water' token on it) gives a satisfying rhythm of "Safe -> Dangerous -> Safe."
-- **PSYCHOLOGY:** The opponent gets paranoid. They know Enterprise is there, healing and generating chips, but they can't touch her until she decides to fight. It forces them to hold back their big removal spells, waiting for the "Surface" moment, which slows down their aggression.
+- **PSYCHOLOGY:** The opponent gets paranoid. They know Enterprise is there, healing and generating chips, but they can't touch her until she decides to fight. It forces them to hold back their big removal tactics, waiting for the "Surface" moment, which slows down their aggression.
 
 ### MECHANICAL CHECK:
 

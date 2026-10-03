@@ -30,7 +30,7 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 
 | **ASSOCIATE (UNIT)** | **RELATIONSHIP** | **DETAILS** |
 | --- | --- | --- |
-| **SCHARNHORST** | *The Survivor, the unsinkable* | Elisabeth trained him, but she also terrified him. He was the only thing she chose to save during Downfall. He operates with relentless intensity out of fear of failing her final order: *"Work the hardest, kill harder, and die hard."* |
+| **SCHARNHORST** | *The Survivor, the unsinkable* | His name is Karras. Scharnhorst is the codename. Elisabeth trained him, but she also terrified him. He was the only thing she chose to save during Downfall. He operates with relentless intensity out of fear of failing her final order: *"Work the hardest, kill harder, and die hard."* |
 | **WHITE KNIGHT** | *The Replacement* | The current unit is a Mk. II built from scratch. The original Mk. I was an experimental aircraft physically torn in half by Elisabeth during the battle. |
 | **BLACK KNIGHT** | *The Dormant Witness* | The satellite went offline for decades immediately after Downfall. Analysis suggests it wasn't a malfunction; it was shot. Elisabeth managed to hijack a weapon on the ground and score a direct hit on the orbital unit. The BLACK KNIGHT miraculously reactivated a few years after RIO was searching for remnant data from the MAJESTIC-12 and accidentally established a brief remote connection with it. |
 
@@ -80,7 +80,7 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 
 #### I. VISUAL PROFILE (ARCHIVE FOOTAGE)
 
-**Subject Description:** The file contains a single, heavily water-damaged photograph found in the wreckage of Sector Zero. It shows twelve distinct figures standing in front of a heavy transport plane. Their faces are crossed out with black marker, except for one young soldier in the back (Karras/Scharnhorst), whose face is circled in red question marks.
+**Subject Description:** The file contains a single, heavily water-damaged photograph found in the wreckage of Sector Zero. It shows twelve distinct figures standing in front of a heavy transport plane. Their faces are crossed out with black marker, except for one young soldier in the back, Karras, later filed under the codename Scharnhorst, whose face is circled in red question marks.
 
 **The Symbol:** The faction crest is a **Hydra strangling a Globe**. In the modern era, this crest is rarely seen on uniforms. Instead, it is usually found stamped onto the chassis of destroyed experimental weapons or etched into the logic boards of rogue AI.
 
@@ -123,6 +123,4 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 - **Loyalty:** FRACTURED. Assets are currently embedded in opposing factions (Global Defense, The Clandestine Service, The Private Sector).
 - **Objective:** SURVIVAL. The new cohort is not tasked with hunting Elisabeth. They are tasked with preventing the next Downfall.
 
-**Work in progress**: the game is in an early phase and this entry will be finished later, for now ignore that the new MAJESTIC-12 have no official members, they will be added later in development. Some Black File units have the affiliation but it is pending further revision, the only confirmed member for now is The BLACK KNIGHT.
-
-Some cards might have MAJESTIC-12 clearance level but that is a placeholder for now.
+**Placeholder membership:** Black Knight is the only confirmed member of the new cohort. A Black File whose clearance is stamped MAJESTIC-12 temporarily joins the faction until the roster is revised. That stamp is a placeholder, not a permanent assignment and not a rules tag. The placeholders are White Knight, Scheherazade, Janus, and Enterprise. Where a file already names another department, that department stays beside the placeholder line.
