@@ -1849,26 +1849,24 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 - **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet. He is not [ARMOR], so anti-tank missiles pass right through his cloak.*
 
-### CORE PASSIVE: "PROTOCOL: ESCALATION"
+### SIMPLE PASSIVE: "DIE HARD"
 
-- **Effect:** *Scharnhorst possesses dynamic stats. He gains +1 Attack and +1 Health for the current Doomsday Clock step, counting **5 to Midnight** as the first step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
+- **Effect:** *Scharnhorst has +1 Attack and +1 Health for the current Doomsday Clock step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
 
-### RULES OF ENGAGEMENT
+### ACTIVE: "WORK THE HARDEST"
 
-*(Choose ONE of the following tables based on Deployment Type)*
+- **Effect:** *Once each turn, pay 1 Chip. Scharnhorst may attack again.*
 
-#### OPTION A: STANDARD ESCALATION (Scaling Units)
+### COMPLEX PASSIVE: "PROTOCOL"
 
-*Used for units that exist on the board and evolve as the clock ticks.*
+*Each line starts at the named step and stays on at every step closer to Midnight, except the commander lock, which ends at **2 to Midnight**.*
 
-| Clock State | Status | Ability / Upgrade | Flavor Text |
-| --- | --- | --- | --- |
-| 5 TO MIDNIGHT | Restricted | Observer Status: Deals -1 Damage to Vehicles. Cannot attack Commanders (Hard Lock). | "Target Positive. Engagement unauthorized. Holding fire." |
-| 4 TO MIDNIGHT | Mobilized | Active Duty: The "Restricted" penalties are removed. | "The first shot is fired. Scharnhorst puts his cigarette out." |
-| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Tactics unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
-| 2 TO MIDNIGHT | Aggressor | Dead Man's Hand: If Scharnhorst kills an infantry unit, he readies instantly and can attack again (Max 2 chains per turn). | "Violence of Action. Work harder. Kill harder." |
-| 1 TO MIDNIGHT | Executioner | Coup de Grâce: Attacks instantly kill any unit that has already taken damage this turn. | "No mercy. She never gave any." |
-| MIDNIGHT | Omega | One Man Army: Gains Double Strike and Immunity to [WMD] / Nuclear effects. | "The world is ending. He is the only thing designed to survive it." |
+- **5 to Midnight, 4 to Midnight, and 3 to Midnight:** *Scharnhorst's attacks cannot target a commander.*
+- **2 to Midnight and closer:** *Scharnhorst can target a commander.*
+- **4 to Midnight and closer:** *Multitarget attacks do not hit him. A multitarget attack is an attack or effect that hits more than one unit.*
+- **3 to Midnight and closer:** *Tactics cannot target him.*
+- **1 to Midnight and closer:** *If his attack hits an enemy unit whose current health is below half its maximum health, that unit is destroyed.*
+- **Midnight:** *He is immune to WMDs. Tactical nukes and other doomsday weapons do not affect him.*
 
 ## 5. FIELD AUDIO & FX
 
@@ -1934,8 +1932,8 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 - **PHYSICALITY:** *Scharnhorst is the ultimate "Investment." When you play him early, he is just a guy in a coat—unassuming, almost weak. The opponent might ignore him to focus on tanks. This is the trap. As the clock ticks, the card physically changes on the table, growing darker and more violent.*
 - **PSYCHOLOGY:** *He forces the opponent to play paranoid. They know if they let the "Late Game Carry" survive until Midnight, they lose. But for the player controlling him, there is a sombre duty—you aren't just trying to win; you are trying to fulfill the contract of the Dead.*
 - **MECHANICAL CHECK:**
-  - *Does this respect the Decapitation Strike rule?* **YES.** *The override at **5 to Midnight** ensures he cannot strike the commander even when both enemy slots in his lane are empty.*
-  - *Does the Midnight effect follow priority?* **YES.** *Passive Immunity/Buffs take effect immediately. His effect is a self-buff, not a board wipe, so no conflict with Defensive priorities.*
+  - *Does this respect the Decapitation Strike rule?* **YES.** *From **5 to Midnight** through **3 to Midnight** his attacks cannot target a commander. From **2 to Midnight** on, a commander strike uses the normal lane rule.*
+  - *Does the Midnight effect follow priority?* **YES.** *Midnight makes him immune to WMDs. That is a prevention on him, not damage to both commanders.*
 
 # CLASSIFIED ASSET FILE: RIO
 
