@@ -329,7 +329,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **CODENAME ORIGIN** | "The 1954 Satellite Conspiracy / 'The Dark Sentinel'" |
 | **AFFILIATION** | "MAJESTIC-12 / The 'Star Wars' Initiative" |
 | **TAGS** | [NONE] (Black File / Orbital Interceptor) |
-| **ARCHETYPE** | Anti-Air / Counter-Spell / Orbital Siege |
+| **ARCHETYPE** | Anti-Air / Counter-Tactic / Orbital Siege |
 | **DEPLOYMENT TYPE** | **Midnight Tactical** (Doomsday Weapon) |
 
 ### Stat block
@@ -392,7 +392,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | --- | --- | --- | --- |
 | **HAND-ACTIVE** | **Orbital Telemetry** | While this card is in your hand and the clock is at **3 to Midnight** or closer, you play with the *Top Card of your Deck* revealed. | *"Terminal velocity achieved. Impact confirmed."* |
 | **SYSTEM 1** | **Geosynchronous Orbit** | **Passive:** Black Knight cannot be targeted by [INFANTRY], [ARMOR], or [HEAVY] units (Ground Forces). It can only be targeted by [AIR] or [SUPPORT] units. | *"Target is out of range. It's too high."* |
-| **SYSTEM 2** | **Point Defense Laser** | **Defense:** Negate the first **Spell**, **Tactic**, or **Active Ability** that targets Black Knight each turn. | *"Projectile intercepted. Threat neutralized."* |
+| **SYSTEM 2** | **Point Defense Laser** | **Defense:** Negate the first **Tactic** or **Active Ability** that targets Black Knight each turn. | *"Projectile intercepted. Threat neutralized."* |
 | **SYSTEM 3** | **Kinetic Rod** | **Passive:** when attacked, fire back a kinetic rod that does 5 damage, double when hitting a [STRUCTURE] | *"Rod released. Impact in 3 seconds."* |
 
 ## 5. FIELD AUDIO & FX
@@ -456,7 +456,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool spells or airplanes."
+- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool tactics or airplanes."
 - **VISUAL SPECTACLE:** The Midnight ability is visually spectacular—It doesn't just hit the board; it **hovers** over it. It forces the opponent to look for Anti-Air solutions while being pelted by kinetic rods from an enemy they literally cannot reach with tanks.
 - **MECHANICAL CHECK:**
   - Does this respect the Decapitation Strike rule? **YES.** The "Kinetic Strike" targets units, not the Commander directly.
@@ -1286,7 +1286,7 @@ Designer Note: Siren is a god of manipulation early on. As the war escalates, th
 - **MIDNIGHT: "MASS HYSTERIA"**
   - **Status:** *Panic*
   - **Final Resort:** **"Broadcast Interrupt"**
-    - **Effect:** Sacrifice Siren. Force a **"Ceasefire"** for 1 Turn. (No units can attack; no cards can be played). This delays the end of the game briefly, but grants no advantage.
+    - **Effect:** Sacrifice Siren. Force a **"Ceasefire"** for 1 Turn. (No units can attack; no cards can be played). Move the Doomsday Clock back one minute. It cannot move earlier than **5 to Midnight**.
     - **Flavor:** *"Please stand by. This is not a test."*
 
 ## IV. FIELD AUDIO & INTERACTIONS
@@ -1847,7 +1847,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** *Ignores standard counter-measures. He is not [INFANTRY], so he cannot be pinned by machine-gun fire. He is not [ARMOR], so anti-tank missiles pass right through his cloak. He exists outside the rock-paper-scissors loop.*
+- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet. He is not [ARMOR], so anti-tank missiles pass right through his cloak.*
 
 ### CORE PASSIVE: "PROTOCOL: ESCALATION"
 
@@ -1865,7 +1865,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | --- | --- | --- | --- |
 | 5 TO MIDNIGHT | Restricted | Observer Status: Deals -1 Damage to Vehicles. Cannot attack Commanders (Hard Lock). | "Target Positive. Engagement unauthorized. Holding fire." |
 | 4 TO MIDNIGHT | Mobilized | Active Duty: The "Restricted" penalties are removed. | "The first shot is fired. Scharnhorst puts his cigarette out." |
-| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Spells unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
+| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Tactics unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
 | 2 TO MIDNIGHT | Aggressor | Dead Man's Hand: If Scharnhorst kills an infantry unit, he readies instantly and can attack again (Max 2 chains per turn). | "Violence of Action. Work harder. Kill harder." |
 | 1 TO MIDNIGHT | Executioner | Coup de Grâce: Attacks instantly kill any unit that has already taken damage this turn. | "No mercy. She never gave any." |
 | MIDNIGHT | Omega | One Man Army: Gains Double Strike and Immunity to [WMD] / Nuclear effects. | "The world is ending. He is the only thing designed to survive it." |
@@ -2128,7 +2128,7 @@ She holds no gun. She holds a gold-nibbed fountain pen suspended over a document
 
 **Archetype:** Early-Game Control / Economy / Clock Manipulation
 
-**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Spells while the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**. She is not a combatant; she is a political entity.
+**Tag Interaction:** As a **Black File** unit, Richelieu has **[DIPLOMATIC IMMUNITY]**. She cannot be targeted by enemy Attacks or "Lethal" Tactics while the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**. She is not a combatant; she is a political entity.
 
 Core Passive: "The Peace Dividend"
 
@@ -2779,7 +2779,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
 - **PHYSICALITY:** Enterprise brings a "Hidden Information" game to the table. The "Sonar" mechanic (seeing the enemy's deck) makes the player feel like a submarine captain looking through a periscope. The physical act of "Diving" (maybe flipping the card or putting a 'Water' token on it) gives a satisfying rhythm of "Safe -> Dangerous -> Safe."
-- **PSYCHOLOGY:** The opponent gets paranoid. They know Enterprise is there, healing and generating chips, but they can't touch her until she decides to fight. It forces them to hold back their big removal spells, waiting for the "Surface" moment, which slows down their aggression.
+- **PSYCHOLOGY:** The opponent gets paranoid. They know Enterprise is there, healing and generating chips, but they can't touch her until she decides to fight. It forces them to hold back their big removal tactics, waiting for the "Surface" moment, which slows down their aggression.
 
 ### MECHANICAL CHECK:
 

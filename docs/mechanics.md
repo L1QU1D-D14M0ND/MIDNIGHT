@@ -38,7 +38,7 @@ During combat, a unit's attack targets the enemy front unit in its lane. If that
 | Zone | What it holds |
 | --- | --- |
 | Command | The commander. This is a health total, not a card. |
-| Hand | Cards a player can deploy. Maximum 7. |
+| Hand | Cards a player can deploy. Maximum 7, unless a card changes it. |
 | Draw pile | Face-down cards that player draws from. |
 | Field | Units in lane slots. |
 | Orbital dock | Orbital units. They do not use a lane slot. |
@@ -52,7 +52,7 @@ A **turn** is one player's phases. A **round** is Player 1's turn plus Player 2'
 On your turn, in this order:
 
 1. **Upkeep.** Start-of-turn damage and other "at the start of your turn" abilities. Resolve them one at a time.
-2. **Draw.** Draw one card. If your hand already has 7 cards, skip the draw. If the draw pile is empty, the draw fails and you get no card.
+2. **Draw.** Draw one card. If your hand is already at its maximum, skip the draw. The maximum is 7 unless a card changes it. If the draw pile is empty, the draw fails and you get no card.
 3. **Chips.** Refill your Chips to your current maximum.
 4. **Main.** Deploy cards and use activated abilities, in any order, as many times as you can pay for.
 5. **Combat.** Your units attack, one unit at a time, in the order you choose.
@@ -70,6 +70,8 @@ Chips are the currency. They pay for deployments and for activated abilities tha
 - A deployment spends the card's Chip cost.
 - An activated ability spends the Chip cost printed on it.
 - An ordinary attack is free, unless a card says the attack costs Chips.
+- A card that grants Chips adds them. A start-of-turn grant is added after the Chips-phase refill. Any other grant is added when the card says. Granted Chips can rise above the maximum. They are spent normally. The next Chips phase still sets Chips to the maximum, so the extra does not bank and does not raise the maximum. Richelieu, Gehenna, and Enterprise grant Chips this way.
+- A card that changes hand size changes the maximum used by the draw step. Shadow Company raises that maximum by 2 while that ability is on.
 
 ## Decapitation Strike
 
@@ -169,7 +171,7 @@ Rules tags are: **Infantry, Armor, Air, Heavy, Structure, Support, Stealth, Orbi
 | Asset | A unit in a lane slot. |
 | Structure | An asset that does not move and does not make ordinary attacks, unless its text says it does. It still occupies its slot and blocks commander strikes through that lane. |
 | Orbital | Deploys into the orbital dock, and only at Midnight (or by a legal Breach from 1). On deploy, it chooses one lane to shadow. It does not fill either slot in that lane and does not, by itself, block the commander. |
-| Tactic | A one-shot with no body. Older card text that says "spell" means tactic. |
+| Tactic | A one-shot with no body. |
 
 A mundane asset's stamp is the minute that authorizes it in the clock table. A legend's stamp is the stamp in its stat block.
 
@@ -181,7 +183,7 @@ A mundane asset's stamp is the minute that authorizes it in the clock table. A l
 | Activated ability | An ability a player chooses to use, paid for if it has a cost. Card text that says "active ability" means this. |
 | Triggered ability | An ability that happens when its event occurs. |
 | Deployment effect | An ability that happens as the card enters, before it can be chosen as an attacker. |
-| Tactic | A one-shot card with no body. "Spell" in older sentences is a tactic. |
+| Tactic | A one-shot card with no body. |
 
 When several effects want to happen at the same moment, apply them in this order. Inside each step, the active player's effects happen first, then the opponent's, and each effect finishes before the next one starts.
 
@@ -205,3 +207,5 @@ These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
 - The mundane roster. The clock table is only a clearance guide.
+- Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
+- Black Knight's abilities are due for a rework and are not settled.
