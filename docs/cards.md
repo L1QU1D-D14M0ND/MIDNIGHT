@@ -227,7 +227,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** **Clearance Override.** As a Black File unit, White Knight ignores [DIPLOMATIC IMMUNITY], [STEALTH], and [VANTABLACK CLOAK]. It can target any unit on the board regardless of protection (except Commanders under any condition).
+- **Interaction:** **Clearance Override.** As a Black File unit, White Knight ignores [DIPLOMATIC IMMUNITY] and [STEALTH]. It can target any unit on the board regardless of protection (except Commanders under any condition).
 
 ### CORE PASSIVE: "THE SAINT'S LIST"
 
@@ -307,7 +307,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** White Knight is the "Boogeyman" for high-level decks. Its presence forces the opponent to play honestly. If they try to hide behind Richelieu's politics or Scharnhorst's stealth, White Knight simply ignores it. Visually, the card feels fast and sharp—a stark contrast to the heavy, messy aesthetic of the other units.
+- **PHYSICALITY:** White Knight is the "Boogeyman" for high-level decks. Its presence forces the opponent to play honestly. If they try to hide behind Richelieu's politics or Scharnhorst's Protocol, White Knight simply ignores it. Visually, the card feels fast and sharp—a stark contrast to the heavy, messy aesthetic of the other units.
 - **PSYCHOLOGY:** By hovering in orbit (Deployment Zone), it creates a sense of imminent doom. The opponent knows they cannot hide their key units. It forces a "Kill or Be Killed" mentality, as they must find Anti-Air solutions immediately or lose their best cards to the "Rod from God."
 
 ### MECHANICAL CHECK:
@@ -1407,7 +1407,7 @@ Designer Note: This is the hard lock on the game state.
 Effect: As long as Scheherazade is on the board, the Doomsday Clock cannot advance to Midnight. The automatic tick and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
 
 - If the automatic tick or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
-- *Consequence:* **Scharnhorst** never gets his Ultimate. **Apollyon** never floods the board.
+- *Consequence:* **Scharnhorst** never gains his Midnight immunity. **Apollyon** never floods the board.
 
 Rules of Engagement (The Holding Action)
 
@@ -1493,7 +1493,7 @@ Scheherazade collapses. The crowbar falls from her hand. The red light turns sol
 
 ## V. STRATEGIC NOTE (THE POKER TABLE FEEL)
 
-*Designer Note: Scheherazade is the "Blue Ball" card. The opponent spends the whole game ramping up, getting ready to drop their massive Midnight Orbitals or unleash Scharnhorst's final form... and then she hits the table and says "No." Visually, the clock on the table should try to tick over, shudder, and get stuck, creating immense tension. She forces the opponent to kill her with conventional means before they can win.*
+*Designer Note: Scheherazade is the "Blue Ball" card. The opponent spends the whole game ramping up, getting ready to drop their massive Midnight Orbitals or unleash the last line of Scharnhorst's Protocol... and then she hits the table and says "No." Visually, the clock on the table should try to tick over, shudder, and get stuck, creating immense tension. She forces the opponent to kill her with conventional means before they can win.*
 
 # CLASSIFIED ASSET FILE: JANUS
 
@@ -1543,7 +1543,7 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 **The Dealer's Note:**
 
-*"He creates heroes by breaking men. You want Scharnhorst to kill everything on Turn 1? Fine. Janus will tell Scharnhorst that he's the last man alive. It's a lie, but the bodies he stacks will be real."*
+*"He creates heroes by breaking men. You want Scharnhorst angry before the clock is? Fine. Janus will tell him the war has already started. Commander targeting and WMD immunity still follow the real clock. The bodies he stacks will be real."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
@@ -1568,7 +1568,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
 
 - **5 TO MIDNIGHT: "False Flag Operation"**
   - **Status:** *Instigating*
-  - **Active Ability:** **"Radicalize."** Target a friendly unit with **Standard Scaling** (Weak early, strong late). It gains its **MIDNIGHT** ability for this turn.
+  - **Active Ability:** **"Radicalize."** Target a friendly unit with **Standard Scaling** (Weak early, strong late). It gains its **MIDNIGHT** ability for this turn. On Scharnhorst, that ability is WMD immunity for this turn.
   - **Cost:** The unit takes **2 Damage** at the end of the turn.
   - **Flavor:** *"Tell them the enemy killed the hostages. Make them angry."*
 - **4 TO MIDNIGHT: "Information Blackout"**
@@ -1579,7 +1579,7 @@ Designer Note: Janus forces units to act according to his False Narrative, not r
 - **3 TO MIDNIGHT: "The Manchurian Candidate"**
   - **Status:** *Programming*
   - **Upgrade:** **"Deep Cover."** You may **Link** Janus to one adjacent Black File unit. That unit is now "Brainwashed" and permanently uses Janus's **False Narrative** for all scaling effects.
-  - *Tactical Note:* A brainwashed Scharnhorst thinks it is Midnight even on Turn 1.
+  - *Tactical Note:* A brainwashed Scharnhorst uses Janus's False Narrative for Die Hard and for every Protocol line except commander targeting and WMD immunity. While the narrative is **Total War**, he counts as **3 to Midnight**: +3/+3, multitarget attacks miss him, and tactics cannot target him. While the narrative is **Peacetime**, he counts as **5 to Midnight**: +1/+1, multitarget attacks can hit him, tactics can target him, and the execution is off. Commander targeting and WMD immunity follow the real clock.
   - **Flavor:** *"The trigger phrase is embedded. He is yours."*
 - **2 TO MIDNIGHT: "Paranoia"**
   - **Status:** *Unstable*
@@ -1847,7 +1847,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet. He is not [ARMOR], so anti-tank missiles pass right through his cloak.*
+- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet.*
 
 ### SIMPLE PASSIVE: "DIE HARD"
 
@@ -1873,7 +1873,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 *Sound cues for digital implementation. The deployment line uses his name, Karras. Scharnhorst is the codename.*
 
 - **ON DEPLOYMENT:** *"[Sound of a lighter flicking open] Karras on station. Working the hardest."*
-- **ACTIVE ABILITY:** *"[Shotgun rack] Obstruction removed. Moving to next."*
+- **ACTIVE ABILITY:** *"[Shotgun rack] Still standing. Going again."*
 - **DEFEATED/DEATH:** *"[He drops to one knee, clutching the old knife sheath.] I... didn't... die hard..."*
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
@@ -1885,11 +1885,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | ACHERON | VS (Enemy) | "Gas masks don't stop knives. Bleed, you suit-rat." |
 | ACHERON | COOP (Ally) | "Smoke covers the movement. Good. Keep the vents open." |
 | APOLLYON | VS (Enemy) | "Toys. Break one, a thousand more come? Fine. I have enough ammo." |
-| APOLLYON | COOP (Ally) | "Keep them busy, machine. I need a clear path to the Commander." |
+| APOLLYON | COOP (Ally) | "Hold them. The commander comes later." |
 | BLACK KNIGHT | VS (Enemy) | "She didn't miss, did she? I can see the hole from here." |
 | BLACK KNIGHT | COOP (Ally) | "Keep the sky clear. I'll handle the dirt." |
 | CALIBAN | VS (Enemy) | "You look like a walking scrapyard. Put the gun down, kid." |
-| CALIBAN | COOP (Ally) | "Take what you want from the wreck. Just leave the Commander to me." |
+| CALIBAN | COOP (Ally) | "Take the wreck. The commander waits until I'm finished with the rest." |
 | CATAPHRACT | VS (Enemy) | "You need speed to kill me, shield-bearer. You're too slow." |
 | CATAPHRACT | COOP (Ally) | "Hold the wall. I'm going through the gap." |
 | GEHENNA | VS (Enemy) | "You smell like burning meat. Stay away from me." |
@@ -1899,24 +1899,24 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | MOEBIUS | VS (Enemy) | "I don't need a resupply. I'll take their ammo." |
 | MOEBIUS | COOP (Ally) | "Keep the rounds coming. I'm working overtime." |
 | NIGHTINGALE | VS (Enemy) | "Don't touch me. I'm not done until they're all dead." |
-| NIGHTINGALE | COOP (Ally) | "Just drive. I'm not bleeding, it's theirs." |
-| NIGHTMARE | VS (Enemy) | "I know what you see when you close your eyes. The rain. The mud." |
-| NIGHTMARE | COOP (Ally) | "The monsters are real. Go make them scream." |
+| NIGHTINGALE | COOP (Ally) | "Patch it in the air. Put me back on a roof." |
+| NIGHTMARE | VS (Enemy) | "Those faces are mine. Stay out of them." |
+| NIGHTMARE | COOP (Ally) | "Point me at whatever you're seeing. I'll make it stop." |
 | PANDORA | VS (Enemy) | "Keep your needles. I don't donate samples." |
 | PANDORA | COOP (Ally) | "Build the gun. I'll pull the trigger." |
 | PANOPTICON | VS (Enemy) | "No cell can hold me. I am the breach." |
 | PANOPTICON | COOP (Ally) | "If they talk, let me know. I'll finish the job." |
-| PHALANX | VS (Enemy) | "One commando against a battalion? I like those odds." |
+| PHALANX | VS (Enemy) | "A battalion is a crowd with rifles. Crowds break." |
 | PHALANX | COOP (Ally) | "Hold the line. I'm going over the top." |
 | RICHELIEU | VS (Enemy) | "Your money is useless here. I accept payment in blood." |
 | RICHELIEU | COOP (Ally) | "Sign the order. I'll make sure it's executed." |
 | RIO | VS (Enemy) | "I don't need a computer to find a pulse." |
 | RIO | COOP (Ally) | "Mark the target. I will handle the ballistics." |
 | SCHEHERAZADE | VS (Enemy) | "You can't talk your way out of this one. Step aside." |
-| SCHEHERAZADE | COOP (Ally) | "Hold the clock. I need five more minutes to clear the room." |
+| SCHEHERAZADE | COOP (Ally) | "Keep their nukes in the tubes. I'll finish this before Midnight." |
 | SHADOW COMPANY | VS (Enemy) | "Amateurs. You fight for money; I fight because I am the weapon." |
 | SHADOW COMPANY | COOP (Ally) | "Secure the perimeter. I'm going inside." |
-| SIREN | VS (Enemy) | "Your cameras can't track me. I'm just a blur in the footage." |
+| SIREN | VS (Enemy) | "Cut the feed. This isn't a show." |
 | SIREN | COOP (Ally) | "Don't film this. It's going to get messy." |
 | STARLIGHT | VS (Enemy) | "A glass cannon. One stone is all it takes." |
 | STARLIGHT | COOP (Ally) | "Burn the cover. I'll take the shot." |
@@ -2900,7 +2900,7 @@ The truck explodes, but the operator doesn't scream. They just sigh and take off
 
 | Target Asset | Interaction Type | Dialogue Log |
 | --- | --- | --- |
-| SCHARNHORST | VS (Enemy) | "Target armor density high. Swarm recommended." |
+| SCHARNHORST | VS (Enemy) | "No armor signature. Single biological. Swarm anyway." |
 | SCHARNHORST | COOP (Ally) | "Keep them busy, big man. My birds are flanking." |
 | RICHELIEU | VS (Enemy) | "You cannot bribe an algorithm. Target locked." |
 | RICHELIEU | COOP (Ally) | "Budget increase approved. Manufacturing more units." |
@@ -3462,7 +3462,7 @@ The suit's power core fails. It locks up in a standing position, becoming a stat
 
 | Target Asset | Interaction Type | Dialogue Log |
 | --- | --- | --- |
-| SCHARNHORST | VS (Enemy) | "You need the Reaper’s speed to kill me, Butcher. You're too slow." |
+| SCHARNHORST | VS (Enemy) | "Speed won't open this hull, Butcher. Bring a bigger knife." |
 | SCHARNHORST | COOP (Ally) | "Stay behind the shield. I'll take the hits." |
 | RICHELIEU | VS (Enemy) | "Paperwork doesn't stop a tank. Move." |
 | RICHELIEU | COOP (Ally) | "Protect the VIP. Moving to escort formation." |
