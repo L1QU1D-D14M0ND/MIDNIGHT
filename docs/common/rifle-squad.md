@@ -1,6 +1,6 @@
 # Rifle Squad
 
-> Common asset. Up to three copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
+> Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
 A line of soldiers with rifles. This is the ordinary infantry body.
 

@@ -7,7 +7,7 @@ The design documents are the direction the game is being rewritten toward. They 
 - [World](world.md) — Elisabeth, Operation Downfall, and Majestic-12. Unfinished.
 - [Mechanics](mechanics.md) — the design rules: commander, Doomsday Clock, Chips, lanes, and card flow. Not in the build.
 - [Cards](cards.md) — the Black File legend files.
-- [Common cards](common/README.md) — the mundane assets. The first six are written. The rest of that roster is open.
+- [Common cards](common/README.md) — the mundane assets. Up to eight copies in a deck, and at most two different Black File legends. The first six are written, and the prototype hardware that fits the clock table is recycled there. The build still generates those names from `lib/weapons.json`.
 
 | | This prototype | Design documents |
 | --- | --- | --- |

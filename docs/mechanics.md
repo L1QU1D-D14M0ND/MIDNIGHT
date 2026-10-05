@@ -16,8 +16,9 @@ This game is a web app, played online against another player.
 - Each player draws an opening hand of 5.
 - Before the first turn, each player may mulligan once: shuffle the hand back into the draw pile and draw 5. A player cannot mulligan twice.
 - The players choose who is Player 1. Player 1 takes the first turn.
-- **Black File** cards are unique: one copy in a deck. Any other asset is limited to three copies.
-- The first common cards are in [Common cards](common/README.md). The clock table below is the clearance guide for mundane assets that do not have a file yet.
+- A deck may include at most **2** Black File cards. Those two must be different legends. A legend is still unique: one copy of that card, and not two copies of the same legend.
+- Any other asset is a common card and is limited to **8** copies.
+- The common cards are in [Common cards](common/README.md). The clock table below is the clearance guide for mundane assets that do not have a file yet.
 
 ## Board
 
@@ -158,7 +159,7 @@ If a disabled Midnight unit is attacked while she is on the board, the retaliati
 
 ## Card types and tags
 
-**Black File** is a supertype, not a weapon tag. A Black File legend is unique.
+**Black File** is a supertype, not a weapon tag. A Black File legend is unique. A deck holds at most two of them, and they have to be two different legends.
 
 `TAGS: [NONE]` on a legend means it has no weapon tag. The parenthetical in the file, such as `(Black File / Orbital Assassin)`, is a role label for authors. It is not a rules tag. Affiliation is not a rules tag. A Majestic-12 clearance stamp is a temporary faction placeholder, described in [World](world.md).
 
@@ -210,8 +211,8 @@ Character speech is floating text. Deployment, ability, and death may have sound
 These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned, except where a file states a number. Caliban's base health is 4 and his base attack is 0. Richelieu's penalty at **1 to Midnight** sets her to 1 health and 1 attack.
-- The rest of the mundane roster. [Common cards](common/README.md) has the first six. The clock table is the clearance guide for the assets that still have no file. A stage effect is written on that unit's own card. Rifle Squad, Scout, and Attack Chopper have one. The others in that directory do not.
-- Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
+- The mundane rows that still have no file: experimental units, chemical and bio weapons, and tactical nukes. [Common cards](common/README.md) has the first six and the prototype hardware that fits an earlier row. TOS-1A Solntsepek is not recycled. A stage effect is written on that unit's own card. Rifle Squad, Scout, Attack Chopper, and Global Hawk have one. The others in that directory do not.
+- Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Bradley's Dismount is a positive Infantry effect. The other effects are not sorted yet.
 - Black Knight counters and disables WMDs. That role is settled. The rest of its sheet is still the old orbital layout and is not settled.
 - Legend files that still use one row per clock step do not say whether a new row replaces the earlier rows or stays on with them. Scharnhorst's Protocol says his lines stay on. The other tables do not, so those rows are not a settled rule.
 - Scheherazade's Time Bubble calls Richelieu, Rio, and Terminus Inverse Scaling and tells them to treat the clock as **3 to Midnight**. Inverse Scaling is defined for a common card's own stage effect. Those three files have no Early and Late stages, so the bubble does not yet say which of their abilities stay on.

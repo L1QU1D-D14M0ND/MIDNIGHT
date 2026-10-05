@@ -2,7 +2,7 @@
 
 > **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules are [Mechanics](mechanics.md).
 
-The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed, except where a file states a number. Caliban's base health is 4 and his base attack is 0. Richelieu's penalty at **1 to Midnight** sets her to 1 health and 1 attack. Common cards are a separate roster in [Common cards](common/README.md).
+The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed, except where a file states a number. Caliban's base health is 4 and his base attack is 0. Richelieu's penalty at **1 to Midnight** sets her to 1 health and 1 attack. A deck includes at most two of these legends, and they must be two different cards. Common cards are a separate roster in [Common cards](common/README.md).
 
 ## Contents
 

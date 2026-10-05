@@ -1,6 +1,6 @@
 # Scout
 
-> Common asset. Up to three copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
+> Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
 One soldier with a radio and a pair of binoculars. The useful work happens before the war is loud.
 

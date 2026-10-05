@@ -1,8 +1,8 @@
 # Attack Chopper
 
-> Common asset. Up to three copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
+> Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
-A single-rotor gunship. It uses a lane slot. It is not an Orbital.
+A single-rotor gunship. It uses a lane slot. It is not an Orbital. The prototype's AH-64 Apache is this card.
 
 | Field | Value |
 | --- | --- |

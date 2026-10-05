@@ -1,6 +1,6 @@
 # Field Gun
 
-> Common asset. Up to three copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
+> Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
 A towed artillery piece and its crew. When the enemy back slot in its lane is occupied, it fires at that unit, over the enemy front slot.
 
