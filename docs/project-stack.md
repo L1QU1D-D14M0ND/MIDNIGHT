@@ -2,7 +2,7 @@
 
 **Status: current playable prototype.** This document describes the game the repository runs today. It is the source of truth for the build.
 
-The design documents are the direction the game is being rewritten toward. They are not implemented.
+The design documents are the direction the game is being rewritten toward. They are not implemented. The order of that work is [Roadmap](roadmap.md).
 
 - [World](world.md) — Elisabeth, Operation Downfall, and Majestic-12. Unfinished.
 - [Mechanics](mechanics.md) — the design rules: commander, Doomsday Clock, Chips, lanes, and card flow. Not in the build.

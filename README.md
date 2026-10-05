@@ -11,6 +11,7 @@ A browser card game played on a 3D poker table. The repository runs an early pro
 | [Mechanics](docs/mechanics.md) | Design rules, not in the build | Commander, Doomsday Clock, Chips, lanes, and card flow |
 | [Cards](docs/cards.md) | Design | Card template and 23 Black File legends |
 | [Common cards](docs/common/README.md) | Design, started | Mundane assets. Up to eight copies. The first six, plus hardware recycled from the prototype. |
+| [Roadmap](docs/roadmap.md) | Not started | Order of work to make the prototype play the design rules. |
 
 The prototype and the design documents describe different games. The build uses Deployment Points, a shared grid, and generated hardware cards. The design uses Chips, a 30-health commander, a Doomsday Clock, and named Black File units. Those systems are not in the build. Where a design document and [Project stack](docs/project-stack.md) disagree, the running game follows the project stack.
 
