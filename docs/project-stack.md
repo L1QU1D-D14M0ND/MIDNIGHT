@@ -7,13 +7,14 @@ The design documents are the direction the game is being rewritten toward. They 
 - [World](world.md) — Elisabeth, Operation Downfall, and Majestic-12. Unfinished.
 - [Mechanics](mechanics.md) — the design rules: commander, Doomsday Clock, Chips, lanes, and card flow. Not in the build.
 - [Cards](cards.md) — the Black File legend files.
+- [Common cards](common/README.md) — the mundane assets. The first six are written. The rest of that roster is open.
 
 | | This prototype | Design documents |
 | --- | --- | --- |
 | Currency | Deployment Points. Start at 1, maximum rises by 1 after combat, cap 10. Unspent points do not bank. | Chips. Start at 1, maximum rises by 1 at the end of each round, cap 10. Unspent Chips do not bank. |
 | Win | Units in the same column damage each other. There is no commander and no match-ending health total. | The match ends when a commander reaches 0 health. Effects resolve one at a time, so both commanders are not reduced together. |
 | Board | A 4-column grid. Each player has a side. Combat hits the enemy in the same column. | Five shared lanes. Each player has a front slot and a back slot in each lane. |
-| Cards | Generated from `lib/weapons.json` with HP, attack, cost, and tags. | Authored Black File files in [Cards](cards.md). |
+| Cards | Generated from `lib/weapons.json` with HP, attack, cost, and tags. | Authored Black File files in [Cards](cards.md), and common assets in [Common cards](common/README.md). |
 | Time | Turns and phases only. | A six-step Doomsday Clock. |
 
 ## Core framework

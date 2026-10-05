@@ -2,7 +2,7 @@
 
 > **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules are [Mechanics](mechanics.md).
 
-The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed.
+The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed. Common cards are a separate roster in [Common cards](common/README.md).
 
 ## Contents
 
@@ -92,39 +92,27 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 
 ### SPECIAL INTERACTIONS
 
-*How this unit breaks the standard rules.*
+*A rule that is not one of the three abilities. Leave this out when the card has none.*
 
-- **Interaction:** *[e.g., "Ignores Armor," "Cannot be targeted by Air," "Treats clock as inverse."]*
+- **Interaction:** *[e.g., "Counts as Infantry for positive Infantry effects."]*
 
-### CORE PASSIVE: "[ABILITY NAME]"
+### SIMPLE PASSIVE: "[ABILITY NAME]"
 
-- **Effect:** *[The defining static ability of the unit active from deployment.]*
+*One direct, concise effect. It is on while the card is in play.*
 
-### RULES OF ENGAGEMENT
+- **Effect:** *[The defining static ability.]*
 
-*(Choose ONE of the following tables based on Deployment Type)*
+### ACTIVE: "[ABILITY NAME]"
 
-#### OPTION A: STANDARD ESCALATION (Scaling Units)
+*One manual activation. It can be an activated ability, a paid ability, or another effect the player chooses to use.*
 
-*Used for units that exist on the board and evolve as the clock ticks.*
+- **Effect:** *[Cost, timing, and result.]*
 
-| **Clock State** | **Status** | **Ability / Upgrade** | **Flavor Text** |
-| --- | --- | --- | --- |
-| **5 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **4 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **3 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **2 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **1 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
+### COMPLEX PASSIVE: "[ABILITY NAME]"
 
-#### OPTION B: TACTICAL WEAPON (Midnight Only)
+*One deeper passive. Clock steps, exceptions, and layered conditions belong here.*
 
-*Only usable if the unit is [ORBITAL] or [TACTICAL] and requires Midnight to deploy.*
-
-- **DEPLOYMENT EFFECT:** *[Immediate impact upon entering the game.]*
-- **SYSTEM 1 (Passive):** *[Effect]*
-- **SYSTEM 2 (Defense):** *[Effect]*
-- **SYSTEM 3 (Active):** *[Effect]*
+- **Effect:** *[The layered rule.]*
 
 ## 5. FIELD AUDIO & FX
 
@@ -219,32 +207,26 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### THE DEALER'S NOTE
 
-"You play Scharnhorst? You play Richelieu? Cute. White Knight eats 'Heroes' for breakfast. It ignores the rules they hide behind. It is the only thing on the table that the other Black Files are afraid of. It doesn't crash; it just waits for the checkmate."
+"You play Scharnhorst? You play Richelieu? Cute. White Knight eats heroes for breakfast. Diplomatic Immunity and Stealth do not apply. It doesn't crash; it just waits for the checkmate."
 
 ## 4. OPERATIONAL DIRECTIVES (MECHANICS)
 
-### SPECIAL INTERACTIONS
+### SIMPLE PASSIVE: "THE SAINT'S LIST"
 
-*How this unit breaks the standard rules.*
+- **Effect:** *White Knight's attacks deal double damage to Black File units.*
 
-- **Interaction:** **Clearance Override.** As a Black File unit, White Knight ignores [DIPLOMATIC IMMUNITY], [STEALTH], and [VANTABLACK CLOAK]. It can target any unit on the board regardless of protection (except Commanders under any condition).
+### ACTIVE: "ROD FROM GOD"
 
-### CORE PASSIVE: "THE SAINT'S LIST"
+- **Effect:** *Once each turn, pay 2 Chips. Choose one enemy unit. Deal 5 damage to it. If that unit is a Black File, destroy it. This ability bypasses Shields and Armor. It cannot target a commander.*
 
-- **Effect:** White Knight deals **Double Damage** to all units with the **Black File** tag.
+### COMPLEX PASSIVE: "PROJECT SAINT"
 
-### RULES OF ENGAGEMENT
+*It deploys by the Orbital rule: Midnight, into the orbital dock, shadowing one lane.*
 
-*(Choose ONE of the following tables based on Deployment Type)*
-
-#### OPTION B: TACTICAL WEAPON (Midnight Only)
-
-*Only usable if the unit is [ORBITAL] or [TACTICAL] and requires Midnight to deploy.*
-
-- **DEPLOYMENT EFFECT:** **"Atmospheric Breach."** Upon entering the battlefield, White Knight deals 2 Damage to ALL enemy units (Sonic Boom) and permanently removes [STEALTH] from them.
-- **SYSTEM 1 (Passive):** **"Sub-Orbital Glide."** White Knight cannot be targeted by [INFANTRY], [ARMOR], or [HEAVY] units. It can only be attacked by [AIR] or [SUPPORT] (Anti-Air) units.
-- **SYSTEM 2 (Defense):** **"Ceramic Scales."** If White Knight would be destroyed by a single hit (e.g., a Nuke or One-Shot ability), it survives with 1 Health and becomes [STEALTHED] for 1 turn (Simulating a repositioning maneuver).
-- **SYSTEM 3 (Active):** **"Rod from God."** (Cost: 2 Chips). Deal 5 Damage to a single target. If the target is a **Black File** unit, destroy it instantly. This attack bypasses [SHIELDS] and [ARMOR].
+- **Atmospheric Breach:** *When White Knight enters, it deals 2 damage to each enemy unit and removes Stealth from each enemy unit. This does not damage a commander.*
+- **Sub-Orbital Glide:** *Infantry, Armor, and Heavy units cannot target it. Air and Support units can.*
+- **Ceramic Scales:** *The first time each turn one hit would destroy White Knight, it survives with 1 Health and becomes Stealthed for 1 turn.*
+- **Clearance Override:** *It ignores Diplomatic Immunity and Stealth when choosing a target. It cannot target a commander.*
 
 ## 5. FIELD AUDIO & FX
 
@@ -307,13 +289,12 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** White Knight is the "Boogeyman" for high-level decks. Its presence forces the opponent to play honestly. If they try to hide behind Richelieu's politics or Scharnhorst's stealth, White Knight simply ignores it. Visually, the card feels fast and sharp—a stark contrast to the heavy, messy aesthetic of the other units.
-- **PSYCHOLOGY:** By hovering in orbit (Deployment Zone), it creates a sense of imminent doom. The opponent knows they cannot hide their key units. It forces a "Kill or Be Killed" mentality, as they must find Anti-Air solutions immediately or lose their best cards to the "Rod from God."
-
-### MECHANICAL CHECK:
-
-- **Does this respect the Decapitation Strike rule?** YES. The "Rod from God" targets units, not the Commander directly.
-- **Does the Midnight effect follow priority?** YES. Atmospheric Breach happens on entry, clearing the way for subsequent actions.
+- **PHYSICALITY:** *White Knight is the boogeyman for Black File decks. The Saint's List doubles its attack damage against them, and Rod from God deletes one. Diplomatic Immunity and Stealth do not keep a unit off its list. It is one needle, so a protection that only stops tactics or multitarget attacks does not stop it. On the table it is fast and clean beside the heavier units.*
+- **PSYCHOLOGY:** *It waits in the orbital dock until Midnight. The opponent answers it with Air or Support, or loses the unit Rod from God names. Scheherazade holds it on the pad by keeping the clock at 1 to Midnight.*
+- **MECHANICAL CHECK:**
+  - *Does this respect the Decapitation Strike rule?* **YES.** *Atmospheric Breach and Rod from God target units. It cannot target a commander.*
+  - *Does the Midnight effect follow priority?* **YES.** *Ceramic Scales is prevention, and it saves White Knight from the first destroying hit each turn. Atmospheric Breach is an offensive entry effect, and it does not damage a commander.*
+  - *Does Scheherazade stop it?* **YES.** *While Scheherazade is on the board, the clock cannot enter Midnight, so White Knight cannot be deployed, including by a Breach from 1 to Midnight.*
 
 # CLASSIFIED ASSET FILE: BLACK KNIGHT
 
@@ -329,7 +310,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **CODENAME ORIGIN** | "The 1954 Satellite Conspiracy / 'The Dark Sentinel'" |
 | **AFFILIATION** | "MAJESTIC-12 / The 'Star Wars' Initiative" |
 | **TAGS** | [NONE] (Black File / Orbital Interceptor) |
-| **ARCHETYPE** | Anti-Air / Counter-Tactic / Orbital Siege |
+| **ARCHETYPE** | Anti-WMD / Counter-Tactic / Orbital Siege |
 | **DEPLOYMENT TYPE** | **Midnight Tactical** (Doomsday Weapon) |
 
 ### Stat block
@@ -370,7 +351,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### THE DEALER'S NOTE
 
-"The Black Knight isn't on your side. It's on the side of 'Silence.' It shoots down anything that flies too fast or explodes too loud. If you play this card, you are putting a lid on the war. Nothing goes up, nothing comes down."
+"The Black Knight isn't on your side. It's on the side of 'Silence.' It was built to shoot down ICBMs. If you play this card, you are putting a lid on the doomsday weapons. Tactical nukes do not resolve."
 
 ## 4. OPERATIONAL DIRECTIVES (MECHANICS)
 
@@ -378,11 +359,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** **[ORBITAL]**. This unit cannot be deployed until the Doomsday Clock reaches **MIDNIGHT**. When deployed, the Black Knight card does not sit *in* the lane slot. Instead, it "docks" at the top of the screen (Outer Space), but it projects a **dark, semi-transparent overlay (The Shadow)** onto a specific lane on the board.
+- **Interaction:** **[ORBITAL]**. Black Knight deploys by the Orbital rule: Midnight, into the orbital dock, shadowing one lane. It does not fill a slot.
 
-### CORE PASSIVE: "THE KESSLER SYNDROME"
+### CORE PASSIVE: "TERMINAL INTERCEPT"
 
-- **Effect:** enemy [AIR] units enter the battlefield **Damaged** (take 2 damage immediately upon deployment) and **Exhausted** (cannot act this turn).
+- **Effect:** While Black Knight is deployed, WMDs are disabled for both players. A WMD is a tactical nuke or other doomsday weapon. A disabled WMD cannot be played or activated, and its effects do not happen. If a WMD would resolve anyway, Black Knight counters it. The counter is prevention: the WMD deals no damage and its other effects do not happen.
 
 ### RULES OF ENGAGEMENT (OPTION B: TACTICAL WEAPON)
 
@@ -413,7 +394,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **SCHARNHORST** | COOP (Ally) | *"...You clear the bunker. I will flatten the building."* |
 | **RICHELIEU** | VS (Enemy) | *"...Diplomatic credentials unrecognized. You are a civilian casualty."* |
 | **RICHELIEU** | COOP (Ally) | *"...Keep looking up. I am the sword of Damocles you paid for."* |
-| **NIGHTINGALE** | VS (Enemy) | *"...Airspace violation. Land immediately or be destroyed."* |
+| **NIGHTINGALE** | VS (Enemy) | *"...No warhead on that frame. You are not the launch I am hunting."* |
 | **NIGHTINGALE** | COOP (Ally) | *"...Medical transport authorized. Flying cover pattern."* |
 | **ACHERON** | VS (Enemy) | *"...Thermal plume detected. Venting gas is prohibited."* |
 | **ACHERON** | COOP (Ally) | *"...The cloud obscures visuals. Switching to thermal targeting."* |
@@ -421,7 +402,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **APOLLYON** | COOP (Ally) | *"...Swarm patterns approved. I will direct the hive."* |
 | **RIO** | VS (Enemy) | *"...Unauthorized connection established, redirecting processing power to the firewall"* |
 | **RIO** | COOP (Ally) | *"...Network… optimized, redirecting all processing power to combat protocols."* |
-| **MOEBIUS** | VS (Enemy) | *"...Launch trajectory blocked. Supply drop denied."* |
+| **MOEBIUS** | VS (Enemy) | *"...Ballistic launch detected. That bird does not land."* |
 | **MOEBIUS** | COOP (Ally) | *"...Cargo bay open. Drop the package."* |
 | **CALIBAN** | VS (Enemy) | *"...Scavenger. Do not touch the crash site."* |
 | **CALIBAN** | COOP (Ally) | *"...I will bring it down. You strip the hull."* |
@@ -430,7 +411,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **WHITE KNIGHT** | VS (Enemy) | *"...Project Saint identified. I outrank you, prototype."* |
 | **WHITE KNIGHT** | COOP (Ally) | *"...We are the ceiling. Nothing flies above us."* |
 | **ENTERPRISE** | VS (Enemy) | *"...Carrier signature detected. You are a large target."* |
-| **ENTERPRISE** | COOP (Ally) | *"...You launch the fighters. I will clear the path."* |
+| **ENTERPRISE** | COOP (Ally) | *"...Launch your fighters. I have the missiles."* |
 | **SHADOW COMPANY** | VS (Enemy) | *"...Contractors. You are not authorized for this altitude."* |
 | **SHADOW COMPANY** | COOP (Ally) | *"...Logistics confirmed. Do not look up when the rod hits."* |
 | **PHALANX** | VS (Enemy) | *"...Shields are useless against kinetic bombardment."* |
@@ -456,11 +437,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool tactics or airplanes."
+- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, tactical nukes and other doomsday weapons are offline for both players.
 - **VISUAL SPECTACLE:** The Midnight ability is visually spectacular—It doesn't just hit the board; it **hovers** over it. It forces the opponent to look for Anti-Air solutions while being pelted by kinetic rods from an enemy they literally cannot reach with tanks.
 - **MECHANICAL CHECK:**
   - Does this respect the Decapitation Strike rule? **YES.** The "Kinetic Strike" targets units, not the Commander directly.
-  - Does the Midnight effect follow priority? **YES.** Deployment damage happens first, clearing the slot for the Black Knight to occupy "Airspace" above it.
+  - Does the Midnight effect follow priority? **YES.** Terminal Intercept is prevention. It does not damage a commander, and it does not fill a slot.
 
 # CLASSIFIED ASSET FILE: PANOPTICON
 
@@ -1407,7 +1388,7 @@ Designer Note: This is the hard lock on the game state.
 Effect: As long as Scheherazade is on the board, the Doomsday Clock cannot advance to Midnight. The automatic tick and Breach of Protocol both stop at **1 to Midnight**. A Breach declared from 1 is not paid and does not deploy a Midnight card.
 
 - If the automatic tick or a Breach attempts to push the clock to Midnight, it remains stuck at **1 to Midnight**.
-- *Consequence:* **Scharnhorst** never gets his Ultimate. **Apollyon** never floods the board.
+- *Consequence:* **Scharnhorst** never gains his Midnight immunity. **Apollyon** never floods the board.
 
 Rules of Engagement (The Holding Action)
 
@@ -1493,7 +1474,7 @@ Scheherazade collapses. The crowbar falls from her hand. The red light turns sol
 
 ## V. STRATEGIC NOTE (THE POKER TABLE FEEL)
 
-*Designer Note: Scheherazade is the "Blue Ball" card. The opponent spends the whole game ramping up, getting ready to drop their massive Midnight Orbitals or unleash Scharnhorst's final form... and then she hits the table and says "No." Visually, the clock on the table should try to tick over, shudder, and get stuck, creating immense tension. She forces the opponent to kill her with conventional means before they can win.*
+*Designer Note: Scheherazade is the "Blue Ball" card. The opponent spends the whole game ramping up, getting ready to drop their massive Midnight Orbitals or unleash the last line of Scharnhorst's Protocol... and then she hits the table and says "No." Visually, the clock on the table should try to tick over, shudder, and get stuck, creating immense tension. She forces the opponent to kill her with conventional means before they can win.*
 
 # CLASSIFIED ASSET FILE: JANUS
 
@@ -1543,7 +1524,7 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 **The Dealer's Note:**
 
-*"He creates heroes by breaking men. You want Scharnhorst to kill everything on Turn 1? Fine. Janus will tell Scharnhorst that he's the last man alive. It's a lie, but the bodies he stacks will be real."*
+*"He creates heroes by breaking men. He lies to common units about the stage of the war. A Rifle Squad can believe the fighting has already made them stronger. An Attack Chopper can believe the air is still cheap. Each further effect is written on that unit's own card. The bodies they stack will be real."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
@@ -1557,29 +1538,29 @@ Core Passive: "The Long Con"
 
 Designer Note: Janus does not move the Doomsday Clock. He lies about which step it is.
 
-Effect: Janus maintains a "False Narrative."
+Effect: Janus maintains a "False Narrative." He does not move the clock. He tells a common unit to use the wrong stage of that unit's own stage effect.
 
-- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**.
-- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**.
+- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**. A chosen common unit uses the late stage of its own stage effect.
+- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**. A chosen common unit uses the early stage of its own stage effect.
+- A common unit has a stage effect only when its own card says so. The effect is decided per unit. [Rifle Squad](common/rifle-squad.md) gets stronger late. [Attack Chopper](common/attack-chopper.md) gets cheaper late. [Scout](common/scout.md) is useful early and fades. The rest of the common roster is still open.
 
 Rules of Engagement (The Manipulation)
 
-Designer Note: Janus forces units to act according to his False Narrative, not reality.
+Designer Note: Janus forces a common unit to use his False Narrative's stage of that unit's own stage effect.
 
 - **5 TO MIDNIGHT: "False Flag Operation"**
   - **Status:** *Instigating*
-  - **Active Ability:** **"Radicalize."** Target a friendly unit with **Standard Scaling** (Weak early, strong late). It gains its **MIDNIGHT** ability for this turn.
+  - **Active Ability:** **"Radicalize."** Target a friendly common unit with **Standard Scaling** (weak early, strong late). For this turn it uses the late stage of its own stage effect.
   - **Cost:** The unit takes **2 Damage** at the end of the turn.
   - **Flavor:** *"Tell them the enemy killed the hostages. Make them angry."*
 - **4 TO MIDNIGHT: "Information Blackout"**
   - **Status:** *Censoring*
-  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Doomsday Clock is at **5 to Midnight** (Peak Power) for this turn.
+  - **Active Ability:** **"Gaslight."** Target a friendly common unit with **Inverse Scaling** (strong early, weak late). For this turn it uses the early stage of its own stage effect.
   - **Cost:** Discard a card (The cost of burying the truth).
   - **Flavor:** *"They don't need to know the front line has collapsed. Keep them fighting."*
 - **3 TO MIDNIGHT: "The Manchurian Candidate"**
   - **Status:** *Programming*
-  - **Upgrade:** **"Deep Cover."** You may **Link** Janus to one adjacent Black File unit. That unit is now "Brainwashed" and permanently uses Janus's **False Narrative** for all scaling effects.
-  - *Tactical Note:* A brainwashed Scharnhorst thinks it is Midnight even on Turn 1.
+  - **Upgrade:** **"Deep Cover."** You may **Link** Janus to one adjacent common unit that has a stage effect. That unit is "Brainwashed" and uses Janus's **False Narrative** stage of its own stage effect. The link follows the narrative when the narrative changes.
   - **Flavor:** *"The trigger phrase is embedded. He is yours."*
 - **2 TO MIDNIGHT: "Paranoia"**
   - **Status:** *Unstable*
@@ -1640,7 +1621,7 @@ Janus doesn't die. He simply hangs up the phone, closes his file folder, and whe
 
 ## V. STRATEGIC NOTE (THE POKER TABLE FEEL)
 
-*Designer Note: Janus brings the "Cold War" to the table. He physically complicates the board state with his "Link" mechanic (represent this with a red string or a dossier placed between cards). The opponent has to constantly guess: "Is that Scharnhorst actually strong, or is Janus lying to it?" It creates a layer of bluffing and psychological pressure.*
+*Designer Note: Janus brings the "Cold War" to the table. He physically complicates the board state with his "Link" mechanic (represent this with a red string or a dossier placed between cards). The opponent has to guess whether that common unit is actually at its real stage, or whether Janus is lying to it. The pressure sits on the common cards, and those cards are designed one unit at a time.*
 
 # CLASSIFIED ASSET FILE: TERMINUS
 
@@ -1847,35 +1828,33 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet. He is not [ARMOR], so anti-tank missiles pass right through his cloak.*
+- **Interaction:** *Scharnhorst counts as [INFANTRY] for positive Infantry effects and not for negative ones. Which effects are which is not written yet.*
 
-### CORE PASSIVE: "PROTOCOL: ESCALATION"
+### SIMPLE PASSIVE: "DIE HARD"
 
-- **Effect:** *Scharnhorst possesses dynamic stats. He gains +1 Attack and +1 Health for the current Doomsday Clock step, counting **5 to Midnight** as the first step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
+- **Effect:** *Scharnhorst has +1 Attack and +1 Health for the current Doomsday Clock step: +1/+1 at **5 to Midnight**, +2/+2 at **4 to Midnight**, +3/+3 at **3 to Midnight**, +4/+4 at **2 to Midnight**, +5/+5 at **1 to Midnight**, and +6/+6 at **Midnight**.*
 
-### RULES OF ENGAGEMENT
+### ACTIVE: "WORK THE HARDEST"
 
-*(Choose ONE of the following tables based on Deployment Type)*
+- **Effect:** *Once each turn, pay 1 Chip. Scharnhorst may attack again.*
 
-#### OPTION A: STANDARD ESCALATION (Scaling Units)
+### COMPLEX PASSIVE: "PROTOCOL"
 
-*Used for units that exist on the board and evolve as the clock ticks.*
+*Each line starts at the named step and stays on at every step closer to Midnight, except the commander lock, which ends at **2 to Midnight**.*
 
-| Clock State | Status | Ability / Upgrade | Flavor Text |
-| --- | --- | --- | --- |
-| 5 TO MIDNIGHT | Restricted | Observer Status: Deals -1 Damage to Vehicles. Cannot attack Commanders (Hard Lock). | "Target Positive. Engagement unauthorized. Holding fire." |
-| 4 TO MIDNIGHT | Mobilized | Active Duty: The "Restricted" penalties are removed. | "The first shot is fired. Scharnhorst puts his cigarette out." |
-| 3 TO MIDNIGHT | Stealth | Vantablack Cloak: Cannot be targeted by Enemy Attacks or Tactics unless he is the only unit on your board. | "The conflict is messy enough now. He can disappear into the noise." |
-| 2 TO MIDNIGHT | Aggressor | Dead Man's Hand: If Scharnhorst kills an infantry unit, he readies instantly and can attack again (Max 2 chains per turn). | "Violence of Action. Work harder. Kill harder." |
-| 1 TO MIDNIGHT | Executioner | Coup de Grâce: Attacks instantly kill any unit that has already taken damage this turn. | "No mercy. She never gave any." |
-| MIDNIGHT | Omega | One Man Army: Gains Double Strike and Immunity to [WMD] / Nuclear effects. | "The world is ending. He is the only thing designed to survive it." |
+- **5 to Midnight, 4 to Midnight, and 3 to Midnight:** *Scharnhorst's attacks cannot target a commander.*
+- **2 to Midnight and closer:** *Scharnhorst can target a commander.*
+- **4 to Midnight and closer:** *Multitarget attacks do not hit him. A multitarget attack is an attack or effect that hits more than one unit.*
+- **3 to Midnight and closer:** *Tactics cannot target him.*
+- **1 to Midnight and closer:** *If his attack hits an enemy unit whose current health is below half its maximum health, that unit is destroyed.*
+- **Midnight:** *He is immune to WMDs. Tactical nukes and other doomsday weapons do not affect him.*
 
 ## 5. FIELD AUDIO & FX
 
 *Sound cues for digital implementation. The deployment line uses his name, Karras. Scharnhorst is the codename.*
 
 - **ON DEPLOYMENT:** *"[Sound of a lighter flicking open] Karras on station. Working the hardest."*
-- **ACTIVE ABILITY:** *"[Shotgun rack] Obstruction removed. Moving to next."*
+- **ACTIVE ABILITY:** *"[Shotgun rack] Still standing. Going again."*
 - **DEFEATED/DEATH:** *"[He drops to one knee, clutching the old knife sheath.] I... didn't... die hard..."*
 
 ## 6. BLACK FILE CROSS-REFERENCE (INTERACTIONS)
@@ -1887,11 +1866,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | ACHERON | VS (Enemy) | "Gas masks don't stop knives. Bleed, you suit-rat." |
 | ACHERON | COOP (Ally) | "Smoke covers the movement. Good. Keep the vents open." |
 | APOLLYON | VS (Enemy) | "Toys. Break one, a thousand more come? Fine. I have enough ammo." |
-| APOLLYON | COOP (Ally) | "Keep them busy, machine. I need a clear path to the Commander." |
+| APOLLYON | COOP (Ally) | "Hold them. The commander comes later." |
 | BLACK KNIGHT | VS (Enemy) | "She didn't miss, did she? I can see the hole from here." |
-| BLACK KNIGHT | COOP (Ally) | "Keep the sky clear. I'll handle the dirt." |
+| BLACK KNIGHT | COOP (Ally) | "Keep their nukes off the field. I'll handle the dirt." |
 | CALIBAN | VS (Enemy) | "You look like a walking scrapyard. Put the gun down, kid." |
-| CALIBAN | COOP (Ally) | "Take what you want from the wreck. Just leave the Commander to me." |
+| CALIBAN | COOP (Ally) | "Take the wreck. The commander waits until I'm finished with the rest." |
 | CATAPHRACT | VS (Enemy) | "You need speed to kill me, shield-bearer. You're too slow." |
 | CATAPHRACT | COOP (Ally) | "Hold the wall. I'm going through the gap." |
 | GEHENNA | VS (Enemy) | "You smell like burning meat. Stay away from me." |
@@ -1901,24 +1880,24 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | MOEBIUS | VS (Enemy) | "I don't need a resupply. I'll take their ammo." |
 | MOEBIUS | COOP (Ally) | "Keep the rounds coming. I'm working overtime." |
 | NIGHTINGALE | VS (Enemy) | "Don't touch me. I'm not done until they're all dead." |
-| NIGHTINGALE | COOP (Ally) | "Just drive. I'm not bleeding, it's theirs." |
-| NIGHTMARE | VS (Enemy) | "I know what you see when you close your eyes. The rain. The mud." |
-| NIGHTMARE | COOP (Ally) | "The monsters are real. Go make them scream." |
+| NIGHTINGALE | COOP (Ally) | "Patch it in the air. Put me back on a roof." |
+| NIGHTMARE | VS (Enemy) | "Those faces are mine. Stay out of them." |
+| NIGHTMARE | COOP (Ally) | "Point me at whatever you're seeing. I'll make it stop." |
 | PANDORA | VS (Enemy) | "Keep your needles. I don't donate samples." |
 | PANDORA | COOP (Ally) | "Build the gun. I'll pull the trigger." |
 | PANOPTICON | VS (Enemy) | "No cell can hold me. I am the breach." |
 | PANOPTICON | COOP (Ally) | "If they talk, let me know. I'll finish the job." |
-| PHALANX | VS (Enemy) | "One commando against a battalion? I like those odds." |
+| PHALANX | VS (Enemy) | "A battalion is a crowd with rifles. Crowds break." |
 | PHALANX | COOP (Ally) | "Hold the line. I'm going over the top." |
 | RICHELIEU | VS (Enemy) | "Your money is useless here. I accept payment in blood." |
 | RICHELIEU | COOP (Ally) | "Sign the order. I'll make sure it's executed." |
 | RIO | VS (Enemy) | "I don't need a computer to find a pulse." |
 | RIO | COOP (Ally) | "Mark the target. I will handle the ballistics." |
 | SCHEHERAZADE | VS (Enemy) | "You can't talk your way out of this one. Step aside." |
-| SCHEHERAZADE | COOP (Ally) | "Hold the clock. I need five more minutes to clear the room." |
+| SCHEHERAZADE | COOP (Ally) | "Keep their nukes in the tubes. I'll finish this before Midnight." |
 | SHADOW COMPANY | VS (Enemy) | "Amateurs. You fight for money; I fight because I am the weapon." |
 | SHADOW COMPANY | COOP (Ally) | "Secure the perimeter. I'm going inside." |
-| SIREN | VS (Enemy) | "Your cameras can't track me. I'm just a blur in the footage." |
+| SIREN | VS (Enemy) | "Cut the feed. This isn't a show." |
 | SIREN | COOP (Ally) | "Don't film this. It's going to get messy." |
 | STARLIGHT | VS (Enemy) | "A glass cannon. One stone is all it takes." |
 | STARLIGHT | COOP (Ally) | "Burn the cover. I'll take the shot." |
@@ -1934,8 +1913,8 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 - **PHYSICALITY:** *Scharnhorst is the ultimate "Investment." When you play him early, he is just a guy in a coat—unassuming, almost weak. The opponent might ignore him to focus on tanks. This is the trap. As the clock ticks, the card physically changes on the table, growing darker and more violent.*
 - **PSYCHOLOGY:** *He forces the opponent to play paranoid. They know if they let the "Late Game Carry" survive until Midnight, they lose. But for the player controlling him, there is a sombre duty—you aren't just trying to win; you are trying to fulfill the contract of the Dead.*
 - **MECHANICAL CHECK:**
-  - *Does this respect the Decapitation Strike rule?* **YES.** *The override at **5 to Midnight** ensures he cannot strike the commander even when both enemy slots in his lane are empty.*
-  - *Does the Midnight effect follow priority?* **YES.** *Passive Immunity/Buffs take effect immediately. His effect is a self-buff, not a board wipe, so no conflict with Defensive priorities.*
+  - *Does this respect the Decapitation Strike rule?* **YES.** *From **5 to Midnight** through **3 to Midnight** his attacks cannot target a commander. From **2 to Midnight** on, a commander strike uses the normal lane rule.*
+  - *Does the Midnight effect follow priority?* **YES.** *Midnight makes him immune to WMDs. That is a prevention on him, not damage to both commanders.*
 
 # CLASSIFIED ASSET FILE: RIO
 
@@ -2902,7 +2881,7 @@ The truck explodes, but the operator doesn't scream. They just sigh and take off
 
 | Target Asset | Interaction Type | Dialogue Log |
 | --- | --- | --- |
-| SCHARNHORST | VS (Enemy) | "Target armor density high. Swarm recommended." |
+| SCHARNHORST | VS (Enemy) | "No armor signature. Single biological. Swarm anyway." |
 | SCHARNHORST | COOP (Ally) | "Keep them busy, big man. My birds are flanking." |
 | RICHELIEU | VS (Enemy) | "You cannot bribe an algorithm. Target locked." |
 | RICHELIEU | COOP (Ally) | "Budget increase approved. Manufacturing more units." |
@@ -3464,7 +3443,7 @@ The suit's power core fails. It locks up in a standing position, becoming a stat
 
 | Target Asset | Interaction Type | Dialogue Log |
 | --- | --- | --- |
-| SCHARNHORST | VS (Enemy) | "You need the Reaper’s speed to kill me, Butcher. You're too slow." |
+| SCHARNHORST | VS (Enemy) | "Speed won't open this hull, Butcher. Bring a bigger knife." |
 | SCHARNHORST | COOP (Ally) | "Stay behind the shield. I'll take the hits." |
 | RICHELIEU | VS (Enemy) | "Paperwork doesn't stop a tank. Move." |
 | RICHELIEU | COOP (Ally) | "Protect the VIP. Moving to escort formation." |
