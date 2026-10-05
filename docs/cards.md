@@ -310,7 +310,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **CODENAME ORIGIN** | "The 1954 Satellite Conspiracy / 'The Dark Sentinel'" |
 | **AFFILIATION** | "MAJESTIC-12 / The 'Star Wars' Initiative" |
 | **TAGS** | [NONE] (Black File / Orbital Interceptor) |
-| **ARCHETYPE** | Anti-Air / Counter-Tactic / Orbital Siege |
+| **ARCHETYPE** | Anti-WMD / Counter-Tactic / Orbital Siege |
 | **DEPLOYMENT TYPE** | **Midnight Tactical** (Doomsday Weapon) |
 
 ### Stat block
@@ -351,7 +351,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### THE DEALER'S NOTE
 
-"The Black Knight isn't on your side. It's on the side of 'Silence.' It shoots down anything that flies too fast or explodes too loud. If you play this card, you are putting a lid on the war. Nothing goes up, nothing comes down."
+"The Black Knight isn't on your side. It's on the side of 'Silence.' It was built to shoot down ICBMs. If you play this card, you are putting a lid on the doomsday weapons. Tactical nukes do not resolve."
 
 ## 4. OPERATIONAL DIRECTIVES (MECHANICS)
 
@@ -359,11 +359,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 *How this unit breaks the standard rules.*
 
-- **Interaction:** **[ORBITAL]**. This unit cannot be deployed until the Doomsday Clock reaches **MIDNIGHT**. When deployed, the Black Knight card does not sit *in* the lane slot. Instead, it "docks" at the top of the screen (Outer Space), but it projects a **dark, semi-transparent overlay (The Shadow)** onto a specific lane on the board.
+- **Interaction:** **[ORBITAL]**. Black Knight deploys by the Orbital rule: Midnight, into the orbital dock, shadowing one lane. It does not fill a slot.
 
-### CORE PASSIVE: "THE KESSLER SYNDROME"
+### CORE PASSIVE: "TERMINAL INTERCEPT"
 
-- **Effect:** enemy [AIR] units enter the battlefield **Damaged** (take 2 damage immediately upon deployment) and **Exhausted** (cannot act this turn).
+- **Effect:** While Black Knight is deployed, WMDs are disabled for both players. A WMD is a tactical nuke or other doomsday weapon. A disabled WMD cannot be played or activated, and its effects do not happen. If a WMD would resolve anyway, Black Knight counters it. The counter is prevention: the WMD deals no damage and its other effects do not happen.
 
 ### RULES OF ENGAGEMENT (OPTION B: TACTICAL WEAPON)
 
@@ -394,7 +394,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **SCHARNHORST** | COOP (Ally) | *"...You clear the bunker. I will flatten the building."* |
 | **RICHELIEU** | VS (Enemy) | *"...Diplomatic credentials unrecognized. You are a civilian casualty."* |
 | **RICHELIEU** | COOP (Ally) | *"...Keep looking up. I am the sword of Damocles you paid for."* |
-| **NIGHTINGALE** | VS (Enemy) | *"...Airspace violation. Land immediately or be destroyed."* |
+| **NIGHTINGALE** | VS (Enemy) | *"...No warhead on that frame. You are not the launch I am hunting."* |
 | **NIGHTINGALE** | COOP (Ally) | *"...Medical transport authorized. Flying cover pattern."* |
 | **ACHERON** | VS (Enemy) | *"...Thermal plume detected. Venting gas is prohibited."* |
 | **ACHERON** | COOP (Ally) | *"...The cloud obscures visuals. Switching to thermal targeting."* |
@@ -402,7 +402,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **APOLLYON** | COOP (Ally) | *"...Swarm patterns approved. I will direct the hive."* |
 | **RIO** | VS (Enemy) | *"...Unauthorized connection established, redirecting processing power to the firewall"* |
 | **RIO** | COOP (Ally) | *"...Network… optimized, redirecting all processing power to combat protocols."* |
-| **MOEBIUS** | VS (Enemy) | *"...Launch trajectory blocked. Supply drop denied."* |
+| **MOEBIUS** | VS (Enemy) | *"...Ballistic launch detected. That bird does not land."* |
 | **MOEBIUS** | COOP (Ally) | *"...Cargo bay open. Drop the package."* |
 | **CALIBAN** | VS (Enemy) | *"...Scavenger. Do not touch the crash site."* |
 | **CALIBAN** | COOP (Ally) | *"...I will bring it down. You strip the hull."* |
@@ -411,7 +411,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **WHITE KNIGHT** | VS (Enemy) | *"...Project Saint identified. I outrank you, prototype."* |
 | **WHITE KNIGHT** | COOP (Ally) | *"...We are the ceiling. Nothing flies above us."* |
 | **ENTERPRISE** | VS (Enemy) | *"...Carrier signature detected. You are a large target."* |
-| **ENTERPRISE** | COOP (Ally) | *"...You launch the fighters. I will clear the path."* |
+| **ENTERPRISE** | COOP (Ally) | *"...Launch your fighters. I have the missiles."* |
 | **SHADOW COMPANY** | VS (Enemy) | *"...Contractors. You are not authorized for this altitude."* |
 | **SHADOW COMPANY** | COOP (Ally) | *"...Logistics confirmed. Do not look up when the rod hits."* |
 | **PHALANX** | VS (Enemy) | *"...Shields are useless against kinetic bombardment."* |
@@ -437,11 +437,11 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, you are telling the opponent "You are not allowed to use your cool tactics or airplanes."
+- **PHYSICALITY:** Black Knight is the ultimate "No" card. When you put it on the table, tactical nukes and other doomsday weapons are offline for both players.
 - **VISUAL SPECTACLE:** The Midnight ability is visually spectacular—It doesn't just hit the board; it **hovers** over it. It forces the opponent to look for Anti-Air solutions while being pelted by kinetic rods from an enemy they literally cannot reach with tanks.
 - **MECHANICAL CHECK:**
   - Does this respect the Decapitation Strike rule? **YES.** The "Kinetic Strike" targets units, not the Commander directly.
-  - Does the Midnight effect follow priority? **YES.** Deployment damage happens first, clearing the slot for the Black Knight to occupy "Airspace" above it.
+  - Does the Midnight effect follow priority? **YES.** Terminal Intercept is prevention. It does not damage a commander, and it does not fill a slot.
 
 # CLASSIFIED ASSET FILE: PANOPTICON
 
@@ -1868,7 +1868,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | APOLLYON | VS (Enemy) | "Toys. Break one, a thousand more come? Fine. I have enough ammo." |
 | APOLLYON | COOP (Ally) | "Hold them. The commander comes later." |
 | BLACK KNIGHT | VS (Enemy) | "She didn't miss, did she? I can see the hole from here." |
-| BLACK KNIGHT | COOP (Ally) | "Keep the sky clear. I'll handle the dirt." |
+| BLACK KNIGHT | COOP (Ally) | "Keep their nukes off the field. I'll handle the dirt." |
 | CALIBAN | VS (Enemy) | "You look like a walking scrapyard. Put the gun down, kid." |
 | CALIBAN | COOP (Ally) | "Take the wreck. The commander waits until I'm finished with the rest." |
 | CATAPHRACT | VS (Enemy) | "You need speed to kill me, shield-bearer. You're too slow." |

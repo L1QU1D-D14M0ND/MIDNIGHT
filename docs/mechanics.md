@@ -175,6 +175,10 @@ Rules tags are: **Infantry, Armor, Air, Heavy, Structure, Support, Stealth, Orbi
 
 A mundane asset's stamp is the minute that authorizes it in the clock table. A legend's stamp is the stamp in its stat block.
 
+### WMDs
+
+A WMD is a tactical nuke or other doomsday weapon. The Midnight row of the clock table is what authorizes tactical nukes. A legend is a WMD only when its own text says so. While Black Knight is deployed, WMDs are disabled for both players, and Black Knight counters a WMD that would resolve anyway. Scharnhorst is immune to WMDs at Midnight. His card states that immunity. Terminal Intercept names WMDs. The Air tag keeps its own rules.
+
 ## Abilities and priority
 
 | Word | Meaning |
@@ -208,4 +212,4 @@ These are not rules yet, and this document does not invent them:
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
 - The mundane roster. The clock table is only a clearance guide.
 - Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
-- Black Knight's abilities are due for a rework and are not settled.
+- Black Knight counters and disables WMDs. That role is settled. The rest of its sheet is still the old orbital layout and is not settled.
