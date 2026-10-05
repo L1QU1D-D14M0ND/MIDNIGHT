@@ -21,4 +21,4 @@ npm install
 npm run dev
 ```
 
-`npm run build` builds the Next.js app. `npm run lint` runs ESLint.
+`npm run build` builds the Next.js app. `npm run lint` calls `eslint .`. ESLint is not installed, and the repository has no ESLint config, so that script fails.

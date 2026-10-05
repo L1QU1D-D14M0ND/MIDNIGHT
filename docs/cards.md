@@ -2,7 +2,7 @@
 
 > **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules are [Mechanics](mechanics.md).
 
-The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed. Common cards are a separate roster in [Common cards](common/README.md).
+The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed, except where a file states a number. Caliban's base health is 4 and his base attack is 0. Richelieu's penalty at **1 to Midnight** sets her to 1 health and 1 attack. Common cards are a separate roster in [Common cards](common/README.md).
 
 ## Contents
 
@@ -766,7 +766,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 Subject Description:
 
-Gehenna is a colossal, deployed on hydraulic jacks, its an Industrial Incinerator. It resembles a bucket-wheel excavator combined with a blast furnace, covered in soot, grease, and warning signs. It leaves a trail of scorched earth and black sludge wherever it moves.
+Gehenna is a colossal industrial incinerator, deployed on hydraulic jacks. It resembles a bucket-wheel excavator combined with a blast furnace, covered in soot, grease, and warning signs. It leaves a trail of scorched earth and black sludge wherever it moves.
 
 The "Weapon" / Gear:
 
@@ -802,7 +802,7 @@ Designer Note: This turns your weak/dying units into value.
 
 Effect: Once per turn, you may drag a friendly unit onto Gehenna to sacrifice it. The sacrificed unit is a casualty and is shuffled into its owner's draw pile.
 
-- **Benefit:** Gain **Chips** equal to half that unit's Deployment Cost (rounded up).
+- **Benefit:** Gain **Chips** equal to half that unit's Chip cost (rounded up).
 - *Synergy:* Great for recycling units that are about to die from DoT effects or cheap tokens.
 
 Rules of Engagement (The Production Line)
@@ -1433,7 +1433,7 @@ Defeated / Death Animation:
 
 Scheherazade collapses. The crowbar falls from her hand. The red light turns solid.
 
-"I can't... tell the story... anymore..." [The Clock ticks to Midnight]
+"I can't... tell the story... anymore..." The clock does not move because she was defeated. It stays where it is until a later tick or a card moves it.
 
 ### BLACK FILE CROSS-REFERENCE
 
@@ -1685,7 +1685,7 @@ Core Passive: "The Boundary Line"
 
 Designer Note: This is the hard counter to Moebius's "Rush" tactics.
 
-Effect: after Terminus has been on the table for 2 turns and the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played, ignoring any [HASTE] or [RUSH] tags. Easy to handle in this web based game.
+Effect: after Terminus has been on the table for 2 turns and the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, all Enemy Units enter the battlefield Exhausted (Tapped/Stunned). They cannot attack the turn they are played. Haste and Rush are not rules tags. See [Mechanics](mechanics.md).
 
 Rules of Engagement (The Blockade Crumbling)
 
@@ -2341,14 +2341,14 @@ Moebius drops his clipboard. He doesn't look scared, just annoyed.
 
 ### Stat block
 
-Chip cost and health are unassigned. Attack is unassigned, except 0 where the file states it or the type is Structure. Rules: [Mechanics](mechanics.md).
+Chip cost is unassigned. The ability below sets health to 4 and attack to 0 until an attack changes the attack. Rules: [Mechanics](mechanics.md).
 
 | Field | Value |
 | --- | --- |
 | Chip cost | Unassigned |
 | Stamp | 5 to Midnight |
-| Health | Unassigned |
-| Attack | Unassigned |
+| Health | 4 |
+| Attack | 0 |
 | Tags | — |
 | Supertype | Black File, unique |
 | Type | Asset |
@@ -2399,7 +2399,7 @@ Designer Note: As the clock ticks, Caliban stops hiding in the dirt and starts d
 
 - **5 TO MIDNIGHT: "Sabotage"**
   - **Status:** *Insurgent*
-  - **Active Ability:** **"Trapwire."** Secretly choose a slot on the enemy board. The next unit played there takes damage equal to its own Deployment Cost.
+  - **Active Ability:** **"Trapwire."** Secretly choose a slot on the enemy board. The next unit played there takes damage equal to its own Chip cost.
   - **Flavor:** *"Watch your step."*
 - **4 TO MIDNIGHT: "Guerrilla Tactics"**
   - **Status:** *Ambush*
@@ -2531,7 +2531,7 @@ Core Passive: "The Dead Zone"
 
 Designer Note: This forces the enemy to move their units away or die.
 
-Effect: Acheron deals no direct combat damage. Instead, any unit (Friend or Foe) directly in front of or adjacent to Acheron suffers "Corrosion." (Take damage equal to the current Escalation Level at the start of every turn).
+Effect: Acheron deals no direct combat damage. Instead, any unit (Friend or Foe) directly in front of or adjacent to Acheron suffers "Corrosion" at the start of every turn. An earlier draft set that damage to an escalation level, and the clock has no such number. The **4 to Midnight** row is the only line that states an amount: 1 damage. The other steps do not.
 
 Rules of Engagement (The Toxicity Levels)
 
@@ -2692,7 +2692,7 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 | **4 TO MIDNIGHT** | **Periscope Depth** | **Ability:** "Tomahawk." Deal **2 Damage** to a random enemy unit at the end of your turn. Works while Submerged. | *"Tube 1, fire. Do not surface."* |
 | **3 TO MIDNIGHT** | **Wolfpack** | **Upgrade:** When Enterprise Surfaces, she spawns a **"Phantom Ace"** Token (2/1 Jet with Haste). | *"Flight deck clear. Launch the alert fighter."* |
 | **2 TO MIDNIGHT** | **Alpha Strike** | **Upgrade:** "Phantom Ace" Tokens now have **"Dive Bomb"** (Deal double damage to Structures/Heavy). | *"Hit the pylons. Bring the roof down."* |
-| **1 TO MIDNIGHT** | **Emergency Blow** | **Active:** "Breach." Surfaces instantly for **0 Chips** and deals **2 Damage** to all adjacent enemies (The displacement wave). | *"Ballast tanks empty! Emergency surface!"* |
+| **1 TO MIDNIGHT** | **Emergency Blow** | **Active:** "Breach." The ship surfaces. This is not Breach of Protocol. It costs **0 Chips** and deals **2 Damage** to all adjacent enemies (The displacement wave). | *"Ballast tanks empty! Emergency surface!"* |
 | **MIDNIGHT** | **The Leviathan** | **Passive:** Enterprise remains **Surfaced**. She gains **"Broadside"** (Attacks hit the Target and both adjacent units). | *"All tubes open. Fire everything!"* |
 
 ## 5. FIELD AUDIO & FX

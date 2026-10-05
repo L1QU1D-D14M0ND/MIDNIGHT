@@ -2,7 +2,7 @@
 
 > Common asset. Up to three copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
-A canvas-backed truck with crates and a stretcher. It holds the lane and keeps the unit beside it standing.
+A canvas-backed truck with crates and a stretcher. It holds the lane and restores the other friendly unit in that same lane.
 
 | Field | Value |
 | --- | --- |
