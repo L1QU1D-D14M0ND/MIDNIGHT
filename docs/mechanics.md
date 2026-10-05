@@ -210,6 +210,6 @@ Character speech is floating text. Deployment, ability, and death may have sound
 These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
-- The mundane roster. The clock table is only a clearance guide.
+- The mundane roster. The clock table is only a clearance guide. Some common units will have a stage effect, written on that unit's card when the common cards are designed. Janus's False Narrative tells such a unit to use the early or late stage of its own effect. Infantry getting stronger and Air getting cheaper are examples of the kind of effect, not a list.
 - Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
 - Black Knight counters and disables WMDs. That role is settled. The rest of its sheet is still the old orbital layout and is not settled.

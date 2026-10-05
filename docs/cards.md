@@ -1524,7 +1524,7 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 **The Dealer's Note:**
 
-*"He creates heroes by breaking men. You want Scharnhorst angry before the clock is? Fine. Janus will tell him the war has already started. Commander targeting and WMD immunity still follow the real clock. The bodies he stacks will be real."*
+*"He creates heroes by breaking men. He lies to common units about the stage of the war. An infantry squad can believe the fighting has already made them stronger. A flight can believe the air is still cheap. Each of those effects is written on that unit's own card, when the common cards are designed. The bodies they stack will be real."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
@@ -1538,29 +1538,29 @@ Core Passive: "The Long Con"
 
 Designer Note: Janus does not move the Doomsday Clock. He lies about which step it is.
 
-Effect: Janus maintains a "False Narrative."
+Effect: Janus maintains a "False Narrative." He does not move the clock. He tells a common unit to use the wrong stage of that unit's own stage effect.
 
-- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**.
-- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**.
+- If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**. A chosen common unit uses the late stage of its own stage effect.
+- If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**. A chosen common unit uses the early stage of its own stage effect.
+- A common unit has a stage effect only when its own card says so. Those cards are not written yet. The effect is decided per unit. An Infantry card might get stronger as the clock advances. An Air card might get cheaper. Those are examples of the kind of effect, not a roster.
 
 Rules of Engagement (The Manipulation)
 
-Designer Note: Janus forces units to act according to his False Narrative, not reality.
+Designer Note: Janus forces a common unit to use his False Narrative's stage of that unit's own stage effect.
 
 - **5 TO MIDNIGHT: "False Flag Operation"**
   - **Status:** *Instigating*
-  - **Active Ability:** **"Radicalize."** Target a friendly unit with **Standard Scaling** (Weak early, strong late). It gains its **MIDNIGHT** ability for this turn. On Scharnhorst, that ability is WMD immunity for this turn.
+  - **Active Ability:** **"Radicalize."** Target a friendly common unit with **Standard Scaling** (weak early, strong late). For this turn it uses the late stage of its own stage effect.
   - **Cost:** The unit takes **2 Damage** at the end of the turn.
   - **Flavor:** *"Tell them the enemy killed the hostages. Make them angry."*
 - **4 TO MIDNIGHT: "Information Blackout"**
   - **Status:** *Censoring*
-  - **Active Ability:** **"Gaslight."** Target a friendly unit with **Inverse Scaling** (Strong early, weak late). It acts as if the Doomsday Clock is at **5 to Midnight** (Peak Power) for this turn.
+  - **Active Ability:** **"Gaslight."** Target a friendly common unit with **Inverse Scaling** (strong early, weak late). For this turn it uses the early stage of its own stage effect.
   - **Cost:** Discard a card (The cost of burying the truth).
   - **Flavor:** *"They don't need to know the front line has collapsed. Keep them fighting."*
 - **3 TO MIDNIGHT: "The Manchurian Candidate"**
   - **Status:** *Programming*
-  - **Upgrade:** **"Deep Cover."** You may **Link** Janus to one adjacent Black File unit. That unit is now "Brainwashed" and permanently uses Janus's **False Narrative** for all scaling effects.
-  - *Tactical Note:* A brainwashed Scharnhorst uses Janus's False Narrative for Die Hard and for every Protocol line except commander targeting and WMD immunity. While the narrative is **Total War**, he counts as **3 to Midnight**: +3/+3, multitarget attacks miss him, and tactics cannot target him. While the narrative is **Peacetime**, he counts as **5 to Midnight**: +1/+1, multitarget attacks can hit him, tactics can target him, and the execution is off. Commander targeting and WMD immunity follow the real clock.
+  - **Upgrade:** **"Deep Cover."** You may **Link** Janus to one adjacent common unit that has a stage effect. That unit is "Brainwashed" and uses Janus's **False Narrative** stage of its own stage effect. The link follows the narrative when the narrative changes.
   - **Flavor:** *"The trigger phrase is embedded. He is yours."*
 - **2 TO MIDNIGHT: "Paranoia"**
   - **Status:** *Unstable*
@@ -1621,7 +1621,7 @@ Janus doesn't die. He simply hangs up the phone, closes his file folder, and whe
 
 ## V. STRATEGIC NOTE (THE POKER TABLE FEEL)
 
-*Designer Note: Janus brings the "Cold War" to the table. He physically complicates the board state with his "Link" mechanic (represent this with a red string or a dossier placed between cards). The opponent has to constantly guess: "Is that Scharnhorst actually strong, or is Janus lying to it?" It creates a layer of bluffing and psychological pressure.*
+*Designer Note: Janus brings the "Cold War" to the table. He physically complicates the board state with his "Link" mechanic (represent this with a red string or a dossier placed between cards). The opponent has to guess whether that common unit is actually at its real stage, or whether Janus is lying to it. The pressure sits on the common cards, and those cards are designed one unit at a time.*
 
 # CLASSIFIED ASSET FILE: TERMINUS
 
