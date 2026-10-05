@@ -2,7 +2,7 @@
 
 > **Status: design rules.** This is how a match of MIDNIGHT is meant to be played. It is not implemented. The playable build is [Project stack](project-stack.md). The setting is [World](world.md). The legend files are [Cards](cards.md). The first common cards are in [Common cards](common/README.md).
 >
-> Chip cost, health, and attack on individual legends are still unassigned. The first common cards are in [Common cards](common/README.md). The rest of the mundane roster is still open.
+> Chip cost, health, and attack on individual legends are still unassigned, except the numbers a file already states. The rest of the mundane roster is still open.
 
 ## Web app
 
@@ -70,8 +70,8 @@ Chips are the currency. They pay for deployments and for activated abilities tha
 - A deployment spends the card's Chip cost.
 - An activated ability spends the Chip cost printed on it.
 - An ordinary attack is free, unless a card says the attack costs Chips.
-- A card that grants Chips adds them. A start-of-turn grant is added after the Chips-phase refill. Any other grant is added when the card says. Granted Chips can rise above the maximum. They are spent normally. The next Chips phase still sets Chips to the maximum, so the extra does not bank and does not raise the maximum. Richelieu, Gehenna, and Enterprise grant Chips this way.
-- A card that changes hand size changes the maximum used by the draw step. Shadow Company raises that maximum by 2 while that ability is on.
+- A card that grants Chips adds them. A start-of-turn grant is added after the Chips-phase refill. Any other grant is added when the card says. Granted Chips can rise above the maximum. They are spent normally. The next Chips phase still sets Chips to the maximum, so the extra does not bank and does not raise the maximum. Richelieu, Gehenna, and Enterprise grant Chips. Richelieu's file says +1 Chip every turn while the clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, and it does not name the phase. Gehenna grants Chips equal to half the sacrificed unit's Chip cost, rounded up, when that unit is sacrificed. Enterprise grants +1 Chip per turn while Submerged, on the **5 to Midnight** row of its file.
+- A card that changes hand size changes the maximum used by the draw step. Shadow Company raises that maximum by 2 while the clock is at **5 to Midnight**, **4 to Midnight**, **3 to Midnight**, or **2 to Midnight**.
 
 ## Decapitation Strike
 
@@ -87,7 +87,7 @@ The first commander to reach 0 loses, and the match ends before the next instanc
 
 During combat, a unit's attack follows the lane order in Board: the enemy front slot, then the enemy back slot, then the enemy commander when both of those slots are empty.
 
-An area effect or a one-shot deals damage only to units, unless its own text says it deals damage to a commander. Panopticon's Midnight liquidation says it deals commander damage, so it can. White Knight's Rod from God does not, so it cannot.
+An area effect or a one-shot deals damage only to units, unless its own text says it deals damage to a commander. Panopticon's Midnight ability, Total Eradication, says it deals commander damage, so it can. The ability named Liquidation Protocol is at **1 to Midnight** and heals your own commander. It does not damage the enemy commander. White Knight's Rod from God does not deal commander damage, so it cannot.
 
 A unit that does not attack, including a Structure and an Orbital, does not strike the commander by occupying or shadowing a lane. A unit in either enemy slot of a lane still blocks commander strikes through that lane.
 
@@ -209,7 +209,12 @@ Character speech is floating text. Deployment, ability, and death may have sound
 
 These are not rules yet, and this document does not invent them:
 
-- Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
+- Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned, except where a file states a number. Caliban's base health is 4 and his base attack is 0. Richelieu's penalty at **1 to Midnight** sets her to 1 health and 1 attack.
 - The rest of the mundane roster. [Common cards](common/README.md) has the first six. The clock table is the clearance guide for the assets that still have no file. A stage effect is written on that unit's own card. Rifle Squad, Scout, and Attack Chopper have one. The others in that directory do not.
 - Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
 - Black Knight counters and disables WMDs. That role is settled. The rest of its sheet is still the old orbital layout and is not settled.
+- Legend files that still use one row per clock step do not say whether a new row replaces the earlier rows or stays on with them. Scharnhorst's Protocol says his lines stay on. The other tables do not, so those rows are not a settled rule.
+- Scheherazade's Time Bubble calls Richelieu, Rio, and Terminus Inverse Scaling and tells them to treat the clock as **3 to Midnight**. Inverse Scaling is defined for a common card's own stage effect. Those three files have no Early and Late stages, so the bubble does not yet say which of their abilities stay on.
+- Acheron's Corrosion amount is stated only on the **4 to Midnight** row, as 1 damage. The core line used to call the amount an escalation level. The clock has no such number. His **5 to Midnight** row says he has 0 attack while the Dead Zone is off.
+- Richelieu's +1 Chip says "every turn" and does not name the phase.
+- Some older files use a 50% chance, and names that are not rules tags: Haste, Rush, Shields, Armor as a number, Morale, Fear, Pierce, and similar. The rules tags are the eight listed above. Those other names are not rules until this document defines them.

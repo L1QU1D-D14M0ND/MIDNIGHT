@@ -80,7 +80,7 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 
 #### I. VISUAL PROFILE (ARCHIVE FOOTAGE)
 
-**Subject Description:** The file contains a single, heavily water-damaged photograph found in the wreckage of Sector Zero. It shows twelve distinct figures standing in front of a heavy transport plane. Their faces are crossed out with black marker, except for one young soldier in the back, Karras, later filed under the codename Scharnhorst, whose face is circled in red question marks.
+**Subject Description:** The file contains a single, heavily water-damaged photograph found in the wreckage of Sector Zero. It shows twelve distinct figures standing in front of a heavy transport plane. Their faces are crossed out with black marker. At the edge of the frame, not one of the twelve, is a young soldier, Karras, later filed under the codename Scharnhorst. His face is circled in red question marks.
 
 **The Symbol:** The faction crest is a **Hydra strangling a Globe**. In the modern era, this crest is rarely seen on uniforms. Instead, it is usually found stamped onto the chassis of destroyed experimental weapons or etched into the logic boards of rogue AI.
 
@@ -117,7 +117,7 @@ ARCHIVE: BLACK FILE // DECEASED // THE FIRST COHORT
 
 **Operational Directives:** The "New" Majestic-12 designation has been reactivated, but the doctrine has been rewritten in blood.
 
-- **The BLACK KNIGHT:** the only thing that survived the “Downfall” reactivated a few years ago and is the only original member from the old MAJESTIC-12
+- **The BLACK KNIGHT:** The only original member who survived Downfall. The satellite reactivated a few years ago.
 - **Deployment:** **NON-CONSOLIDATED.**
   - **The "Basket" Protocol:** Multiple assets may converge on a single Area of Operations (AO) if dictated by individual objectives, but they must *never* operate as a single tactical column. Command will never again risk the entire pantheon in one valley. If two Majestic-12 units are in the same sector, it is because their separate agendas have crossed paths, not because they are standing in formation.
 - **Loyalty:** FRACTURED. Assets are currently embedded in opposing factions (Global Defense, The Clandestine Service, The Private Sector).
