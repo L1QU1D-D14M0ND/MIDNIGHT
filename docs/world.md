@@ -1,4 +1,4 @@
-> **Status: design document, unfinished.** This file is not implemented. The playable build is [Project stack](project-stack.md). Rules this setting assumes are in [Mechanics](mechanics.md). The legend roster is in [Cards](cards.md).
+> **Status: design document, unfinished.** This file is not implemented. The playable build is [Project stack](project-stack.md). Rules this setting assumes are in [Mechanics](mechanics.md). The legend roster is in [Cards](cards.md). The first common cards are in [Common cards](common/README.md).
 
 # PERSON OF INTEREST FILE: ELISABETH
 

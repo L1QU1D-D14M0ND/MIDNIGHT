@@ -1,8 +1,8 @@
 # Mechanics
 
-> **Status: design rules.** This is how a match of MIDNIGHT is meant to be played. It is not implemented. The playable build is [Project stack](project-stack.md). The setting is [World](world.md). The legend files are [Cards](cards.md).
+> **Status: design rules.** This is how a match of MIDNIGHT is meant to be played. It is not implemented. The playable build is [Project stack](project-stack.md). The setting is [World](world.md). The legend files are [Cards](cards.md). The first common cards are in [Common cards](common/README.md).
 >
-> Chip cost, health, and attack on individual legends are still unassigned. Mundane assets (infantry through nukes) do not have cards yet.
+> Chip cost, health, and attack on individual legends are still unassigned. The first common cards are in [Common cards](common/README.md). The rest of the mundane roster is still open.
 
 ## Web app
 
@@ -17,7 +17,7 @@ This game is a web app, played online against another player.
 - Before the first turn, each player may mulligan once: shuffle the hand back into the draw pile and draw 5. A player cannot mulligan twice.
 - The players choose who is Player 1. Player 1 takes the first turn.
 - **Black File** cards are unique: one copy in a deck. Any other asset is limited to three copies.
-- Mundane assets are not designed yet. The clock table below is their clearance guide until those cards exist.
+- The first common cards are in [Common cards](common/README.md). The clock table below is the clearance guide for mundane assets that do not have a file yet.
 
 ## Board
 
@@ -210,6 +210,6 @@ Character speech is floating text. Deployment, ability, and death may have sound
 These are not rules yet, and this document does not invent them:
 
 - Chip cost, health, and attack for each legend. The stat blocks in [Cards](cards.md) mark those fields unassigned.
-- The mundane roster. The clock table is only a clearance guide. Some common units will have a stage effect, written on that unit's card when the common cards are designed. Janus's False Narrative tells such a unit to use the early or late stage of its own effect. Infantry getting stronger and Air getting cheaper are examples of the kind of effect, not a list.
+- The rest of the mundane roster. [Common cards](common/README.md) has the first six. The clock table is the clearance guide for the assets that still have no file. A stage effect is written on that unit's own card. Rifle Squad, Scout, and Attack Chopper have one. The others in that directory do not.
 - Scharnhorst counts as Infantry for positive Infantry effects and not for negative ones. Which effects are which is not written yet.
 - Black Knight counters and disables WMDs. That role is settled. The rest of its sheet is still the old orbital layout and is not settled.

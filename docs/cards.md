@@ -2,7 +2,7 @@
 
 > **Status: design roster.** These files are not in the playable build. The build's cards are generated from `lib/weapons.json`, described in [Project stack](project-stack.md). The rules are [Mechanics](mechanics.md).
 
-The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed.
+The first entry is the blank template. The rest are Black File legends. Several files still use a shorter layout than the template. Each entry has a stat block. Chip cost, health, and attack stay unassigned until those numbers are designed. Common cards are a separate roster in [Common cards](common/README.md).
 
 ## Contents
 
@@ -1524,7 +1524,7 @@ He is surrounded by Analog Tech: rotary telephones, maps covered in red string, 
 
 **The Dealer's Note:**
 
-*"He creates heroes by breaking men. He lies to common units about the stage of the war. An infantry squad can believe the fighting has already made them stronger. A flight can believe the air is still cheap. Each of those effects is written on that unit's own card, when the common cards are designed. The bodies they stack will be real."*
+*"He creates heroes by breaking men. He lies to common units about the stage of the war. A Rifle Squad can believe the fighting has already made them stronger. An Attack Chopper can believe the air is still cheap. Each further effect is written on that unit's own card. The bodies they stack will be real."*
 
 ## III. OPERATIONAL DIRECTIVES (GAMEPLAY)
 
@@ -1542,7 +1542,7 @@ Effect: Janus maintains a "False Narrative." He does not move the clock. He tell
 
 - If the Doomsday Clock is at **5 to Midnight**, **4 to Midnight**, or **3 to Midnight**, Janus's Narrative is **Total War**. A chosen common unit uses the late stage of its own stage effect.
 - If the Doomsday Clock is at **2 to Midnight**, **1 to Midnight**, or **Midnight**, Janus's Narrative is **Peacetime**. A chosen common unit uses the early stage of its own stage effect.
-- A common unit has a stage effect only when its own card says so. Those cards are not written yet. The effect is decided per unit. An Infantry card might get stronger as the clock advances. An Air card might get cheaper. Those are examples of the kind of effect, not a roster.
+- A common unit has a stage effect only when its own card says so. The effect is decided per unit. [Rifle Squad](common/rifle-squad.md) gets stronger late. [Attack Chopper](common/attack-chopper.md) gets cheaper late. [Scout](common/scout.md) is useful early and fades. The rest of the common roster is still open.
 
 Rules of Engagement (The Manipulation)
 
