@@ -92,39 +92,27 @@ Required on every card. The rules for these fields are in [Mechanics](mechanics.
 
 ### SPECIAL INTERACTIONS
 
-*How this unit breaks the standard rules.*
+*A rule that is not one of the three abilities. Leave this out when the card has none.*
 
-- **Interaction:** *[e.g., "Ignores Armor," "Cannot be targeted by Air," "Treats clock as inverse."]*
+- **Interaction:** *[e.g., "Counts as Infantry for positive Infantry effects."]*
 
-### CORE PASSIVE: "[ABILITY NAME]"
+### SIMPLE PASSIVE: "[ABILITY NAME]"
 
-- **Effect:** *[The defining static ability of the unit active from deployment.]*
+*One direct, concise effect. It is on while the card is in play.*
 
-### RULES OF ENGAGEMENT
+- **Effect:** *[The defining static ability.]*
 
-*(Choose ONE of the following tables based on Deployment Type)*
+### ACTIVE: "[ABILITY NAME]"
 
-#### OPTION A: STANDARD ESCALATION (Scaling Units)
+*One manual activation. It can be an activated ability, a paid ability, or another effect the player chooses to use.*
 
-*Used for units that exist on the board and evolve as the clock ticks.*
+- **Effect:** *[Cost, timing, and result.]*
 
-| **Clock State** | **Status** | **Ability / Upgrade** | **Flavor Text** |
-| --- | --- | --- | --- |
-| **5 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **4 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **3 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **2 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **1 TO MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
-| **MIDNIGHT** | *[Status]* | [Effect] | *"[Quote]"* |
+### COMPLEX PASSIVE: "[ABILITY NAME]"
 
-#### OPTION B: TACTICAL WEAPON (Midnight Only)
+*One deeper passive. Clock steps, exceptions, and layered conditions belong here.*
 
-*Only usable if the unit is [ORBITAL] or [TACTICAL] and requires Midnight to deploy.*
-
-- **DEPLOYMENT EFFECT:** *[Immediate impact upon entering the game.]*
-- **SYSTEM 1 (Passive):** *[Effect]*
-- **SYSTEM 2 (Defense):** *[Effect]*
-- **SYSTEM 3 (Active):** *[Effect]*
+- **Effect:** *[The layered rule.]*
 
 ## 5. FIELD AUDIO & FX
 
@@ -219,32 +207,26 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ### THE DEALER'S NOTE
 
-"You play Scharnhorst? You play Richelieu? Cute. White Knight eats 'Heroes' for breakfast. It ignores the rules they hide behind. It is the only thing on the table that the other Black Files are afraid of. It doesn't crash; it just waits for the checkmate."
+"You play Scharnhorst? You play Richelieu? Cute. White Knight eats heroes for breakfast. Diplomatic Immunity and Stealth do not apply. It doesn't crash; it just waits for the checkmate."
 
 ## 4. OPERATIONAL DIRECTIVES (MECHANICS)
 
-### SPECIAL INTERACTIONS
+### SIMPLE PASSIVE: "THE SAINT'S LIST"
 
-*How this unit breaks the standard rules.*
+- **Effect:** *White Knight's attacks deal double damage to Black File units.*
 
-- **Interaction:** **Clearance Override.** As a Black File unit, White Knight ignores [DIPLOMATIC IMMUNITY] and [STEALTH]. It can target any unit on the board regardless of protection (except Commanders under any condition).
+### ACTIVE: "ROD FROM GOD"
 
-### CORE PASSIVE: "THE SAINT'S LIST"
+- **Effect:** *Once each turn, pay 2 Chips. Choose one enemy unit. Deal 5 damage to it. If that unit is a Black File, destroy it. This ability bypasses Shields and Armor. It cannot target a commander.*
 
-- **Effect:** White Knight deals **Double Damage** to all units with the **Black File** tag.
+### COMPLEX PASSIVE: "PROJECT SAINT"
 
-### RULES OF ENGAGEMENT
+*It deploys by the Orbital rule: Midnight, into the orbital dock, shadowing one lane.*
 
-*(Choose ONE of the following tables based on Deployment Type)*
-
-#### OPTION B: TACTICAL WEAPON (Midnight Only)
-
-*Only usable if the unit is [ORBITAL] or [TACTICAL] and requires Midnight to deploy.*
-
-- **DEPLOYMENT EFFECT:** **"Atmospheric Breach."** Upon entering the battlefield, White Knight deals 2 Damage to ALL enemy units (Sonic Boom) and permanently removes [STEALTH] from them.
-- **SYSTEM 1 (Passive):** **"Sub-Orbital Glide."** White Knight cannot be targeted by [INFANTRY], [ARMOR], or [HEAVY] units. It can only be attacked by [AIR] or [SUPPORT] (Anti-Air) units.
-- **SYSTEM 2 (Defense):** **"Ceramic Scales."** If White Knight would be destroyed by a single hit (e.g., a Nuke or One-Shot ability), it survives with 1 Health and becomes [STEALTHED] for 1 turn (Simulating a repositioning maneuver).
-- **SYSTEM 3 (Active):** **"Rod from God."** (Cost: 2 Chips). Deal 5 Damage to a single target. If the target is a **Black File** unit, destroy it instantly. This attack bypasses [SHIELDS] and [ARMOR].
+- **Atmospheric Breach:** *When White Knight enters, it deals 2 damage to each enemy unit and removes Stealth from each enemy unit. This does not damage a commander.*
+- **Sub-Orbital Glide:** *Infantry, Armor, and Heavy units cannot target it. Air and Support units can.*
+- **Ceramic Scales:** *The first time each turn one hit would destroy White Knight, it survives with 1 Health and becomes Stealthed for 1 turn.*
+- **Clearance Override:** *It ignores Diplomatic Immunity and Stealth when choosing a target. It cannot target a commander.*
 
 ## 5. FIELD AUDIO & FX
 
@@ -307,13 +289,12 @@ Chip cost and health are unassigned. Attack is unassigned, except 0 where the fi
 
 ## 7. DESIGNER'S NOTES (THE TABLE FEEL)
 
-- **PHYSICALITY:** White Knight is the "Boogeyman" for high-level decks. Its presence forces the opponent to play honestly. If they try to hide behind Richelieu's politics or Scharnhorst's Protocol, White Knight simply ignores it. Visually, the card feels fast and sharp—a stark contrast to the heavy, messy aesthetic of the other units.
-- **PSYCHOLOGY:** By hovering in orbit (Deployment Zone), it creates a sense of imminent doom. The opponent knows they cannot hide their key units. It forces a "Kill or Be Killed" mentality, as they must find Anti-Air solutions immediately or lose their best cards to the "Rod from God."
-
-### MECHANICAL CHECK:
-
-- **Does this respect the Decapitation Strike rule?** YES. The "Rod from God" targets units, not the Commander directly.
-- **Does the Midnight effect follow priority?** YES. Atmospheric Breach happens on entry, clearing the way for subsequent actions.
+- **PHYSICALITY:** *White Knight is the boogeyman for Black File decks. The Saint's List doubles its attack damage against them, and Rod from God deletes one. Diplomatic Immunity and Stealth do not keep a unit off its list. It is one needle, so a protection that only stops tactics or multitarget attacks does not stop it. On the table it is fast and clean beside the heavier units.*
+- **PSYCHOLOGY:** *It waits in the orbital dock until Midnight. The opponent answers it with Air or Support, or loses the unit Rod from God names. Scheherazade holds it on the pad by keeping the clock at 1 to Midnight.*
+- **MECHANICAL CHECK:**
+  - *Does this respect the Decapitation Strike rule?* **YES.** *Atmospheric Breach and Rod from God target units. It cannot target a commander.*
+  - *Does the Midnight effect follow priority?* **YES.** *Ceramic Scales is prevention, and it saves White Knight from the first destroying hit each turn. Atmospheric Breach is an offensive entry effect, and it does not damage a commander.*
+  - *Does Scheherazade stop it?* **YES.** *While Scheherazade is on the board, the clock cannot enter Midnight, so White Knight cannot be deployed, including by a Breach from 1 to Midnight.*
 
 # CLASSIFIED ASSET FILE: BLACK KNIGHT
 
