@@ -10,7 +10,7 @@ A common card has a stage effect only when its own file says so. The effect is d
 
 The clock table in Mechanics is the clearance guide. This directory does not include experimental units, chemical or bio weapons, or tactical nukes.
 
-The prototype generates 26 hardware names in `lib/weapons.json`, with random stats. The names that already match a written common, or that share one role with each other, are one card. The rest of the fitting names are written below. The build still generates the old stats. These files are the authored versions.
+The prototype generates 26 hardware names in `lib/weapons.json`, with random stats. Each name that fits the clock table is its own common card, in basic form: stamp, cost, health, attack, and tags. The build still generates the old stats. These files are the authored versions. The real names plus the six older bodies are enough for a 30-card deck, so no extra invented cards were added.
 
 ## Cards
 
@@ -28,27 +28,25 @@ The prototype generates 26 hardware names in `lib/weapons.json`, with random sta
 | [V-22 Osprey](osprey.md) | 4 to Midnight | Air, Support | None. |
 | [MQ-9 Reaper](reaper.md) | 4 to Midnight | Air, Support | None. |
 | [Iron Dome](iron-dome.md) | 4 to Midnight | Structure, Support | None. |
+| [Phalanx CIWS](phalanx.md) | 4 to Midnight | Structure, Support | None. Basic form. |
 | [Pantsir-S1](pantsir.md) | 4 to Midnight | Armor, Support | None. |
 | [Attack Chopper](attack-chopper.md) | 3 to Midnight | Air | Standard Scaling. Chip cost drops late. |
-| [Main Battle Tank](main-battle-tank.md) | 3 to Midnight | Armor, Heavy | None. |
-| [Stealth Fighter](stealth-fighter.md) | 3 to Midnight | Air, Stealth | None. |
+| [AH-64 Apache](apache.md) | 3 to Midnight | Air, Heavy | None. Basic form. |
+| [M1A2 Abrams](abrams.md) | 3 to Midnight | Armor, Heavy | None. Basic form. |
+| [Leopard 2A7](leopard-2a7.md) | 3 to Midnight | Armor, Heavy | None. Basic form. |
+| [T-14 Armata](armata.md) | 3 to Midnight | Armor, Heavy | None. Basic form. |
+| [Challenger 3](challenger-3.md) | 3 to Midnight | Armor, Heavy | None. Basic form. |
+| [Merkava Mk 4](merkava.md) | 3 to Midnight | Armor, Heavy | None. Basic form. |
+| [F-35 Lightning II](f-35.md) | 3 to Midnight | Air, Stealth | None. Basic form. |
+| [Su-57 Felon](su-57.md) | 3 to Midnight | Air, Stealth | None. Basic form. |
 | [Eurofighter Typhoon](typhoon.md) | 3 to Midnight | Air | None. |
 | [AC-130J Ghostrider](ghostrider.md) | 3 to Midnight | Air, Heavy | None. |
 | [Field Gun](field-gun.md) | 2 to Midnight | Heavy | None. |
 | [M142 HIMARS](himars.md) | 2 to Midnight | Support, Heavy | None. |
 | [B-21 Raider](raider.md) | 2 to Midnight | Air, Stealth, Heavy | None. |
-| [Strategic Battery](strategic-battery.md) | 2 to Midnight | Structure, Heavy | None. |
-
-## Recycled from the prototype
-
-| Prototype name | Where it went |
-| --- | --- |
-| AH-64 Apache | [Attack Chopper](attack-chopper.md). Same role. |
-| M1A2 Abrams, Leopard 2A7, T-14 Armata, Challenger 3, Merkava Mk 4 | [Main Battle Tank](main-battle-tank.md). Same tags, one card. |
-| F-35 Lightning II, Su-57 Felon | [Stealth Fighter](stealth-fighter.md). |
-| Phalanx CIWS | [Iron Dome](iron-dome.md). Both are point-defense mounts. |
-| MIM-104 Patriot, Aegis Ashore, THAAD Battery | [Strategic Battery](strategic-battery.md). |
-| FGM-148 Javelin, RQ-4 Global Hawk, Switchblade 600, M2 Bradley, M1126 Stryker, V-22 Osprey, MQ-9 Reaper, Iron Dome, Pantsir-S1, Eurofighter Typhoon, AC-130J Ghostrider, M142 HIMARS, B-21 Raider | Their own files, above. |
+| [MIM-104 Patriot](patriot.md) | 2 to Midnight | Structure, Heavy | None. Basic form. |
+| [Aegis Ashore](aegis-ashore.md) | 2 to Midnight | Structure, Heavy | None. Basic form. |
+| [THAAD Battery](thaad.md) | 2 to Midnight | Structure, Heavy | None. Basic form. |
 
 ## Not recycled
 
