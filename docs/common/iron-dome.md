@@ -2,7 +2,7 @@
 
 > Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
-A point-defense mount. The prototype's Phalanx CIWS is the same card: a Structure that swats aircraft, not a second unit.
+A point-defense mount. The Phalanx CIWS is its own card.
 
 | Field | Value |
 | --- | --- |

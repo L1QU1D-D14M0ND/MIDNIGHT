@@ -2,7 +2,7 @@
 
 > Common asset. Up to eight copies. Rules: [Mechanics](../mechanics.md). Index: [Common cards](README.md).
 
-A single-rotor gunship. It uses a lane slot. It is not an Orbital. The prototype's AH-64 Apache is this card.
+A single-rotor gunship. It uses a lane slot. It is not an Orbital. The AH-64 Apache is a separate named card.
 
 | Field | Value |
 | --- | --- |

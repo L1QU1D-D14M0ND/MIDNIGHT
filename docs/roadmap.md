@@ -4,59 +4,93 @@
 
 Each step should leave `npm run dev` playable. When a step lands, update Project stack so it still describes the build.
 
-These steps stop at the common cards. Black File legends stay in [Cards](cards.md) until their chip costs, health, and attack are assigned. A deck of commons is already legal. Online play is a later track. Two players stay on one screen until the local match matches the rules.
+Black File legends stay in [Cards](cards.md) until their chip costs, health, and attack are assigned. A deck of commons is already legal. Online play stays later. Until then, Player 2 can be the bot in step 6.
 
-## 1. Authored decks
+## 1. Normal cards, basic form
 
-Replace the generator in `lib/card-data.ts`. Load each common file's stamp, chip cost, health, attack, tags, and type. Stop rolling stats from `lib/weapons.json`.
+The generator in `lib/weapons.json` already has real equipment names. Those names are the normal cards, one file each, with the tags they already carry. [Common cards](common/README.md) lists them. TOS-1A Solntsepek stays out: it is a thermobaric launcher, and this roster does not include the chemical row.
 
-A match uses a 30-card deck and at most 8 copies of each common. No Black File cards yet. Both players can share one fixed deck made of the **5 to Midnight** cards, which can be paid for at the opening maximum of 1 Chip.
+The six older bodies stay too: Rifle Squad, Scout, Jeep, Supply Truck, Field Gun, and Attack Chopper. Together with the prototype names, that is enough for a 30-card deck at 8 copies. No further invented cards until a clock row is actually empty.
 
-`weapons.json` can stay as a name list. It is not the stat source.
+In the build, replace `generateMasterDeck` in `lib/card-data.ts` with those files' stamp, chip cost, health, attack, tags, and type. A match deck is 30 cards, at most 8 of one common, and no Black File card. Both players can share one fixed deck of the **5 to Midnight** cards, which cost 1 Chip.
+
+Special text on a file is not wired in this step. A card enters, sits in a slot, and attacks with its printed numbers.
 
 ## 2. Five lanes and the commander
 
-Change `GRID_CONSTANTS`, `components/game/table.tsx`, and `components/game/scene.tsx` to 5 lanes. Each player has a front slot and a back slot. Front is the slot closer to the center.
+This needs a layout pass before the rules change, because the table is already tight.
 
-In `lib/store.ts`, the active player's units attack one at a time. The target is the enemy front unit, then the enemy back unit, then the commander when both of those slots are empty. Apply one strike at a time. Each commander starts at 30 health. The first to reach 0 loses, and `winner` is set.
+What is already there:
 
-Shuffle a killed card into its owner's draw pile.
+- Each player has 2 rows. In `components/game/table.tsx`, row 0 is the row closer to the center for both players. That row is the front slot. Row 1 is the back slot.
+- `GRID_SIZE` is 4. Combat in `lib/store.ts` ignores the row and hits the first enemy in that column.
 
-Add empty graveyard, capture, and orbital dock lists on each player. None of the commons put a card there yet.
+Plan:
+
+1. Set `GRID_SIZE` to 5. `tableWidth` already grows with it. At `CELL_WIDTH` 2.4 the outer column reaches about x = 6, and the decks in `components/game/scene.tsx` also sit at x = 6. Move the decks out, or drop `CELL_WIDTH` toward 2, and then look at `components/game/camera-manager.tsx` from the default view and the selected-card view. The camera should still see all five lanes and both commanders.
+2. Keep row 0 as front and row 1 as back. One unit per slot.
+3. Add `commander` health to each player, starting at 30, drawn in `components/game/ui.tsx`.
+4. When this player's units attack, resolve one unit at a time. Default order is front slots from lane 0 through lane 4, then back slots in that same lane order. The target is the enemy front unit in that lane, then the enemy back unit, then the commander if both enemy slots are empty. Stop the combat when a commander reaches 0 and set `winner`.
+5. Shuffle a killed card into its owner's draw pile.
+6. Add empty `graveyard`, `capture`, and `orbital` arrays on the player. No current common uses them. They are there so a later card does not have to reshape the player.
 
 ## 3. Turns and Chips
 
-Replace the shared end phase with one player's turn: Upkeep, Draw, Chips, Main, Combat, End. A round is Player 1's turn plus Player 2's turn.
+This loop is already in `lib/store.ts`. Keep it.
 
-The hand maximum is 7. The opening hand stays 5, so the first Draw happens.
+- Player 1 acts, then Player 2. Ending Player 1's phase refills Player 2 to their current maximum and draws if their hand is below the maximum.
+- After the combat results are dismissed, both maximums rise by 1, capped at 10. Player 1 is refilled immediately. Player 2 is refilled when their phase starts. Unspent points do not carry past that refill.
 
-Rename Deployment Points to Chips. Both maximums increase by 1 at the end of each round, after Player 2's end phase, capped at 10. A player refills to their maximum during their own Chips phase. Unspent Chips do not bank.
+That is the Chip rule, under the name Deployment Points. Rename `dp` and `maxDp` to Chips in the store and the HUD. Leave the timing.
 
-The HUD in `components/game/ui.tsx` shows the phase, both commanders, and Chips.
+The hand maximum is 5. Raise it to 7. The draw that already runs at the start of a phase is the Draw step, so the opening hand of 5 will draw.
 
-## 4. The Doomsday Clock
+The six design phases can be labels on this same loop. Main is the current phase, while cards are played. Combat is the current end phase. Upkeep and End can be empty passes until a card needs them. Do not build a second turn machine.
 
-Add the six steps, starting at **5 to Midnight**. At the end of every second round, the clock advances one step, and then the Chip maximums increase.
+One difference remains, and it belongs with step 2: today both sides strike in the same combat. After the lanes exist, only the player who just finished their phase strikes.
 
-A card can be deployed on its stamp or closer to Midnight. A card exactly one minute early can be breached: pay twice its Chip cost, advance the clock one step, then the card enters. A card further ahead than that is shown locked.
+## 4. Doomsday Clock
 
-Put the clock on the table, at the top center.
+The clock is new. There is no timer in the build. Plan it as a small piece of state plus a lock on `playCard`, then a table object.
 
-## 5. Common abilities
+State, in `lib/store.ts`:
 
-Wire the text already written on the common files.
+- A fixed list: **5 to Midnight**, **4 to Midnight**, **3 to Midnight**, **2 to Midnight**, **1 to Midnight**, **Midnight**. Store an index, 0 through 5. The match starts at 0.
+- `round` increments when Player 2's phase ends, at the same moment the maximums are about to rise. On every even round, advance the index by one first, then raise the maximums. The first advance is after round 2.
+- Nothing in this build stops the clock at **1 to Midnight**. Scheherazade is a Black File and is not in the deck.
 
-- Numbers and looks: Rifle Squad's late attack, Scout and Global Hawk in Upkeep, the Javelin's bonus against Armor, and the Switchblade becoming a casualty after it attacks.
-- Main phase: Jeep and Stryker move forward, the Osprey moves Infantry, the Supply Truck restores 2 health, Bradley's infantry bonus, and the Strategic Battery's shot.
-- Combat: Field Gun, HIMARS, Ghostrider, Pantsir, Iron Dome, and the rule that Infantry, Armor, and Heavy cannot target a Stealth Fighter or the B-21 Raider.
-- Attack Chopper's early cost of 4 and late cost of 2.
+Deploy check inside `playCard`:
 
-Janus is a Black File, so these stage effects follow the real clock.
+- A card's stamp is an index in that same list. It can be played when its index is less than or equal to the clock index.
+- If its index is exactly one higher, the play is a Breach: the player must have twice the printed Chip cost, the clock advances one step, then the card enters and the cost is paid.
+- If its index is two or more higher, the card does not start a drag. `components/game/ui.tsx` draws it grey, with a lock.
 
-## 6. Match setup
+Presentation:
 
-Before the first turn, each player may mulligan once. The players choose who is Player 1.
+- First, show the current name in the HUD, next to the Chip count. That is enough to test Breach and the lock.
+- Then add the table clock: a short group at the top center of the felt, one dark hand, six marks. The hand angle is `index * 60` degrees. No new clock names, and no step past Midnight.
 
-## Later
+Chip costs that change with the clock, such as the Attack Chopper, wait for step 5. Until then the chopper uses its early cost.
 
-Online play, so a deck look stays on one player's screen. Black File cards, after their numbers are assigned, into the two legend slots. Exile, capture, and orbitals already have a place on the player from step 2.
+## 5. Abilities, after the basic cards
+
+Do this only once every common card is in the match as a body: stamp, cost, health, attack, tags, and type.
+
+Then wire the text already on the files. Stage effects follow the real clock. Janus is a Black File and is not in the deck.
+
+- Rifle Squad's late attack, Scout and Global Hawk during Upkeep, the Javelin's bonus against Armor, the Switchblade's casualty after it attacks, and the Attack Chopper's late cost.
+- Jeep and Stryker move forward. The Osprey moves Infantry. The Supply Truck restores 2 health. Bradley's bonus is the positive Infantry effect.
+- Field Gun, HIMARS, Ghostrider, and Pantsir change which unit is struck. Iron Dome and Phalanx reduce a hit. The F-35, the Su-57, and the B-21 Raider cannot be targeted by Infantry, Armor, or Heavy.
+- Patriot, Aegis Ashore, and THAAD Battery gain the battery shot: 2 damage to an enemy Air unit in this lane or an adjacent lane.
+
+## 6. A basic bot
+
+Player 2 is a bot. It uses the same actions as a person: `playCard`, then `endPhase`.
+
+- It does not mulligan, and it does not Breach.
+- On its phase it plays the affordable, unlocked card with the lowest Chip cost into the first empty front slot, lanes left to right, then the back slots. If several cards tie, it plays the first one in hand.
+- When no play is legal, it ends the phase.
+- It does not use activated abilities. Those do not exist until step 5. After that, the bot still only plays bodies and attacks in the default lane order.
+- A HUD toggle turns the bot off, and a second person plays on the same screen.
+
+The human may mulligan once before the first turn. That prompt can ship with the bot. Choosing Player 1 can wait: the human is Player 1, and the bot is Player 2.
